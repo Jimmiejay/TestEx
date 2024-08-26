@@ -20,8 +20,8 @@ const WFHConfirm = () => {
         });
     };
 
-  return (
-    <div className="wfhconfirm-form">
+    return (
+        <div className="wfhconfirm-form">
             <div className='wfhconfirm-header'>
                 <h2 className='wfhconfirm-title'>แจ้งลา</h2>
             </div>
@@ -34,7 +34,7 @@ const WFHConfirm = () => {
                 <input id="startDate" value={startDate} readOnly />
             </div>
             <div className="wfhconfirm-group">
-            <label>ช่วงเวลา</label>
+                <label>ช่วงเวลา</label>
                 <input id="endDate" value={endDate} readOnly />
             </div>
             <div className="wfhconfirm-group">
@@ -43,7 +43,7 @@ const WFHConfirm = () => {
             </div>
             <button onClick={handleConfirm} className='wfhconfirmbtn'>ยืนยัน</button>
         </div>
-  );
+    );
 };
 
 export default WFHConfirm
