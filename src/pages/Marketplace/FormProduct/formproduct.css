@@ -1,0 +1,65 @@
+.formproduct-container{
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    max-height: 100%;
+    /* background-color: #C8A1E0; */
+
+    margin: 0 auto;
+    padding: 20px;
+    /* border: 1px solid #ddd;
+    border-radius: 8px; */
+}
+
+.formproduct-container .formproduct-content {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: darkgray; */
+}
+
+.formproduct-container .formproduct-txt {
+    text-align: center;
+}
+
+.formproduct-container .formproduct-txt h1 {
+    font-family: 'NotoSansThai';
+    font-size: 30px; /*เปลี่ยนจาก 26 เป็น 30 แทน*/
+    font-weight: 700;
+    color: #DE2D1E;
+    margin: 20px;
+}
+
+.formproduct-container .formproduct-txt h2 {
+    font-family: 'Prompt';
+    font-size:24px; /*เปลี่ยนจาก 26 เป็น 30 แทน*/
+    font-weight: 400;
+    color: #333333;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.formproduct-container .formproduct-txt h3 {
+    font-family: 'NotoSansThai';
+    font-size: 20px; /*เปลี่ยนจาก 26 เป็น 30 แทน*/
+    font-weight: 400;
+    color: #333333;
+    margin-left: 10px;
+}
+
+.formproduct-container .formproduct-profile {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 15px;
+    width: 100%;
+}
+
+.formproduct-container .formproduct-profile img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.formproduct-container .formproduct-uploadimg {
+    width: 100%;
+    padding: 0 15px;
+}

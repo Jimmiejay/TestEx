@@ -1,0 +1,126 @@
+.reward-contrainer {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    /* background-color: cornflowerblue; */
+    width: 100vw;
+    height: 100vh;
+}
+
+.reward-contrainer .reward-card {
+    width: 98vw;
+    height: 90vh;
+    background-color: #ffffff;
+}
+
+.reward-contrainer .rewardtxt {
+    text-align: center;
+}
+
+.reward-contrainer .rewardtxt h2 {
+    font-size: 26px;
+    font-family: 'Sukhumvit Set';
+    font-weight: 600;
+    color: black;
+    margin: 10px 0 20px 0;
+}
+
+.reward-contrainer .image-container {
+    text-align: center;
+}
+
+.reward-contrainer .image-container img {
+    width: 350px;
+    height: 350px;
+    margin: 0 0 20px 0;
+    /* border-radius: 8px; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.reward-contrainer .reward-content {
+    margin-top: 5px;
+}
+
+.reward-contrainer .reward-content h3 {
+    font-size: 20px;
+    font-family: 'Sukhumvit Set';
+    font-weight: 700;
+    color: black;
+    margin: 0 10px;
+}
+
+.reward-contrainer .reward-date {
+    font-size: 14px;
+    font-family: 'Sukhumvit Set';
+    font-weight: 300;
+    color: #333333;
+    margin: 0 10px 8px ;
+}
+
+.reward-contrainer .custom-line {
+    border: 0;
+    height: 1px; 
+    background-color: #ccc; /* สีของเส้น */
+    margin: 10px 0 5px 10px; /* top right bottom left;*/
+    width: 100%; 
+  }
+
+.reward-contrainer .reward-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.90;
+    margin: 0 10px 20px ;
+}
+
+.reward-contrainer .reward-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0 0 0 ; /*padding: top right bottom left;*/
+}
+
+.reward-contrainer .reward-points {
+    display: flex;
+    align-items: center;
+    font-family: 'Prompt';
+    font-size: 24px;
+    /* color: #f0a500; */
+    color: black;
+    font-weight: 900;
+}
+
+.reward-contrainer .reward-points span:first-child {
+    font-size: 24px;
+    margin-right: 4px;
+}
+
+.reward-contrainer .redeem-btn {
+    width: 115px;
+    height: 36px;
+    background-color: #DE2D1E;
+    color: #fff;
+    padding: 2px 0 0 5px; /*padding: top right bottom left;*/
+    border: none;
+    border-radius: 21px;
+    font-size: 20px;
+    font-family: 'Sukhumvit Set';
+    font-weight: 900;
+    cursor: pointer;
+    margin: 0 5px 0 0;  /*margin: top right bottom left;*/
+}
+
+.reward-contrainer .redeem-btn:hover {
+    background-color: #f5384b;
+}
+
+.reward-contrainer .redeem-btn:active {
+    background-color: #fd031c;
+}
+
+.reward-contrainer .redeem-btn:disabled {
+    background-color: #cccccc;
+}
+
+.reward-contrainer .swal-wide{
+    width:200px !important;
+}

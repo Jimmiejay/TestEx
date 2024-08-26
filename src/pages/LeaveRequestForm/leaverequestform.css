@@ -1,0 +1,25 @@
+.leaverequestform-container{
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    max-height: 100%;
+    /* background-color: #C8A1E0; */
+}
+
+.leaverequestform-container .leaverequestform-content {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: darkgray; */
+}
+
+.leaverequestform-container .leaverequestform-txt {
+    text-align: center;
+}
+
+.leaverequestform-container .leaverequestform-txt h1 {
+    font-family: 'NotoSansThai';
+    font-size: 30px; /*เปลี่ยนจาก 26 เป็น 30 แทน*/
+    font-weight: 700;
+    color: #DE2D1E;
+    margin: 20px;
+}

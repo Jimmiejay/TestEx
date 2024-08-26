@@ -1,0 +1,8 @@
+.callproduct-container {
+    display: flex;
+    justify-content: left;
+    /* width: calc(50% - 20px); */
+    /* ให้กว้างครึ่งหนึ่งของพื้นที่ ลบด้วยครึ่งหนึ่งของ gap */
+    max-width: 300px;
+    /* กำหนดความกว้างสูงสุด ปรับตามความเหมาะสม */
+}

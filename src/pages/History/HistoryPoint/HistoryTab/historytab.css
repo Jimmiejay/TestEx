@@ -1,0 +1,62 @@
+.historyTab-container {
+  width: 100%;
+  max-width: 100vw;
+  /* max-height: 100vh; */
+  /* min-height: 100vh; */
+  height: 50%;
+}
+
+.historyTab-container .historyTab-content {
+  display: flex;
+}
+
+.historyTab-container .historyTab {
+  display: flex;
+  border-bottom: 5px solid #F1F1F1;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
+.historyTab-container .historyTab-txt {
+  text-align: center;
+}
+
+.historyTab-container .historyTab-txt h3 {
+  font-size: 18px;
+  font-family: 'Sukhumvit Set';
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  padding: 0 0 0 100px;
+}
+
+.historyTab-container .historyTab-button {
+  padding: 8px 100px;
+  border-radius: 0;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid transparent;
+  color: #898989;
+}
+
+.historyTab-container .historyTab-button:hover {
+  border-bottom: 2px solid #4285F4;
+}
+
+.historyTab-container .historyTab-button.active {
+  border-bottom: 2px solid #FF1400;
+  color: #333333;
+  font-weight: 700;
+}
+
+.historyTab-container .historyTab-page {
+  padding: 16px 16px 16px 16px;
+  display: none;
+  text-align: left;
+}
+
+.historyTab-container .historyTab-page.active {
+  display: block;
+  padding: 0px;
+}

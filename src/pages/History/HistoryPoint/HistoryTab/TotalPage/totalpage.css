@@ -1,0 +1,31 @@
+.total-container {
+    display: flex;
+    min-width: 100vw;
+    /* max-height: 80vh; */
+    /* background-color: rgb(37, 121, 47); */
+}
+
+.total-container .scrollable-content {
+    display: flex;
+    width: 100%;
+    /* scrollbar-width: thin;
+    scrollbar-color: red rgba(77, 77, 77, 0);
+    overflow-y: overlay; */
+    justify-content: center;
+    max-height: 100vh;
+}
+
+.total-container .scrollable-content .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(68, 37, 121); */
+    padding: 0 10px 20px 0;
+    align-items: center;
+    min-height: 100vh;
+
+    scrollbar-width: thin;
+    scrollbar-color: #DE2D1E rgba(77, 77, 77, 0);
+    overflow-y: overlay;
+}
+
