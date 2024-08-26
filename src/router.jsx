@@ -16,6 +16,8 @@ import MedicalLeaveForm from "./pages/LeaveRequestForm/FormLeave/MedicalLeaveFor
 import PersonalLeaveForm from "./pages/LeaveRequestForm/FormLeave/PersonalLeaveForm/PersonalLeaveForm";
 import WFHForm from "./pages/LeaveRequestForm/FormLeave/WFHForm/WFHForm";
 import MedicalConfirm from "./pages/LeaveRequestForm/FormLeave/MedicalLeaveForm/MedicalLeaveConfirm/MedicalConfirm";
+import MemberCard from "./pages/MemberCard/MemberCard";
+import PersonalLeaveConfirm from "./pages/LeaveRequestForm/FormLeave/PersonalLeaveForm/PersonalLeaveConfirm/PersonalLeaveConfirm";
 
 
 
@@ -32,6 +34,10 @@ const router = createBrowserRouter([
     { 
         path: "/api/reward",
         element: (<Reward />),
+    },
+    { 
+        path: "/api/membercard",
+        element: (<MemberCard />),
     },
     { 
         path: "/api/history",
@@ -68,6 +74,10 @@ const router = createBrowserRouter([
     { 
         path: "/api/leaverequestform/medicalleaveform/medicalconfirm",
         element: (<MedicalConfirm />),
+    },
+    { 
+        path: "/api/leaverequestform/personalleaveform/personalconfirm",
+        element: (<PersonalLeaveConfirm />),
     },
 ]);
 

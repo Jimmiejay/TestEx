@@ -1,0 +1,57 @@
+.card {
+    width: 375px;
+    height: 240px;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .img-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
+  
+  .points,
+  .points-value,
+  .brand-img,
+  .membership,
+  .level {
+    position: absolute;
+    color: white;
+    text-align: left;
+  }
+  
+  .points {
+    top: 20px;
+    left: 30px;
+    font-size: 18px;
+  }
+  
+  .points-value {
+    top: 50px;
+    left: 30px;
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .brand-img {
+    top: 20px;
+    right: 30px;
+  }
+  
+  .membership {
+    bottom: 50px;
+    left: 30px;
+    font-size: 20px;
+  }
+  
+  .level {
+    bottom: 20px;
+    right: 30px;
+    font-size: 16px;
+  }

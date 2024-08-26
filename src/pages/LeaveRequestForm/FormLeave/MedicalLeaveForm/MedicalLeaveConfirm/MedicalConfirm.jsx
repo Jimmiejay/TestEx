@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './medicalcomfirm.css'
+import './medicalcomfirm.css';
 import Swal from 'sweetalert2';
 import { useLocation } from 'react-router-dom';
 // import MedicalLeaveForm from '../MedicalLeaveForm';
@@ -39,7 +39,7 @@ const MedicalConfirm = () => {
             </div>
             <button onClick={handleConfirm} className='medicalconfirmbtn'>ยืนยัน</button>
         </div>
-    )
-}
+    );
+};
 
 export default MedicalConfirm

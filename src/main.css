@@ -117,8 +117,8 @@
 @font-face {
   font-family: 'NotoSansThai';
   src: local("NotoSansThai"),
-   url('../src/assets/NotoSansThai/NotoSansThai-Thin.ttf') format('truetype'),
-   url('../src/assets/NotoSansThai/NotoSansThai-VariableFont_wdth\,wght.ttf') format('truetype');
+    url('../src/assets/NotoSansThai/NotoSansThai-Thin.ttf') format('truetype'),
+    url('../src/assets/NotoSansThai/NotoSansThai-VariableFont_wdth\,wght.ttf') format('truetype');
   font-weight: 100;
   font-variation-settings: "wdth" 100;
 }
@@ -127,8 +127,8 @@
 @font-face {
   font-family: 'NotoSansThai';
   src: local("NotoSansThai"),
-   url('../src/assets/NotoSansThai/NotoSansThai-ExtraLight.ttf') format('truetype'),
-   url('../src/assets/NotoSansThai/NotoSansThai-VariableFont_wdth\,wght.ttf') format('truetype');
+    url('../src/assets/NotoSansThai/NotoSansThai-ExtraLight.ttf') format('truetype'),
+    url('../src/assets/NotoSansThai/NotoSansThai-VariableFont_wdth\,wght.ttf') format('truetype');
   font-weight: 200;
   font-variation-settings: "wdth" 100;
 }
@@ -137,8 +137,8 @@
 @font-face {
   font-family: 'NotoSansThai';
   src: local("NotoSansThai"),
-   url('../src/assets/NotoSansThai/NotoSansThai-Light.ttf') format('truetype'),
-   url('../src/assets/NotoSansThai/NotoSansThai-VariableFont_wdth\,wght.ttf') format('truetype');
+    url('../src/assets/NotoSansThai/NotoSansThai-Light.ttf') format('truetype'),
+    url('../src/assets/NotoSansThai/NotoSansThai-VariableFont_wdth\,wght.ttf') format('truetype');
   font-weight: 300;
   font-variation-settings: "wdth" 100;
 }
@@ -147,8 +147,8 @@
 @font-face {
   font-family: 'NotoSansThai';
   src: local("NotoSansThai"),
-   url('../src/assets/NotoSansThai/NotoSansThai-Regular.ttf') format('truetype'),
-   url('../src/assets/NotoSansThai/NotoSansThai-VariableFont_wdth\,wght.ttf') format('truetype');
+    url('../src/assets/NotoSansThai/NotoSansThai-Regular.ttf') format('truetype'),
+    url('../src/assets/NotoSansThai/NotoSansThai-VariableFont_wdth\,wght.ttf') format('truetype');
   font-weight: 400;
   font-variation-settings: "wdth" 100;
 }
@@ -157,8 +157,8 @@
 @font-face {
   font-family: 'NotoSansThai';
   src: local("NotoSansThai"),
-   url('../src/assets/NotoSansThai/NotoSansThai-Medium.ttf') format('truetype'),
-   url('../src/assets/NotoSansThai/NotoSansThai-VariableFont_wdth\,wght.ttf') format('truetype');
+    url('../src/assets/NotoSansThai/NotoSansThai-Medium.ttf') format('truetype'),
+    url('../src/assets/NotoSansThai/NotoSansThai-VariableFont_wdth\,wght.ttf') format('truetype');
   font-weight: 500;
   font-variation-settings: "wdth" 100;
 }
@@ -167,8 +167,8 @@
 @font-face {
   font-family: 'NotoSansThai';
   src: local("NotoSansThai"),
-   url('../src/assets/NotoSansThai/NotoSansThai-SemiBold.ttf') format('truetype'),
-   url('../src/assets/NotoSansThai/NotoSansThai-VariableFont_wdth\,wght.ttf') format('truetype');
+    url('../src/assets/NotoSansThai/NotoSansThai-SemiBold.ttf') format('truetype'),
+    url('../src/assets/NotoSansThai/NotoSansThai-VariableFont_wdth\,wght.ttf') format('truetype');
   font-weight: 600;
   font-variation-settings: "wdth" 100;
 }
@@ -176,9 +176,9 @@
 /* NotoSansThai-Bold */
 @font-face {
   font-family: 'NotoSansThai';
-  src: local("NotoSansThai"), 
-  url('../src/assets/NotoSansThai/NotoSansThai-Bold.ttf') format('truetype'),
-  url('../src/assets/NotoSansThai/NotoSansThai-VariableFont_wdth\,wght.ttf') format('truetype');
+  src: local("NotoSansThai"),
+    url('../src/assets/NotoSansThai/NotoSansThai-Bold.ttf') format('truetype'),
+    url('../src/assets/NotoSansThai/NotoSansThai-VariableFont_wdth\,wght.ttf') format('truetype');
   font-weight: 700;
   font-variation-settings: "wdth" 100;
 }

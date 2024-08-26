@@ -29,9 +29,22 @@ const PersonalLeaveForm = () => {
         if (start && end) {
             const startDateObj = new Date(start);
             const endDateObj = new Date(end);
-            const diffTime = Math.abs(endDateObj - startDateObj);
-            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-            setDayCount(diffDays);
+
+            let currentDate = startDateObj;
+            let totalDays = 0;
+
+            while (currentDate <= endDateObj) {
+                const dayOfWeek = currentDate.getDay();
+
+                // วันจันทร์ถึงศุกร์ (วันอาทิตย์ = 0, วันเสาร์ = 6)
+                if (dayOfWeek !== 0 && dayOfWeek !== 6) {
+                    totalDays++;
+                }
+
+                // เลื่อนไปวันถัดไป
+                currentDate.setDate(currentDate.getDate() + 1);
+            }
+            setDayCount(totalDays);
         } else {
             setDayCount('');
         }
@@ -75,12 +88,14 @@ const PersonalLeaveForm = () => {
             endDate,
             dayCount
         };
-        console.log('Form Data Submitted: ', formDataPersonalLeave);
+        // console.log('Form Data Submitted: ', formDataPersonalLeave);
 
-        Swal.fire({
-            icon: 'success',
-            title: 'ส่งฟอร์มสำเร็จ',
-            text: 'ข้อมูลการลาของคุณถูกส่งเรียบร้อยแล้ว',
+        // ส่งข้อมูลไปยังหน้า MedicalConfirm
+        navigate('/api/leaverequestform/personalleaveform/personalconfirm', {
+            state: {
+                leaveType, details, startDate,
+                endDate, dayCount
+            },
         });
     };
 
