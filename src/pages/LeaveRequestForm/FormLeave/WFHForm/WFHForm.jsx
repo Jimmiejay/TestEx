@@ -54,14 +54,15 @@ const WFHForm = () => {
             details,
             timePeriod,
             date: selectedDate
-            
-        };
-        console.log('Form Data Submitted: ', formDataWFH);
 
-        Swal.fire({
-            icon: 'success',
-            title: 'ส่งฟอร์มสำเร็จ',
-            text: 'ข้อมูลการลาของคุณถูกส่งเรียบร้อยแล้ว',
+        };
+        // console.log('Form Data Submitted: ', formDataWFH);
+
+        // ส่งข้อมูลไปยังหน้า MedicalConfirm
+        navigate('/api/leaverequestform/personalleaveform/personalconfirm', {
+            state: {
+                leaveType, details, date: selectedDate
+            },
         });
     };
 

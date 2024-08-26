@@ -18,6 +18,7 @@ import WFHForm from "./pages/LeaveRequestForm/FormLeave/WFHForm/WFHForm";
 import MedicalConfirm from "./pages/LeaveRequestForm/FormLeave/MedicalLeaveForm/MedicalLeaveConfirm/MedicalConfirm";
 import MemberCard from "./pages/MemberCard/MemberCard";
 import PersonalLeaveConfirm from "./pages/LeaveRequestForm/FormLeave/PersonalLeaveForm/PersonalLeaveConfirm/PersonalLeaveConfirm";
+import WFHConfirm from "./pages/LeaveRequestForm/FormLeave/WFHForm/WFHConfirm/WFHConfirm";
 
 
 
@@ -78,6 +79,10 @@ const router = createBrowserRouter([
     { 
         path: "/api/leaverequestform/personalleaveform/personalconfirm",
         element: (<PersonalLeaveConfirm />),
+    },
+    { 
+        path: "/api/leaverequestform/workfromhomeform/workfromhomeconfirm",
+        element: (<WFHConfirm/>),
     },
 ]);
 

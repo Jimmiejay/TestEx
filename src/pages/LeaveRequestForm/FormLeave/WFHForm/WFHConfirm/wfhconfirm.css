@@ -1,0 +1,91 @@
+.wfhconfirm-form {
+    background-color: #fff;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.wfhconfirm-header {
+    text-align: center;
+}
+
+.wfhconfirm-title {
+    font-family: 'NotoSansThai';
+    font-size: 26px;
+    font-weight: 700;
+    color: #333333;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.wfhconfirm-group {
+    margin-bottom: 20px;
+    text-align: left;
+
+    label {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        color: #333333;
+        font-weight: 400;
+    }
+}
+
+.wfhconfirm-day-count {
+    font-family: 'NotoSansThai';
+    font-size: 14px;
+    color: #C1C1C1;
+    text-align: left;
+    font-weight: 400;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.wfhconfirm-group input,
+.wfhconfirm-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #F7F7F7;
+    /* background-color: #F7F7F7; */
+    border-radius: 5px;
+    font-size: 1em;
+
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+}
+.wfhconfirm-group input{
+    height: 50%;
+}
+
+.wfhconfirm-group input[readonly],
+.wfhconfirm-group textarea[readonly] {
+    background-color: #F7F7F7;
+    /* เปลี่ยนสีพื้นหลังเพื่อแสดงว่าเป็นฟิลด์ที่ไม่สามารถแก้ไขได้ */
+    cursor: not-allowed;
+    /* เปลี่ยนเคอร์เซอร์เป็น not-allowed เมื่อโฮเวอร์ */
+}
+
+.wfhconfirm-group input[readonly]:focus,
+.wfhconfirm-group textarea[readonly]:focus {
+    outline: none;
+    /* ปิดการแสดงผลการโฟกัส */
+}
+
+
+.personalconfirmbtn {
+    width: 100%;
+    padding: 15px;
+    background-color: #DE2D1E;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.personalconfirmbtn:hover {
+    background-color: #c0392b;
+}
