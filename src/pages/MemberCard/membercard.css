@@ -8,15 +8,10 @@
 
     min-width: 100%;
     max-height: 100%;
-    background-color: #C8A1E0;
-
 }
 
 .membercard-container .membercard-content {
-    /* width: 100vw;
-    height: 100vh; */
     margin-top: 20px;
-    /* background-color: darkgray; */
 }
 
 .membercard-container .membercard-txt {
@@ -38,32 +33,15 @@
     margin-top: 20px;
     background-color: white;
     width: 100%;
-    max-width: 375px; /* ปรับความกว้างให้เหมาะสมกับการ์ด */
-    border-radius: 10px; /* ทำให้มุมล่างโค้งเข้ากับการ์ด */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.membercard-container .button-wrapper {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 10px 0; /* เพิ่มการเว้นระยะด้านบนและล่าง */
-}
-
-.membercard-container .button-wrapper:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 15%; /* ปรับตำแหน่งเส้นแบ่ง */
-    height: 70%; /* ลดความสูงของเส้นแบ่ง */
-    width: 1px;
-    background-color: #e0e0e0;
+    max-width: 375px;
+    height: 60px;
+    /* ปรับความกว้างให้เหมาะสมกับการ์ด */
+    border-radius: 10px;
+    border: 1px solid #C1C1C1;
 }
 
 .membercard-container .card-buttons button {
-    padding: 8px 12px;
+    padding: 8px 8px;
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -73,4 +51,26 @@
     font-size: 20px;
     font-weight: 700;
     color: #333;
-  }
+}
+
+.membercard-container .button-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+    /* เพิ่มการเว้นระยะด้านบนและล่าง */
+}
+
+.membercard-container .button-wrapper:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 5%;
+    /* ปรับตำแหน่งเส้นแบ่ง */
+    height: 100%;
+    /* ลดความสูงของเส้นแบ่ง */
+    width: 2px;
+    background-color: #C1C1C1;
+}
