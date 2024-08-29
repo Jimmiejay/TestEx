@@ -2,13 +2,13 @@ import React from 'react'
 import './transfercard.css'
 import PJa from '../../assets/พี่จ๋า.png'
 import PMy from '../../assets/พี่มายด์.png'
-import Nilecon from '../../assets/nilecon.png'
+import Nileconlogo from '../../assets/nileconlogo.png'
 
 const TransferCard = ({ showMonth, showSpecificMonth }) => {
     const Useddata = {
         month: ["กรกฎาคม 2567","สิงหาคม 2567"],
         usedText: "คะแนนที่ถูกใช้",
-        usedAvatar: [PJa, PMy, Nilecon],
+        usedAvatar: [PJa, PMy, Nileconlogo],
         usedUser: ["jajah", "MYratchi","แลกของรางวัล"],
         usedDescription: ["ทำงานตรงเวลา ความใส่ใจในรายละเอียด","ไม่ใส่ใจในรายละเอียดของงาน แต่ทำงานตรงต่อเวลา",
             "The Monsters Labubu Fall in  Wild Vinyl Plush Doll"],

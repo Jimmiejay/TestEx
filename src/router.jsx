@@ -7,7 +7,7 @@ import {
 import "./main.css";
 import TestTab3 from "./pages/Tab3/Testtab3";
 import Reward from "./pages/Reward/Reward";
-import History from "./pages/History/History";
+import Ranking from "./pages/Ranking/Ranking";
 import Marketplace from "./pages/Marketplace/Marketplace";
 import MyProduct from "./pages/Marketplace/MyProducts/MyProducts";
 import FormProduct from "./pages/Marketplace/FormProduct/FormProduct";
@@ -41,8 +41,8 @@ const router = createBrowserRouter([
         element: (<MemberCard />),
     },
     { 
-        path: "/api/history",
-        element: (<History />),
+        path: "/api/ranking",
+        element: (< Ranking/>),
     },
     { 
         path: "/api/marketplace",
