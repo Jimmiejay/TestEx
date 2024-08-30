@@ -9,8 +9,6 @@ const FormProduct = () => {
     
     // const navigate = useNavigate();
 
-    
-
     // const handleImageClick = () => {
     //     navigate('/api/marketplace/myproducts');
     // };

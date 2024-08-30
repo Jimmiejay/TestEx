@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './marketplace.css'
 import CallProduct from './Callproduct/CallProduct'
 import SearchBar from '../../components/SearchBar/SearchBar'
 import Paom from '../../assets/พี่ออม.png'
+import Add from '../../assets/newadd.png'
 import { useNavigate } from 'react-router-dom'
 
 
 const Marketplace = () => {
+    const [profileImage, setProfileImage] = useState(null);
     const navigate = useNavigate();
+
+    useEffect(() => {
+        // กำหนดค่าต่างๆ ที่คุณต้องการภายใน useEffect
+        setProfileImage(Paom);
+    }, []);
 
     const handleSearch = (searchTerm) => {
         console.log('Searching for:', searchTerm)
@@ -15,6 +22,10 @@ const Marketplace = () => {
 
     const handleImageClick = () => {
         navigate('/api/marketplace/myproducts');
+    };
+
+    const handleClick = () => {
+        navigate('/api/marketplace/formproduct');
     };
 
     return (
@@ -25,8 +36,8 @@ const Marketplace = () => {
                 </div>
                 <div className='marketplace-profile'>
                     <img
-                        src={Paom}
-                        alt="P'Aom"
+                        src={profileImage}
+                        alt="profileImage"
                         onClick={handleImageClick}
                         style={{ cursor: 'pointer' }}
                     />
@@ -46,6 +57,11 @@ const Marketplace = () => {
                     <CallProduct />
                     <CallProduct />
                 </div>
+                <button className="floating-button" onClick={handleClick}>
+                    <i className="fas fa-plus">
+                        <img src={Add} alt="Add" />
+                    </i>
+                </button>
             </div>
         </div>
     );

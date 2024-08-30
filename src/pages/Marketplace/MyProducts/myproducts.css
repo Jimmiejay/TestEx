@@ -19,7 +19,8 @@
 
 .myproducts-container .myproducts-txt h1 {
     font-family: 'NotoSansThai';
-    font-size: 30px; /*เปลี่ยนจาก 26 เป็น 30 แทน*/
+    font-size: 30px;
+    /*เปลี่ยนจาก 26 เป็น 30 แทน*/
     font-weight: 700;
     color: #DE2D1E;
 }
@@ -54,4 +55,15 @@
     gap: 30px;
     row-gap: 20px;
     padding-left: 35px;
+}
+
+.myproducts-container .floating-button img {
+    position: fixed;
+    top: 85%;
+    right: 70px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

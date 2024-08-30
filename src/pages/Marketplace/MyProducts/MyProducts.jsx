@@ -3,6 +3,7 @@ import './myproducts.css'
 import CallProduct from '../Callproduct/CallProduct';
 import SearchBar from '../../../components/SearchBar/SearchBar'
 import Paom from '../../../assets/พี่ออม.png'
+import Add from '../../../assets/newadd.png'
 import { useNavigate } from 'react-router-dom';
 
 const MyProducts = () => {
@@ -15,6 +16,10 @@ const MyProducts = () => {
   const handleImageClick = () => {
     navigate('/api/marketplace/myproducts');
   };
+
+  const handleClick = () => {
+    navigate('/api/marketplace/formproduct');
+};
 
   return (
     <div className='myproducts-container'>
@@ -37,7 +42,13 @@ const MyProducts = () => {
           <CallProduct />
           <CallProduct />
           <CallProduct />
+          <CallProduct />
         </div>
+        <button className="floating-button" onClick={handleClick}>
+          <i className="fas fa-plus">
+            <img src={Add} alt="Add" />
+          </i>
+        </button>
       </div>
     </div>
   )

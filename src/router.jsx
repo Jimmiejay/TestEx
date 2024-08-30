@@ -8,6 +8,7 @@ import "./main.css";
 import Reward from "./pages/Reward/Reward";
 import Ranking from "./pages/Ranking/Ranking";
 import Marketplace from "./pages/Marketplace/Marketplace";
+import ChangeHistory from "./pages/Marketplace/ChangeHistory/ChangeHistory";
 import MyProduct from "./pages/Marketplace/MyProducts/MyProducts";
 import FormProduct from "./pages/Marketplace/FormProduct/FormProduct";
 import LeaveRequestForm from "./pages/LeaveRequestForm/LeaveRequestForm";
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
     { 
         path: "/api/marketplace",
         element: (<Marketplace />),
+    },
+    { 
+        path: "/api/marketplace/changehistory",
+        element: (<ChangeHistory />),
     },
     { 
         path: "/api/marketplace/myproducts",

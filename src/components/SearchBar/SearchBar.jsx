@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './searchbar.css';
-import Add from '../../assets/add.png';
+// import Add from '../../assets/add.png';
+import ChangeHistory from '../../assets/exchangehistory.png'
 import { FaSearch } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
@@ -13,9 +14,9 @@ const SearchBar = ({ onSearch }) => {
         e.preventDefault();
         onSearch(searchTerm)
     };
-    
-    const handlePlusClick = () => {
-        navigate('/api/marketplace/formproduct');
+
+    const handleChangeClick = () => {
+        navigate('/api/marketplace/changehistory');
     };
 
     return (
@@ -32,11 +33,11 @@ const SearchBar = ({ onSearch }) => {
                     />
                 </div>
             </div>
-            <button className="add-button">
+            <button className="change-button">
                 <img 
-                src={Add} 
-                alt="add" 
-                onClick={handlePlusClick}
+                src={ChangeHistory} 
+                alt="ChangeHistory" 
+                onClick={handleChangeClick}
                 style={{ cursor: 'pointer' }}/>
             </button>
         </div>

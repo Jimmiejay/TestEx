@@ -136,8 +136,8 @@ const FormMarketplace = () => {
                 <label htmlFor="condition">สภาพสินค้า<span className="required">*</span></label>
                 <input
                     type="text"
-                    placeholder='สภาพสินค้า'
                     id="condition"
+                    placeholder='สภาพสินค้า'
                     value={condition}
                     onChange={(e) => setCondition(e.target.value)}
                     required

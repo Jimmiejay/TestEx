@@ -3,32 +3,32 @@
     padding: 20px;
 }
 
-.form-header {
+.product-form .form-header {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.user-avatar {
+.product-form .user-avatar {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     margin-right: 10px;
 }
 
-.user-info {
+.product-form .user-info {
     font-family: 'Prompt';
     font-size:18px; 
     font-weight: 400;
     color: #333333;
 }
 
-.form-group {
+.product-form .form-group {
     margin-bottom: 15px;
     position: relative;
 }
 
-.form-group label {
+.product-form .form-group label {
     display: block;
     font-family: 'Prompt';
     font-weight: 400;
@@ -36,19 +36,19 @@
     margin-bottom: 5px;
 }
 
-.form-group label .required {
+.product-form .form-group label .required {
     color: red;
     margin-left: 2px;
 }
 
-.product-image-input {
+.product-form .product-image-input {
     width: 100%;
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 8px;
 }
 
-.drop_zone {
+.product-form .drop_zone {
     /* position: relative; */
     border: 1px solid #C1C1C1;
     width: 100%; 
@@ -66,24 +66,26 @@
     transition: all 0.3s ease;
 }
 
-.drop_zone:hover {
+.product-form .drop_zone:hover {
     background-color: #f0f0f0;
 }
 
-.drop_zone p{
+.product-form .drop_zone p{
     font-family: 'NotoSansThai';
     font-size: 14px;
+    font-weight: 700;
     color: #C1C1C1;
     text-align: center;
+    margin-top: 10px;
 }
 
-.drop_zone img{
-    width: 40px;
-    height: 40px;
+.product-form .drop_zone img{
+    width: 45px;
+    height: 45px;
     margin-top: 20px;
 }
 
-.dropped-image {
+.product-form .dropped-image {
     min-width: 100%;
     min-height: 100%;
     object-fit: contain;
@@ -91,13 +93,13 @@
     margin-bottom: 20px;
 }
 
-.error-message {
+.product-form .error-message {
     color: #DE2D1E;
     font-size: 14px;
     margin-top: 5px;
 }
 
-input[type="text"],
+.product-form .form-group input[type="text"],
 input[type="number"],
 textarea {
     width: 100%;
@@ -109,24 +111,24 @@ textarea {
     color: #000;
 }
 
-textarea {
+.product-form .form-group textarea {
     resize: vertical;
     height: 94px;
 }
 
-::placeholder{
+.product-form ::placeholder{
     font-family: 'NotoSansThai';
     font-size: 14px;
     color: #C1C1C1;
 }
 
-.delivery-options {
+.product-form .delivery-options {
     display: flex;
     /* justify-content: space-between; */
     margin-top: 10px;
 }
 
-.delivery-option {
+.product-form .delivery-option {
     width: 110px;
     height: 40px;
     padding: 10px;
@@ -143,19 +145,19 @@ textarea {
     color: #C1C1C1;
 }
 
-.delivery-option.selected {
+.product-form .delivery-option.selected {
     background-color: #DE2D1E;
     color: #fff;
     border-color: #C1C1C1;
 }
 
-.delivery-option:disabled {
+.product-form .delivery-option:disabled {
     background-color: #eee;
     color: #aaa;
     cursor: not-allowed;
 }
 
-.submit-button {
+.product-form .submit-button {
     /* width: 40%; */
     width: 100%;
     padding: 10px;
@@ -171,6 +173,6 @@ textarea {
     margin-top: 20px;
 }
 
-.submit-button:hover {
+.product-form .submit-button:hover {
     background-color: #c9302c;
 }
