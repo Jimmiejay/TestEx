@@ -1,0 +1,109 @@
+.rewardconfirm-contrainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* เพิ่มการจัดตรงกลางในแนวนอน */
+    width: 100%;
+    height: 100; /* ปรับความสูงให้เต็มหน้าจอ */
+}
+
+.rewardconfirm-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.rewardconfirm-title {
+    font-family: 'NotoSansThai';
+    font-size: 26px;
+    font-weight: 700;
+    color: #333333;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.rewardconfirm-card {
+    width: 95%;
+    height: 166px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.reward-image {
+    width: 135px;
+    height: 142px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.reward-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.reward-name {
+    font-family: 'NotoSansThai';
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+    padding: 10px;
+}
+
+.points-container {
+    display: flex;
+    align-items: center;
+}
+
+.points-container span {
+    font-family: 'NotoSansThai';
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+    text-align: left;
+}
+
+.point-image {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.confirm-button {
+    width: 95%;
+    height: 50px;
+    background-color: #DE2D1E;
+    color: #ffffff;
+    border: none;
+    border-radius: 38px;
+    font-family: 'NotoSansThai';
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 350px;
+    text-align: center; /* ปรับปุ่มให้อยู่ตรงกลาง */
+}
+
+.confirm-button:hover {
+    background-color: #B82418;
+}
+
+.confirm-button:active {
+    background-color: #fd031c;
+}
+
+.confirm-button:disabled {
+    background-color: #cccccc;
+}

@@ -1,89 +1,126 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './reward.css';
-import Swal from 'sweetalert2';
-import withReactContent from 'sweetalert2-react-content';
-import Labubu from '../../assets/labubu.png'
+import Labubu2 from '../../assets/labubu 2.png'
 import PCoin from '../../assets/pcoin.png'
-
-const MySwal = withReactContent(Swal);
+import { useNavigate } from 'react-router-dom';
 
 const Reward = () => {
-    const [points, setPoints] = useState(659);
-    const [isRedeemed, setIsRedeemed] = useState(false);
+    const [currentPoints, setCurrentPoints] = useState(null); //เก็บคะแนนที่มี
+    const [rewardPoints, setRewardPoints] = useState(null); //เก็บคะแนนที่ต้องใช้ในการแลก
+    const [rewardName, setRewardName] = useState('');  //เก็บค่าชื่อของรางวัล
+    const [rewardImage, setRewardImage] = useState(null); //เก็บค่ารูปของรางวัล
+    const [rewardDate, setRewardDate] = useState(''); //เก็บค่าวันที่หมดอายุ
+    const [pointImage, setPointImage] = useState(''); //เก็บค่ารูปเหรียญ
+    const [description, setDescription] = useState(null); //เก็บค่ารายละเอียด
+    const navigate = useNavigate();
 
-    // แบบกดได้ที่ 1 แต่ยังไม่ได้ทำให้ปุ่ม disable
-    // const handleRedeem = () => {
-    //     const newPoints = points - 500; // สมมติว่าแต่ละรางวัลใช้ 500 points
-    //     setPoints(newPoints);
+    useEffect(() => {
+        // กำหนดค่าต่างๆ ที่คุณต้องการภายใน useEffect
+        setCurrentPoints(650);
+        setRewardPoints(500);
+        setRewardName("The Monsters Labubu Fall in Wild Vinyl Plush Doll");
+        setRewardImage(Labubu2);
+        setRewardDate("หมดอายุ 27 ก.ค. 2567");
+        setDescription(`The Monsters LABUBU Fall in Wild Vinyl Plush Doll
+                        เป็นของเล่นตุ๊กตาสะสมขนาดใหญ่ที่มี Labubu
+                        ตัวละครสัตว์ประหลาดน่ารักที่ออกแบบโดย
+                        Molly Labubu แต่งกายด้วยชุดสีขาวตกแต่งด้วย
+                        ลายดอกไม้และกระเป๋าเป้สีฟ้าอ่อน พร้อมสำหรับการผจญภัย`);
+        setPointImage(PCoin);
+    }, []);
 
-    //     MySwal.fire({
-    //         icon: 'success',
-    //         title: 'คุณได้ใช้สิทธิ์แล้ว',
-    //         html: `<p>คุณมียอดคงเหลือ ${newPoints} points</p>`,
-    //         confirmButtonText: 'ย้อนกลับ',
-    //         confirmButtonColor: '#3085d6',
-    //         customClass: {
-    //             popup: 'my-swal'
+    if (!currentPoints || !rewardPoints || !rewardName || !description || !rewardImage || !rewardDate) {
+        return <div>Loading...</div>; // แสดงข้อความ Loading ระหว่างรอข้อมูล
+    }
+
+    // useEffect(() => {
+    //     // ฟังก์ชันดึงข้อมูลจากฐานข้อมูล
+    //     const fetchData = async () => {
+    //         try {
+    //             const response = await axios.get('/api/reward-data'); // URL ของ API ที่จะดึงข้อมูล
+    //             const data = response.data;
+
+    //             // อัปเดต state ด้วยข้อมูลที่ได้จากฐานข้อมูล
+    //             setCurrentPoints(data.currentPoints);
+    //             setRewardPoints(data.rewardPoints);
+    //             setRewardName(data.rewardName);
+    //             setRewardImage(data.rewardImage);
+    //             setRewardDate(data.rewardDate);
+    //             setDescription(data.description);
+    //             setPointImage(data.pointImage);
+    //         } catch (error) {
+    //             console.error('Error fetching reward data:', error);
     //         }
-    //     });
-    // };
+    //     };
 
-    // แบบกดได้ที่ 2
-    const handleRedeem = async () => {
-        if (isRedeemed) return; // ป้องกันการกดซ้ำระหว่างกำลังประมวลผล
+    //     fetchData();
+    // }, []); // [] หมายถึงทำงานเพียงครั้งเดียวหลังจากคอมโพเนนต์ถูกเรนเดอร์
 
-        const newPoints = points - 500;
-        setPoints(newPoints);
-        setIsRedeemed(true); // ตั้งค่าให้ปุ่มถูก disabled หลังจากกด
+    // if (!currentPoints || !rewardPoints || !rewardName) {
+    //     return <div>Loading...</div>; // แสดงข้อความ Loading ระหว่างรอข้อมูล
+    // }
 
-        await MySwal.fire({
-            icon: 'success',
-            title: 'คุณได้ใช้สิทธิ์แล้ว',
-            html: `<p>คุณมียอดคงเหลือ ${newPoints} points</p>`,
-            confirmButtonText: 'ย้อนกลับ',
-            confirmButtonColor: '#ff4b4b',
-            width:'375px',
-            height:'291px',     
-          });
+    const handleNextSubmit = (event) => {
+        event.preventDefault();
+
+        if (currentPoints < rewardPoints) {
+            alert("คะแนนของคุณไม่พอสำหรับการแลกรางวัลนี้");
+            return;
+        }
+
+
+        const formDataReward = {
+            currentPoints,
+            rewardPoints,
+            rewardImage,
+            rewardName,
+            pointImage,
+            rewardPoints
+
         };
+        // console.log('Form Data Submitted: ', formDataWFH);
+
+        // ส่งข้อมูลไปยังหน้า RewardConfirm
+        navigate('/api/reward/rewardconfirm', {
+            state: {
+                currentPoints, rewardImage, rewardName, pointImage, rewardPoints
+            },
+        });
+    };
 
     return (
         <div className='reward-contrainer'>
             <div className="reward-card">
                 <div className='rewardtxt'>
-                    <h2>Reward</h2>
+                    <h2>รางวัล</h2>
                 </div>
                 <div className="image-container">
-                    <img src={Labubu} alt="Labubu" />
+                    <img src={rewardImage} alt="RewardImage" />
                 </div>
                 <div className="reward-content">
-                    <h3>The Monsters Labubu Fall in
-                     Wild Vinyl Plush Doll</h3>
-                    <p className="reward-date">หมดอายุ 27 ก.ค. 2567</p>
+                    <h3>{rewardName}</h3>
+                    <p className="reward-date">{rewardDate}</p>
 
                     {/* -- เส้นขีดใต้ --  */}
                     <div class="custom-line"></div>
 
-                    <h3>Description</h3>
-                    <p className="reward-description">
-                        The Monsters LABUBU Fall in Wild Vinyl Plush Doll
-                        เป็นของเล่นตุ๊กตาสะสมขนาดใหญ่ที่มี Labubu
-                        ตัวละครสัตว์ประหลาดน่ารักที่ออกแบบโดย
-                        Molly Labubu <br /> แต่งกายด้วยชุดสีขาวตกแต่งด้วย
-                        ลายดอกไม้และกระเป๋าเป้สีฟ้าอ่อน พร้อมสำหรับการผจญภัย
-                    </p>
+                    <h3>รายละเอียด</h3>
+                    <p className="reward-description">{description}</p>
+
                     <div className="reward-footer">
                         <div className="reward-points">
                             <span>
-                                <img src={PCoin} alt="P Coin" />
+                                <img src={pointImage} alt="Point Coin" />
                             </span>
-                            <span>500</span>
+                            <span className="current-points">{currentPoints}</span>
+                            <span className="reward-points-divider">/{rewardPoints}</span> {/* แสดงคะแนนในรูปแบบ 650/500 */}
                         </div>
-                        <button className={`redeem-btn ${isRedeemed ? 'disabled' : ''}`}
-                            onClick={handleRedeem}
-                            disabled={isRedeemed}
+                        <button type='button'
+                            className='redeem-btn'
+                            onClick={handleNextSubmit}
+                            disabled={currentPoints < rewardPoints} // ปิดใช้งานปุ่มหากคะแนนไม่พอ
                         >
-                            {isRedeemed ? 'ใช้สิทธิ์แล้ว' : 'Redeem'}
+                            แลก
                         </button>
                     </div>
                 </div>
