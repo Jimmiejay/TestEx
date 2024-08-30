@@ -3,6 +3,7 @@ import './reward.css';
 import Labubu2 from '../../assets/labubu 2.png'
 import PCoin from '../../assets/pcoin.png'
 import { useNavigate } from 'react-router-dom';
+import Button from '../../components/Button/ShortButton/ShortButton';
 
 const Reward = () => {
     const [currentPoints, setCurrentPoints] = useState(null); //เก็บคะแนนที่มี
@@ -13,6 +14,8 @@ const Reward = () => {
     const [pointImage, setPointImage] = useState(''); //เก็บค่ารูปเหรียญ
     const [description, setDescription] = useState(null); //เก็บค่ารายละเอียด
     const navigate = useNavigate();
+
+    const [isSubmitting, setIsSubmitting] = useState(false)
 
     useEffect(() => {
         // กำหนดค่าต่างๆ ที่คุณต้องการภายใน useEffect
@@ -62,6 +65,7 @@ const Reward = () => {
 
     const handleNextSubmit = (event) => {
         event.preventDefault();
+        if (isSubmitting) return;
 
         if (currentPoints < rewardPoints) {
             alert("คะแนนของคุณไม่พอสำหรับการแลกรางวัลนี้");
@@ -115,13 +119,9 @@ const Reward = () => {
                             <span className="current-points">{currentPoints}</span>
                             <span className="reward-points-divider">/{rewardPoints}</span> {/* แสดงคะแนนในรูปแบบ 650/500 */}
                         </div>
-                        <button type='button'
-                            className='redeem-btn'
-                            onClick={handleNextSubmit}
-                            disabled={currentPoints < rewardPoints} // ปิดใช้งานปุ่มหากคะแนนไม่พอ
-                        >
-                            แลก
-                        </button>
+                        <div onClick={handleNextSubmit} type="button" className={`redeem-btn ${isSubmitting ? 'disabled' : ''}`} >
+                            <Button text={isSubmitting ? 'แลกแล้ว' : 'แลก'} disabled={currentPoints < rewardPoints} />
+                        </div>
                     </div>
                 </div>
             </div>

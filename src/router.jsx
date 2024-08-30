@@ -5,7 +5,6 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import "./main.css";
-import TestTab3 from "./pages/Tab3/Testtab3";
 import Reward from "./pages/Reward/Reward";
 import Ranking from "./pages/Ranking/Ranking";
 import Marketplace from "./pages/Marketplace/Marketplace";
@@ -28,10 +27,6 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <div>page one</div>,
-    },
-    { //ใช้อันนี้ tab3
-        path: "/api/tab3",
-        element: (<TestTab3 />),
     },
     { 
         path: "/api/reward",

@@ -112,21 +112,13 @@
 }
 
 .reward-contrainer .redeem-btn {
-    width: 115px;
-    height: 36px;
-    background-color: #DE2D1E;
-    color: #fff;
     padding: 2px 0 0 5px;
     border: none;
     border-radius: 21px;
-    font-size: 20px;
-    font-family: 'Sukhumvit Set';
-    font-weight: 900;
     cursor: pointer;
-    margin: 10px 10px 0 0;
 }
 
-.reward-contrainer .redeem-btn:hover {
+/* .reward-contrainer .redeem-btn:hover {
     background-color: #B82418;
 }
 
@@ -136,4 +128,5 @@
 
 .reward-contrainer .redeem-btn:disabled {
     background-color: #B8B8B8;
-}
+    pointer-events: none;
+} */
