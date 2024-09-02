@@ -40,17 +40,17 @@ const MedicalLeaveForm = () => {
 
     // ถ้าเลือก "ลาป่วย" ให้เปลี่ยนไปที่หน้า MedicalLeaveForm
     if (selectedLeaveType === "ลาป่วย") {
-        navigate('/api/leaverequestform/medicalleaveform');
+        navigate('/leaverequestform/medicalleaveform');
     }
 
     // ถ้าเลือก "ลากิจ" ให้เปลี่ยนไปที่หน้า PersonalLeaveForm
     if(selectedLeaveType === "ลากิจ") {
-        navigate('/api/leaverequestform/personalleaveform');
+        navigate('/leaverequestform/personalleaveform');
     }
 
     // ถ้าเลือก "Work From Home" ให้เปลี่ยนไปที่หน้า WorkFromHomeForm
     if(selectedLeaveType === "Work From Home") {
-        navigate('/api/leaverequestform/workfromhomeform');
+        navigate('/leaverequestform/workfromhomeform');
     }
 };
 
@@ -83,7 +83,7 @@ const MedicalLeaveForm = () => {
     // console.log('Form Data Submitted: ', formDataLeave);
 
     // ส่งข้อมูลไปยังหน้า MedicalConfirm
-    navigate('/api/leaverequestform/medicalleaveform/medicalconfirm', {
+    navigate('/leaverequestform/medicalleaveform/medicalconfirm', {
       state: { leaveType, details},
     });
   };

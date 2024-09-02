@@ -98,7 +98,7 @@ const Reward = () => {
         // console.log('Form Data Submitted: ', formDataWFH);
 
         // ส่งข้อมูลไปยังหน้า RewardConfirm
-        navigate('/api/reward/rewardconfirm', {
+        navigate('/reward/rewardconfirm', {
             state: {
                 currentPoints, rewardImage, rewardName, pointImage, rewardPoints
             },

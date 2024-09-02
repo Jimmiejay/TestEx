@@ -30,31 +30,31 @@ const router = createBrowserRouter([
         element: <div>page one</div>,
     },
     { 
-        path: "/api/reward",
+        path: "/reward",
         element: (<Reward />),
     },
     { 
-        path: "/api/reward/rewardconfirm",
+        path: "/reward/rewardconfirm",
         element: (<RewardConfirm />),
     },
     { 
-        path: "/api/membercard",
+        path: "/membercard",
         element: (<MemberCard />),
     },
     { 
-        path: "/api/ranking",
+        path: "/ranking",
         element: (< Ranking/>),
     },
     { 
-        path: "/api/marketplace",
+        path: "/marketplace",
         element: (<Marketplace />),
     },
     { 
-        path: "/api/marketplace/changehistory",
+        path: "/marketplace/changehistory",
         element: (<ChangeHistory />),
     },
     { 
-        path: "/api/marketplace/myproducts",
+        path: "/marketplace/myproducts",
         element: (<MyProduct />),
     },
     { 
@@ -62,31 +62,31 @@ const router = createBrowserRouter([
         element: (<FormProduct />),
     },
     { 
-        path: "/api/leaverequestform",
+        path: "/leaverequestform",
         element: (<LeaveRequestForm />),
     },
     { 
-        path: "/api/leaverequestform/medicalleaveform",
+        path: "/leaverequestform/medicalleaveform",
         element: (<MedicalLeaveForm />),
     },
     { 
-        path: "/api/leaverequestform/personalleaveform",
+        path: "/leaverequestform/personalleaveform",
         element: (<PersonalLeaveForm />),
     },
     { 
-        path: "/api/leaverequestform/workfromhomeform",
+        path: "/leaverequestform/workfromhomeform",
         element: (<WFHForm />),
     },
     { 
-        path: "/api/leaverequestform/medicalleaveform/medicalconfirm",
+        path: "/leaverequestform/medicalleaveform/medicalconfirm",
         element: (<MedicalConfirm />),
     },
     { 
-        path: "/api/leaverequestform/personalleaveform/personalconfirm",
+        path: "/leaverequestform/personalleaveform/personalconfirm",
         element: (<PersonalLeaveConfirm />),
     },
     { 
-        path: "/api/leaverequestform/workfromhomeform/workfromhomeconfirm",
+        path: "/leaverequestform/workfromhomeform/workfromhomeconfirm",
         element: (<WFHConfirm/>),
     },
 ]);

@@ -10,7 +10,7 @@ const FormProduct = () => {
     // const navigate = useNavigate();
 
     // const handleImageClick = () => {
-    //     navigate('/api/marketplace/myproducts');
+    //     navigate('/marketplace/myproducts');
     // };
 
     return (

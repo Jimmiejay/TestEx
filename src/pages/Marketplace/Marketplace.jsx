@@ -21,11 +21,11 @@ const Marketplace = () => {
     };
 
     const handleImageClick = () => {
-        navigate('/api/marketplace/myproducts');
+        navigate('/marketplace/myproducts');
     };
 
     const handleClick = () => {
-        navigate('/api/marketplace/formproduct');
+        navigate('/marketplace/formproduct');
     };
 
     return (
