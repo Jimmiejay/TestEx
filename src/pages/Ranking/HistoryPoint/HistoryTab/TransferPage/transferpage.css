@@ -1,24 +1,111 @@
 .transferpage-container {
   display: flex;
-  min-width: 100vw;
-  /* background-color: rgb(37, 121, 47); */
+  min-width: 99vw;
+  /*แก้ตรงนี้*/
 }
 
 .transferpage-container .scrollable-content {
   display: flex;
   width: 100%;
-  scrollbar-width: thin;
-  scrollbar-color: #DE2D1E rgba(77, 77, 77, 0);
-  overflow-y: overlay;
   justify-content: center;
   max-height: 90vh;
+  max-width: 99vw;
+  /*แก้ตรงนี้*/
 }
 
 .transferpage-container .scrollable-content .content {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  /* background-color: rgb(68, 37, 121); */
   padding: 0 10px 20px 0;
   align-items: center;
+  max-height: 60vh;
+
+  scrollbar-width: thin;
+  scrollbar-color: #DE2D1E rgba(77, 77, 77, 0);
+  overflow-y: overlay;
+}
+
+@media only screen and (max-width:1250px){
+  .transferpage-container {
+    display: flex;
+    min-width: 98vw; /*แก้ตรงนี้*/
+  }
+  
+  .transferpage-container .scrollable-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    max-height: 90vh;
+    max-width: 98vw; /*แก้ตรงนี้*/
+  }
+  
+  .transferpage-container .scrollable-content .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 20px 0;
+    align-items: center;
+    max-height: 60vh;
+  
+    scrollbar-width: thin;
+    scrollbar-color: #DE2D1E rgba(77, 77, 77, 0);
+    overflow-y: overlay;
+  }
+}
+
+@media only screen and (max-width:730px){
+  .transferpage-container {
+    display: flex;
+    min-width: 97vw; /*แก้ตรงนี้*/
+  }
+  
+  .transferpage-container .scrollable-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    max-height: 90vh;
+    max-width: 97vw; /*แก้ตรงนี้*/
+  }
+  
+  .transferpage-container .scrollable-content .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 20px 0;
+    align-items: center;
+    max-height: 60vh;
+  
+    scrollbar-width: thin;
+    scrollbar-color: #DE2D1E rgba(77, 77, 77, 0);
+    overflow-y: overlay;
+  }
+}
+
+@media only screen and (max-width:480px){
+  .transferpage-container {
+    display: flex;
+    min-width: 95vw; /*แก้ตรงนี้*/
+  }
+  
+  .transferpage-container .scrollable-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    max-height: 90vh;
+    max-width: 95vw; /*แก้ตรงนี้*/
+  }
+  
+  .transferpage-container .scrollable-content .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 20px 0;
+    align-items: center;
+    max-height: 60vh;
+  
+    scrollbar-width: thin;
+    scrollbar-color: #DE2D1E rgba(77, 77, 77, 0);
+    overflow-y: overlay;
+  }
 }

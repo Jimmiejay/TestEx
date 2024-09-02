@@ -28,7 +28,6 @@
     .total-container {
         display: flex;
         min-width: 98vw;
-        /* background-color: aquamarine; */
     }
     
     .total-container .scrollable-content {
@@ -46,7 +45,6 @@
         padding: 0 10px 20px 0;
         align-items: center;
         max-height: 60vh;
-        /* background-color: blueviolet; */
     
         scrollbar-width: thin;
         scrollbar-color: #DE2D1E rgba(77, 77, 77, 0);
@@ -83,7 +81,7 @@
     }
 }
 
-@media only screen and (max-width:1250px){
+@media only screen and (max-width:1050px){
     .total-container {
         display: flex;
         min-width: 97vw; /*แก้ตรงนี้*/
@@ -287,6 +285,7 @@
     }
     
 }
+
 @media only screen and (max-width:390px){
     .total-container {
         display: flex;

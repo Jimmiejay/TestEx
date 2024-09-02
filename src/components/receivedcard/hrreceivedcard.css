@@ -401,6 +401,107 @@
     }
 }
 
+@media only screen and (max-width:370px){
+    /* HR Receivedpoint */
+    .hr-received-container{
+        display: block;
+        max-width: 100%;
+        max-height: fit-content;
+    }
+    
+    .hr-received-container .hr-received-card {
+        width: 300px;
+        height: 130px;
+        padding: 16px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+        margin: 10px 0 0 5px;  
+    }
+    
+    .hr-received-container .hr-received-points {
+        margin: -20px 5px 10px 0;
+        text-align: right;
+        font-size: 14px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+    }
+    
+    .hr-received-container .hr-received-points.positive {
+        color: #34A853;
+    }
+    
+    .hr-received-container .hr-received-points.negative {
+        color: #FF1400;
+    }
+    
+    .hr-received-container .hr-received-txt{
+        text-align: center;
+    }
+    
+    .hr-received-container .hr-received-txt h3{
+        font-size: 14px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        color: #333333;
+        text-align: left;
+        margin: -5px 0 0 0px;
+    }
+    
+    .hr-received-container .hr-received-txt h4{
+        font-size: 13px;
+        font-family: 'NotoSansThai';
+        font-weight: 600;
+        color: #666666;
+        text-align: left;
+        margin: 10px 0 0 10px;
+    }
+    
+    .hr-received-container .hr-received-txt h6{
+        font-size: 16px;
+        font-family: 'NotoSansThai';
+        font-weight: 400;
+        color: #333333;
+        text-align: left;
+        margin: -33px 0 0 40px;
+    }
+    
+    .hr-received-container .hr-received-dashed-line {
+        border: none;
+        border-top: 1px dashed #E3E3E3;
+        margin: 5px 0; 
+    }
+    
+    .hr-received-container .hr-received-img {
+        width: 30px;
+        height: 30px;
+        margin: 5px 0 0 0;
+    }
+    
+    .hr-received-container .hr-received-date {
+        font-size: 12px;
+        font-family: 'NotoSansThai';
+        font-weight: 600;
+        color: #B3B3B3;
+        text-align: right;
+        margin-top: -20px;
+    }
+    
+    .hr-received-container .hr-received-message{
+        font-size: 11px;
+        font-family: 'NotoSansThai';
+        font-weight: 400;
+        color: #666666;
+        margin: 0 0 0 40px;
+        
+        max-width: 220px;
+        white-space: normal;
+        /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+        word-wrap: break-word;
+        /* ตัดคำเมื่อความยาวเกินความกว้าง */
+    }
+}
+
 @media only screen and (max-width:360px){
     /* HR Receivedpoint */
     .hr-received-container{
