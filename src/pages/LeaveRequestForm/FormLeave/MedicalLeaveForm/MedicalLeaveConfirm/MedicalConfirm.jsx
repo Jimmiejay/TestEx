@@ -35,8 +35,11 @@ const MedicalConfirm = () => {
             <div className="medicalconfirm-group">
                 <label htmlFor="details">รายละเอียด</label>
                 <textarea id="details" value={details} readOnly />
-
             </div>
+            {/* <div className="medicalconfirm-group">
+                <label htmlFor="details">รายละเอียด</label>
+                <textarea id="details" value={details} readOnly />
+            </div> */}
             <button onClick={handleConfirm} className='medicalconfirmbtn'>ยืนยัน</button>
         </div>
     );

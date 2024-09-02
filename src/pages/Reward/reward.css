@@ -98,17 +98,17 @@
 
 .reward-contrainer .current-points {
     font-family: 'NotoSansThai';
-    color: #888888;
-    font-size: 18px;
+    color: #333333;
+    font-size: 24px;
+    font-weight: 700;
     margin-right: 2px;
-    margin-top: 3px;
 }
 
 .reward-contrainer .reward-points-divider {
     font-family: 'NotoSansThai';
-    color: #333333;
-    font-size: 24px;
-    font-weight: 700;
+    color: #777777;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .reward-contrainer .redeem-btn {
@@ -118,15 +118,10 @@
     cursor: pointer;
 }
 
-/* .reward-contrainer .redeem-btn:hover {
-    background-color: #B82418;
+.reward-popup-class {
+    border-radius: 15px; /* ปรับค่า radius ตามที่ต้องการ */
 }
 
-.reward-contrainer .redeem-btn:active {
-    background-color: #fd031c;
+.reward-button-class {
+    border-radius: 5px; /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
 }
-
-.reward-contrainer .redeem-btn:disabled {
-    background-color: #B8B8B8;
-    pointer-events: none;
-} */

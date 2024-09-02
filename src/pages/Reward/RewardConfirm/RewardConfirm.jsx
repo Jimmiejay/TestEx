@@ -25,12 +25,16 @@ const RewardConfirm = () => {
         // เรียก MySwal.fire ทันทีหลังจากที่ตั้งค่า setPoints
         await MySwal.fire({
             icon: 'success',
-            title: 'คุณได้ใช้สิทธิ์แล้ว',
-            html: `<p>คุณมียอดคงเหลือ ${newPoints} points</p>`,
-            confirmButtonText: 'ย้อนกลับ',
-            confirmButtonColor: '#ff4b4b',
+            title: 'แลกรางวัลสำเร็จ',
+            html: `<p>คุณมียอดคงเหลือ ${newPoints} คะแนน</p>`,
+            confirmButtonText: 'เรียบร้อย',
+            confirmButtonColor: '#29AE4C',
             width: '375px',
-            height: '291px',
+            height: '290px',
+            customClass: {
+                popup: 'rewardconfirm-popup-class',
+                confirmButton: 'rewardconfirm-button-class'
+            }
         });
 
 

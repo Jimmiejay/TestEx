@@ -27,7 +27,7 @@
 
 .Btn.disabled {
     background-color: #ccc;
-    color: #777;
+    color: #FFFFFF;
     cursor: not-allowed;
 }
 

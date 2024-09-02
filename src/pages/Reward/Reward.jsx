@@ -4,6 +4,7 @@ import Labubu2 from '../../assets/labubu 2.png'
 import PCoin from '../../assets/pcoin.png'
 import { useNavigate } from 'react-router-dom';
 import Button from '../../components/Button/ShortButton/ShortButton';
+import Swal from 'sweetalert2';
 
 const Reward = () => {
     const [currentPoints, setCurrentPoints] = useState(null); //เก็บคะแนนที่มี
@@ -19,7 +20,7 @@ const Reward = () => {
 
     useEffect(() => {
         // กำหนดค่าต่างๆ ที่คุณต้องการภายใน useEffect
-        setCurrentPoints(650);
+        setCurrentPoints(550);
         setRewardPoints(500);
         setRewardName("The Monsters Labubu Fall in Wild Vinyl Plush Doll");
         setRewardImage(Labubu2);
@@ -68,7 +69,19 @@ const Reward = () => {
         if (isSubmitting) return;
 
         if (currentPoints < rewardPoints) {
-            alert("คะแนนของคุณไม่พอสำหรับการแลกรางวัลนี้");
+            // alert("คะแนนของคุณไม่พอสำหรับการแลกรางวัลนี้");
+            Swal.fire({
+                text: "คะแนนของคุณไม่พอสำหรับการแลกรางวัลนี้",
+                icon: "warning",
+                confirmButtonText: 'ย้อนกลับ',
+                confirmButtonColor: '#ff4b4b',
+                width: '375px',
+                height: '290px',
+                customClass: {
+                    popup: 'reward-popup-class',
+                    confirmButton: 'reward-button-class'
+                }
+            });
             return;
         }
 
