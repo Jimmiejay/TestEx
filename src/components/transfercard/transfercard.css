@@ -4,84 +4,499 @@
     max-width: 100%;
     max-height: fit-content;
 }
+
+.transfer-container .transfer-used-card {
+    width: 394px;
+    height: 130px;
+    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+    margin: 10px 0 0 20px;
+}
+
 .transfer-container .transfer-points {
     margin: -20px 5px 10px 0;
     text-align: right;
     font-size: 14px;
-    font-family: 'Sukhumvit Set';
-    font-weight: 900;
+    font-family: 'NotoSansThai';
+    font-weight: 700;
 }
+
 .transfer-container .transfer-points.positive {
     color: #34A853;
 }
+
 .transfer-container .transfer-points.negative {
     color: #FF1400;
 }
-.transfer-container .transfer-used-txt{
+
+.transfer-container .transfer-txt{
     text-align: center;
 }
+
 .transfer-container .transfer-txt h3{
     font-size: 14px;
-    font-family: 'Sukhumvit Set';
-    font-weight: 900;
+    font-family: 'NotoSansThai';
+    font-weight: 700;
     color: #333333;
     text-align: left;
-    margin: -5px 0 0 0px; /* top right bottom left;*/
+    margin: -5px 0 0 0px; 
 }
+
+.transfer-container .transfer-txt h4{
+    font-size: 13px;
+    font-family: 'NotoSansThai';
+    font-weight: 600;
+    color: #666666;
+    text-align: left;
+    margin: 10px 0 0 20px; /* top right bottom left;*/
+}
+
 .transfer-container .transfer-txt h6{
     font-size: 16px;
-    font-family: 'Sukhumvit Set';
+    font-family: 'NotoSansThai';
     font-weight: 400;
     color: #333333;
     text-align: left;
-    margin: -33px 0 0 40px; /* top right bottom left;*/
+    margin: -33px 0 0 40px;
 }
+
 .transfer-container .transfer-dashed-line {
     border: none;
     border-top: 1px dashed #E3E3E3;
     margin: 5px 0; /* สามารถปรับระยะห่างด้านบนและล่างของเส้น */
 }
+
 .transfer-container .transfer-img {
     width: 30px;
     height: 30px;
     margin: 5px 0 0 0;
 }
+
 .transfer-container .transfer-date {
     font-size: 12px;
-    font-family: 'Sukhumvit Set';
+    font-family: 'NotoSansThai';
     font-weight: 600;
     color: #B3B3B3;
     text-align: right;
     margin-top: -20px;
 }
+
 .transfer-container .transfer-message{
     font-size: 11px;
-    font-family: 'Sukhumvit Set';
+    font-family: 'NotoSansThai';
     font-weight: 400;
     color: #666666;
     margin: 0 0 0 40px;
-    white-space: pre-line;
+    
+    max-width: 220px;
+    white-space: normal;
+    /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+    word-wrap: break-word;
+    /* ตัดคำเมื่อความยาวเกินความกว้าง */
+}
+
+@media only screen and (max-width:450px){
+    /* Transferpoint */
+.transfer-container{
+    display: block;
+    max-width: 100%;
+    max-height: fit-content;
 }
 
 .transfer-container .transfer-used-card {
-    /* position: absolute; */
-    width: 394px;
-    height: 120px;
+    width: 350px;
+    height: 130px;
     padding: 16px;
-    /* background-color: #ffffff; */
     background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px 0 0 20px; /* top right bottom left;*/   
+    border-radius: 8px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+    margin: 10px 0 0 10px;
 }
-.transfer-container .transfer-used-txt{
+
+.transfer-container .transfer-points {
+    margin: -20px 5px 10px 0;
+    text-align: right;
+    font-size: 14px;
+    font-family: 'NotoSansThai';
+    font-weight: 700;
+}
+
+.transfer-container .transfer-points.positive {
+    color: #34A853;
+}
+
+.transfer-container .transfer-points.negative {
+    color: #FF1400;
+}
+
+.transfer-container .transfer-txt{
     text-align: center;
 }
-.transfer-container .transfer-used-txt h4{
+
+.transfer-container .transfer-txt h3{
+    font-size: 14px;
+    font-family: 'NotoSansThai';
+    font-weight: 700;
+    color: #333333;
+    text-align: left;
+    margin: -5px 0 0 0px; 
+}
+
+.transfer-container .transfer-txt h4{
     font-size: 13px;
-    font-family: 'Sukhumvit Set';
-    font-weight: 800;
+    font-family: 'NotoSansThai';
+    font-weight: 600;
     color: #666666;
     text-align: left;
-    margin: 10px 0 0 20px; /* top right bottom left;*/
+    margin: 10px 0 0 10px; /* top right bottom left;*/
+}
+
+.transfer-container .transfer-txt h6{
+    font-size: 16px;
+    font-family: 'NotoSansThai';
+    font-weight: 400;
+    color: #333333;
+    text-align: left;
+    margin: -33px 0 0 40px;
+}
+
+.transfer-container .transfer-dashed-line {
+    border: none;
+    border-top: 1px dashed #E3E3E3;
+    margin: 5px 0; /* สามารถปรับระยะห่างด้านบนและล่างของเส้น */
+}
+
+.transfer-container .transfer-img {
+    width: 30px;
+    height: 30px;
+    margin: 5px 0 0 0;
+}
+
+.transfer-container .transfer-date {
+    font-size: 12px;
+    font-family: 'NotoSansThai';
+    font-weight: 600;
+    color: #B3B3B3;
+    text-align: right;
+    margin-top: -20px;
+}
+
+.transfer-container .transfer-message{
+    font-size: 11px;
+    font-family: 'NotoSansThai';
+    font-weight: 400;
+    color: #666666;
+    margin: 0 0 0 40px;
+    
+    max-width: 220px;
+    white-space: normal;
+    /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+    word-wrap: break-word;
+    /* ตัดคำเมื่อความยาวเกินความกว้าง */
+}
+}
+
+@media only screen and (max-width:430px){
+    /* Transferpoint */
+.transfer-container{
+    display: block;
+    max-width: 100%;
+    max-height: fit-content;
+}
+
+.transfer-container .transfer-used-card {
+    width: 330px;
+    height: 130px;
+    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+    margin: 10px 0 0 10px;
+}
+
+.transfer-container .transfer-points {
+    margin: -20px 5px 10px 0;
+    text-align: right;
+    font-size: 14px;
+    font-family: 'NotoSansThai';
+    font-weight: 700;
+}
+
+.transfer-container .transfer-points.positive {
+    color: #34A853;
+}
+
+.transfer-container .transfer-points.negative {
+    color: #FF1400;
+}
+
+.transfer-container .transfer-txt{
+    text-align: center;
+}
+
+.transfer-container .transfer-txt h3{
+    font-size: 14px;
+    font-family: 'NotoSansThai';
+    font-weight: 700;
+    color: #333333;
+    text-align: left;
+    margin: -5px 0 0 0px; 
+}
+
+.transfer-container .transfer-txt h4{
+    font-size: 13px;
+    font-family: 'NotoSansThai';
+    font-weight: 600;
+    color: #666666;
+    text-align: left;
+    margin: 10px 0 0 10px; /* top right bottom left;*/
+}
+
+.transfer-container .transfer-txt h6{
+    font-size: 16px;
+    font-family: 'NotoSansThai';
+    font-weight: 400;
+    color: #333333;
+    text-align: left;
+    margin: -33px 0 0 40px;
+}
+
+.transfer-container .transfer-dashed-line {
+    border: none;
+    border-top: 1px dashed #E3E3E3;
+    margin: 5px 0; /* สามารถปรับระยะห่างด้านบนและล่างของเส้น */
+}
+
+.transfer-container .transfer-img {
+    width: 30px;
+    height: 30px;
+    margin: 5px 0 0 0;
+}
+
+.transfer-container .transfer-date {
+    font-size: 12px;
+    font-family: 'NotoSansThai';
+    font-weight: 600;
+    color: #B3B3B3;
+    text-align: right;
+    margin-top: -20px;
+}
+
+.transfer-container .transfer-message{
+    font-size: 11px;
+    font-family: 'NotoSansThai';
+    font-weight: 400;
+    color: #666666;
+    margin: 0 0 0 40px;
+    
+    max-width: 220px;
+    white-space: normal;
+    /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+    word-wrap: break-word;
+    /* ตัดคำเมื่อความยาวเกินความกว้าง */
+}
+}
+
+@media only screen and (max-width:390px){
+    /* Transferpoint */
+.transfer-container{
+    display: block;
+    max-width: 100%;
+    max-height: fit-content;
+}
+
+.transfer-container .transfer-used-card {
+    width: 320px;
+    height: 130px;
+    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+    margin: 10px 0 0 10px;
+}
+
+.transfer-container .transfer-points {
+    margin: -20px 5px 10px 0;
+    text-align: right;
+    font-size: 14px;
+    font-family: 'NotoSansThai';
+    font-weight: 700;
+}
+
+.transfer-container .transfer-points.positive {
+    color: #34A853;
+}
+
+.transfer-container .transfer-points.negative {
+    color: #FF1400;
+}
+
+.transfer-container .transfer-txt{
+    text-align: center;
+}
+
+.transfer-container .transfer-txt h3{
+    font-size: 14px;
+    font-family: 'NotoSansThai';
+    font-weight: 700;
+    color: #333333;
+    text-align: left;
+    margin: -5px 0 0 0px; 
+}
+
+.transfer-container .transfer-txt h4{
+    font-size: 13px;
+    font-family: 'NotoSansThai';
+    font-weight: 600;
+    color: #666666;
+    text-align: left;
+    margin: 10px 0 0 10px; /* top right bottom left;*/
+}
+
+.transfer-container .transfer-txt h6{
+    font-size: 16px;
+    font-family: 'NotoSansThai';
+    font-weight: 400;
+    color: #333333;
+    text-align: left;
+    margin: -33px 0 0 40px;
+}
+
+.transfer-container .transfer-dashed-line {
+    border: none;
+    border-top: 1px dashed #E3E3E3;
+    margin: 5px 0; /* สามารถปรับระยะห่างด้านบนและล่างของเส้น */
+}
+
+.transfer-container .transfer-img {
+    width: 30px;
+    height: 30px;
+    margin: 5px 0 0 0;
+}
+
+.transfer-container .transfer-date {
+    font-size: 12px;
+    font-family: 'NotoSansThai';
+    font-weight: 600;
+    color: #B3B3B3;
+    text-align: right;
+    margin-top: -20px;
+}
+
+.transfer-container .transfer-message{
+    font-size: 11px;
+    font-family: 'NotoSansThai';
+    font-weight: 400;
+    color: #666666;
+    margin: 0 0 0 40px;
+    
+    max-width: 220px;
+    white-space: normal;
+    /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+    word-wrap: break-word;
+    /* ตัดคำเมื่อความยาวเกินความกว้าง */
+}
+}
+
+@media only screen and (max-width:360px){
+    /* Transferpoint */
+.transfer-container{
+    display: block;
+    max-width: 100%;
+    max-height: fit-content;
+}
+
+.transfer-container .transfer-used-card {
+    width: 300px;
+    height: 130px;
+    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+    margin: 10px 0 0 5px;
+}
+
+.transfer-container .transfer-points {
+    margin: -20px 5px 10px 0;
+    text-align: right;
+    font-size: 14px;
+    font-family: 'NotoSansThai';
+    font-weight: 700;
+}
+
+.transfer-container .transfer-points.positive {
+    color: #34A853;
+}
+
+.transfer-container .transfer-points.negative {
+    color: #FF1400;
+}
+
+.transfer-container .transfer-txt{
+    text-align: center;
+}
+
+.transfer-container .transfer-txt h3{
+    font-size: 14px;
+    font-family: 'NotoSansThai';
+    font-weight: 700;
+    color: #333333;
+    text-align: left;
+    margin: -5px 0 0 0px; 
+}
+
+.transfer-container .transfer-txt h4{
+    font-size: 13px;
+    font-family: 'NotoSansThai';
+    font-weight: 600;
+    color: #666666;
+    text-align: left;
+    margin: 10px 0 0 10px; /* top right bottom left;*/
+}
+
+.transfer-container .transfer-txt h6{
+    font-size: 16px;
+    font-family: 'NotoSansThai';
+    font-weight: 400;
+    color: #333333;
+    text-align: left;
+    margin: -33px 0 0 40px;
+}
+
+.transfer-container .transfer-dashed-line {
+    border: none;
+    border-top: 1px dashed #E3E3E3;
+    margin: 5px 0; /* สามารถปรับระยะห่างด้านบนและล่างของเส้น */
+}
+
+.transfer-container .transfer-img {
+    width: 30px;
+    height: 30px;
+    margin: 5px 0 0 0;
+}
+
+.transfer-container .transfer-date {
+    font-size: 12px;
+    font-family: 'NotoSansThai';
+    font-weight: 600;
+    color: #B3B3B3;
+    text-align: right;
+    margin-top: -20px;
+}
+
+.transfer-container .transfer-message{
+    font-size: 11px;
+    font-family: 'NotoSansThai';
+    font-weight: 400;
+    color: #666666;
+    margin: 0 0 0 40px;
+    
+    max-width: 220px;
+    white-space: normal;
+    /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+    word-wrap: break-word;
+    /* ตัดคำเมื่อความยาวเกินความกว้าง */
+}
 }

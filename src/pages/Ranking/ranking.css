@@ -2,19 +2,16 @@
     display: flex;
     justify-content: center;
     position: relative;
-    /* width: 100%; */
-    max-width: 98vw;
-    /* max-height: 100vh; */
+    width: 100%;
 }
 
 .ranking-container .ranking-content {
-    width: 100vw;
+    width: 99vw;
     height: 21vh;
     display: grid;
     grid-template-rows: 152px 1fr;
     justify-content: center;
     position: absolute;  
-    background-color: chocolate;
 }
 
 .ranking-container .top-row {
@@ -23,7 +20,6 @@
 
 .ranking-container .low-row {
    width: 100%;
-   /* margin: 0px 0 0 0; */
 }
 
 .ranking-container .ranking-txt {
@@ -40,7 +36,402 @@
 }
 
 .ranking-container .bg-img{
-    width: 100vw;
+    width: 99vw;
     height: 221px;
-    /* object-fit: cover; */
+}
+
+@media only screen and (max-width:1250px){
+    .ranking-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+    
+    .ranking-container .ranking-content {
+        width: 98vw;
+        height: 21vh;
+        display: grid;
+        grid-template-rows: 152px 1fr;
+        justify-content: center;
+        position: absolute;  
+    }
+    
+    .ranking-container .top-row {
+        display: contents;
+    }
+    
+    .ranking-container .low-row {
+       width: 100%;
+    }
+    
+    .ranking-container .ranking-txt {
+        position: absolute;
+    }
+    
+    .ranking-container .ranking-txt.txtranking {
+        font-size: 26px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        color: #333333;
+        top: 20px;
+        justify-self: center;
+    }
+    
+    .ranking-container .bg-img{
+        width: 98vw;
+        height: 221px;
+    }
+}
+
+@media only screen and (max-width:1150px){
+    .ranking-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+    
+    .ranking-container .ranking-content {
+        width: 98vw;
+        height: 21vh;
+        display: grid;
+        grid-template-rows: 152px 1fr;
+        justify-content: center;
+        position: absolute;  
+    }
+    
+    .ranking-container .top-row {
+        display: contents;
+    }
+    
+    .ranking-container .low-row {
+       width: 100%;
+    }
+    
+    .ranking-container .ranking-txt {
+        position: absolute;
+    }
+    
+    .ranking-container .ranking-txt.txtranking {
+        font-size: 26px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        color: #333333;
+        top: 20px;
+        justify-self: center;
+    }
+    
+    .ranking-container .bg-img{
+        width: 98.7vw;
+        height: 221px;
+    }
+}
+
+@media only screen and (max-width:1120px){
+    .ranking-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+    
+    .ranking-container .ranking-content {
+        width: 97vw; /*แก้ตรงนี้*/
+        height: 21vh;
+        display: grid;
+        grid-template-rows: 152px 1fr;
+        justify-content: center;
+        position: absolute;  
+    }
+    
+    .ranking-container .top-row {
+        display: contents;
+    }
+    
+    .ranking-container .low-row {
+       width: 100%;
+    }
+    
+    .ranking-container .ranking-txt {
+        position: absolute;
+    }
+    
+    .ranking-container .ranking-txt.txtranking {
+        font-size: 26px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        color: #333333;
+        top: 20px;
+        justify-self: center;
+    }
+    
+    .ranking-container .bg-img{
+        width: 97vw; /*แก้ตรงนี้*/
+        height: 221px;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .ranking-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+    
+    .ranking-container .ranking-content {
+        width: 95vw; /*แก้ตรงนี้*/
+        height: 21vh;
+        display: grid;
+        grid-template-rows: 152px 1fr;
+        justify-content: center;
+        position: absolute;  
+    }
+    
+    .ranking-container .top-row {
+        display: contents;
+    }
+    
+    .ranking-container .low-row {
+       width: 100%;
+    }
+    
+    .ranking-container .ranking-txt {
+        position: absolute;
+    }
+    
+    .ranking-container .ranking-txt.txtranking {
+        font-size: 26px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        color: #333333;
+        top: 20px;
+        justify-self: center;
+    }
+    
+    .ranking-container .bg-img{
+        width: 95vw; /*แก้ตรงนี้*/
+        height: 221px;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .ranking-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+    
+    .ranking-container .ranking-content {
+        width: 95vw; /*แก้ตรงนี้*/
+        height: 21vh;
+        display: grid;
+        grid-template-rows: 152px 1fr;
+        justify-content: center;
+        position: absolute;  
+    }
+    
+    .ranking-container .top-row {
+        display: contents;
+    }
+    
+    .ranking-container .low-row {
+       width: 100%;
+    }
+    
+    .ranking-container .ranking-txt {
+        position: absolute;
+    }
+    
+    .ranking-container .ranking-txt.txtranking {
+        font-size: 26px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        color: #333333;
+        top: 20px;
+        justify-self: center;
+    }
+    
+    .ranking-container .bg-img{
+        width: 95vw; /*แก้ตรงนี้*/
+        height: 221px;
+    }
+}
+
+@media only screen and (max-width:430px){
+    .ranking-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+    
+    .ranking-container .ranking-content {
+        width: 95vw; /*แก้ตรงนี้*/
+        height: 21vh;
+        display: grid;
+        grid-template-rows: 152px 1fr;
+        justify-content: center;
+        position: absolute;  
+    }
+    
+    .ranking-container .top-row {
+        display: contents;
+    }
+    
+    .ranking-container .low-row {
+       width: 100%;
+    }
+    
+    .ranking-container .ranking-txt {
+        position: absolute;
+    }
+    
+    .ranking-container .ranking-txt.txtranking {
+        font-size: 26px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        color: #333333;
+        top: 20px;
+        justify-self: center;
+    }
+    
+    .ranking-container .bg-img{
+        width: 95vw; /*แก้ตรงนี้*/
+        height: 221px;
+    }
+}
+
+@media only screen and (max-width:390px){
+    .ranking-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+    
+    .ranking-container .ranking-content {
+        width: 95vw; /*แก้ตรงนี้*/
+        height: 21vh;
+        display: grid;
+        grid-template-rows: 152px 1fr;
+        justify-content: center;
+        position: absolute;  
+    }
+    
+    .ranking-container .top-row {
+        display: contents;
+    }
+    
+    .ranking-container .low-row {
+       width: 100%;
+    }
+    
+    .ranking-container .ranking-txt {
+        position: absolute;
+    }
+    
+    .ranking-container .ranking-txt.txtranking {
+        font-size: 26px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        color: #333333;
+        top: 20px;
+        justify-self: center;
+    }
+    
+    .ranking-container .bg-img{
+        width: 95vw; /*แก้ตรงนี้*/
+        height: 221px;
+    }
+}
+
+@media only screen and (max-width:380px){
+    .ranking-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+    
+    .ranking-container .ranking-content {
+        width: 95vw; /*แก้ตรงนี้*/
+        height: 21vh;
+        display: grid;
+        grid-template-rows: 152px 1fr;
+        justify-content: center;
+        position: absolute;  
+    }
+    
+    .ranking-container .top-row {
+        display: contents;
+    }
+    
+    .ranking-container .low-row {
+       width: 100%;
+    }
+    
+    .ranking-container .ranking-txt {
+        position: absolute;
+    }
+    
+    .ranking-container .ranking-txt.txtranking {
+        font-size: 26px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        color: #333333;
+        top: 20px;
+        justify-self: center;
+    }
+    
+    .ranking-container .bg-img{
+        width: 95vw; /*แก้ตรงนี้*/
+        height: 221px;
+    }
+}
+
+@media only screen and (max-width:360px){
+    .ranking-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+    
+    .ranking-container .ranking-content {
+        width: 95vw; /*แก้ตรงนี้*/
+        height: 21vh;
+        display: grid;
+        grid-template-rows: 152px 1fr;
+        justify-content: center;
+        position: absolute;  
+    }
+    
+    .ranking-container .top-row {
+        display: contents;
+    }
+    
+    .ranking-container .low-row {
+       width: 100%;
+    }
+    
+    .ranking-container .ranking-txt {
+        position: absolute;
+    }
+    
+    .ranking-container .ranking-txt.txtranking {
+        font-size: 26px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        color: #333333;
+        top: 20px;
+        justify-self: center;
+    }
+    
+    .ranking-container .bg-img{
+        width: 95vw; /*แก้ตรงนี้*/
+        height: 221px;
+    }
 }

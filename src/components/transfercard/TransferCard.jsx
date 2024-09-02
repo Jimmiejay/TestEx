@@ -20,7 +20,7 @@ const TransferCard = ({ showMonth, showSpecificMonth }) => {
     return (
         <div className='transfer-container'>
             {showMonth && showSpecificMonth && (
-                <div className='transfer-used-txt'><h4>{Useddata.month[1]}</h4></div>
+                <div className='transfer-txt'><h4>{Useddata.month[1]}</h4></div>
             )}
             <div className='transfer-used-card'>
                 <div className='transfer-txt'><h3>{Useddata.usedText}</h3></div>
@@ -32,7 +32,7 @@ const TransferCard = ({ showMonth, showSpecificMonth }) => {
                 <div className='transfer-message'>{Useddata.usedDescription[2]}</div>
             </div>
             {showMonth && (
-                <div className='transfer-used-txt'><h4>{Useddata.month[0]}</h4></div>
+                <div className='transfer-txt'><h4>{Useddata.month[0]}</h4></div>
             )}
             <div className='transfer-used-card'>
                 <div className='transfer-txt'><h3>{Useddata.usedText}</h3></div>
