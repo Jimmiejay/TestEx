@@ -36,13 +36,6 @@ const RewardConfirm = () => {
                 confirmButton: 'rewardconfirm-button-class'
             }
         });
-
-
-        // // เปลี่ยนหน้าไปยัง /api/reward หลังจากที่กดปุ่มยืนยัน
-        // navigate('/api/reward', {
-        //     state: { points: newPoints, isRedeemed: true } // ส่งคะแนนใหม่ และส่งสถานะ isRedeemed กลับไปด้วย
-        // });
-
     };
 
     return (
@@ -59,11 +52,10 @@ const RewardConfirm = () => {
                         </div>
                     </div>
                 </div>
-                {/* <button className="confirm-button" onClick={handleRedeem} disabled={isRedeemed}>
-                    {isRedeemed ? 'ดำเนินการเรียบร้อยแล้ว' : 'ยืนยัน'}
-                </button> */}
-                <div onClick={handleRedeem} type="button" className={`confirm-button ${isRedeemed ? 'disabled' : ''}`} >
-                    <Button text={isRedeemed ? 'ดำเนินการเรียบร้อยแล้ว' : 'ยืนยัน'} disabled={isRedeemed} />
+                <div className='rewardconfirm-footer'>
+                    <div onClick={handleRedeem} type="button" className={`confirm-button ${isRedeemed ? 'disabled' : ''}`} >
+                        <Button text={isRedeemed ? 'ดำเนินการเรียบร้อยแล้ว' : 'ยืนยัน'} disabled={isRedeemed} />
+                    </div>
                 </div>
             </div>
         </div>

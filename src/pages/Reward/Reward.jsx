@@ -89,10 +89,11 @@ const Reward = () => {
         const formDataReward = {
             currentPoints,
             rewardPoints,
-            rewardImage,
             rewardName,
+            rewardImage,
             pointImage,
-            rewardPoints
+            rewardDate,
+            description
 
         };
         // console.log('Form Data Submitted: ', formDataWFH);

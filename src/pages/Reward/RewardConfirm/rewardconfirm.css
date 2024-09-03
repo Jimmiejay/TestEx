@@ -3,10 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* เพิ่มการจัดตรงกลางในแนวนอน */
     width: 100%;
-    height: 100;
-    /* ปรับความสูงให้เต็มหน้าจอ */
+    height: 100%;
 }
 
 .rewardconfirm-header {
@@ -17,7 +15,7 @@
 
 }
 
-.rewardconfirm-title {
+.rewardconfirm-header .rewardconfirm-title {
     font-family: 'NotoSansThai';
     font-size: 26px;
     font-weight: 700;
@@ -27,9 +25,9 @@
     text-align: center;
 }
 
-.rewardconfirm-card {
-    width: 95%;
-    height: 166px;
+.rewardconfirm-header .rewardconfirm-card {
+    width: 90%;
+    height: 100%;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -39,59 +37,956 @@
     box-sizing: border-box;
 }
 
-.reward-image {
-    width: 135px;
-    height: 142px;
+.rewardconfirm-header .reward-image {
+    /* width: 135px;
+    height: 142px; */
+    width: 200px;
+    height: 200px;
     border-radius: 5px;
     object-fit: cover;
-    margin-left: 20px;
-    margin-right: 10px;
+    margin: 5px 10px 5px 5px;
 }
 
-.reward-info {
+.rewardconfirm-header .reward-info {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    /* height: 100%; */
 }
 
-.reward-name {
+.rewardconfirm-header .reward-name {
     font-family: 'NotoSansThai';
     font-size: 20px;
     font-weight: 700;
     color: #333333;
     padding: 10px;
+
+    max-width: 900px;
+    white-space: normal;
+    /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+    word-wrap: break-word;
+    /* ตัดคำเมื่อความยาวเกินความกว้าง */
 }
 
-.points-container {
+.rewardconfirm-header .points-container {
     display: flex;
     align-items: center;
 }
 
-.points-container span {
+.rewardconfirm-header .points-container span {
     font-family: 'NotoSansThai';
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
     color: #333333;
     text-align: left;
+    margin-top: 2px;
 }
 
-.point-image {
-    width: 20px;
-    height: 20px;
+.rewardconfirm-header .point-image {
+    width: 30px;
+    height: 28px;
     margin-right: 5px;
 }
 
-.confirm-button {
+.rewardconfirm-header .rewardconfirm-footer {
     display: flex;
-    margin-top: 350px;
+    align-items: center;
+    padding: 300px 0 0 0;
 }
 
-.rewardconfirm-popup-class {
-    border-radius: 15px; /* ปรับค่า radius ตามที่ต้องการ */
+.rewardconfirm-header .confirm-button {
+    display: flex;
 }
 
-.rewardconfirm-button-class {
-    border-radius: 5px; /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+.rewardconfirm-header .rewardconfirm-popup-class {
+    border-radius: 15px;
+    /* ปรับค่า radius ตามที่ต้องการ */
+}
+
+.rewardconfirm-header .rewardconfirm-button-class {
+    border-radius: 5px;
+    /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+}
+
+
+@media only screen and (max-width:1250px) {
+    .rewardconfirm-contrainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .rewardconfirm-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .rewardconfirm-header .rewardconfirm-title {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #333333;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .rewardconfirm-header .rewardconfirm-card {
+        width: 90%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .rewardconfirm-header .reward-image {
+        /* width: 135px;
+        height: 142px; */
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin: 5px 10px 5px 5px;
+    }
+
+    .rewardconfirm-header .reward-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* height: 100%; */
+    }
+
+    .rewardconfirm-header .reward-name {
+        font-family: 'NotoSansThai';
+        font-size: 20px;
+        font-weight: 700;
+        color: #333333;
+        padding: 10px;
+
+        max-width: 900px;
+        white-space: normal;
+        /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+        word-wrap: break-word;
+        /* ตัดคำเมื่อความยาวเกินความกว้าง */
+    }
+
+    .rewardconfirm-header .points-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .rewardconfirm-header .points-container span {
+        font-family: 'NotoSansThai';
+        font-size: 18px;
+        font-weight: 700;
+        color: #333333;
+        text-align: left;
+        margin-top: 2px;
+    }
+
+    .rewardconfirm-header .point-image {
+        width: 30px;
+        height: 28px;
+        margin-right: 5px;
+    }
+
+    .rewardconfirm-header .rewardconfirm-footer {
+        display: flex;
+        align-items: center;
+        padding: 300px 0 0 0;
+    }
+
+    .rewardconfirm-header .confirm-button {
+        display: flex;
+    }
+
+    .rewardconfirm-header .rewardconfirm-popup-class {
+        border-radius: 15px;
+        /* ปรับค่า radius ตามที่ต้องการ */
+    }
+
+    .rewardconfirm-header .rewardconfirm-button-class {
+        border-radius: 5px;
+        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .rewardconfirm-contrainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .rewardconfirm-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .rewardconfirm-header .rewardconfirm-title {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #333333;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .rewardconfirm-header .rewardconfirm-card {
+        width: 90%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .rewardconfirm-header .reward-image {
+        width: 190px;
+        height: 220px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin: 8px 5px 5px 5px;
+    }
+
+    .rewardconfirm-header .reward-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .rewardconfirm-header .reward-name {
+        font-family: 'NotoSansThai';
+        font-size: 20px;
+        font-weight: 700;
+        color: #333333;
+        padding: 10px;
+
+        max-width: 900px;
+        white-space: normal;
+        /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+        word-wrap: break-word;
+        /* ตัดคำเมื่อความยาวเกินความกว้าง */
+    }
+
+    .rewardconfirm-header .points-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .rewardconfirm-header .points-container span {
+        font-family: 'NotoSansThai';
+        font-size: 18px;
+        font-weight: 700;
+        color: #333333;
+        text-align: left;
+        margin-top: 2px;
+    }
+
+    .rewardconfirm-header .point-image {
+        width: 30px;
+        height: 28px;
+        margin-right: 5px;
+    }
+
+    .rewardconfirm-header .rewardconfirm-footer {
+        display: flex;
+        align-items: center;
+        padding: 280px 0 0 0;
+    }
+
+    .rewardconfirm-header .confirm-button {
+        display: flex;
+    }
+
+    .rewardconfirm-header .rewardconfirm-popup-class {
+        border-radius: 15px;
+        /* ปรับค่า radius ตามที่ต้องการ */
+    }
+
+    .rewardconfirm-header .rewardconfirm-button-class {
+        border-radius: 5px;
+        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+    }
+}
+
+@media only screen and (max-width:430px) {
+    .rewardconfirm-contrainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .rewardconfirm-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .rewardconfirm-header .rewardconfirm-title {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #333333;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .rewardconfirm-header .rewardconfirm-card {
+        width: 90%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .rewardconfirm-header .reward-image {
+        width: 190px;
+        height: 220px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin: 8px 5px 5px 5px;
+    }
+
+    .rewardconfirm-header .reward-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .rewardconfirm-header .reward-name {
+        font-family: 'NotoSansThai';
+        font-size: 20px;
+        font-weight: 700;
+        color: #333333;
+        padding: 10px;
+
+        max-width: 900px;
+        white-space: normal;
+        /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+        word-wrap: break-word;
+        /* ตัดคำเมื่อความยาวเกินความกว้าง */
+    }
+
+    .rewardconfirm-header .points-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .rewardconfirm-header .points-container span {
+        font-family: 'NotoSansThai';
+        font-size: 18px;
+        font-weight: 700;
+        color: #333333;
+        text-align: left;
+        margin-top: 2px;
+    }
+
+    .rewardconfirm-header .point-image {
+        width: 30px;
+        height: 28px;
+        margin-right: 5px;
+    }
+
+    .rewardconfirm-header .rewardconfirm-footer {
+        display: flex;
+        align-items: center;
+        padding: 280px 0 0 0;
+    }
+
+    .rewardconfirm-header .confirm-button {
+        display: flex;
+    }
+
+    .rewardconfirm-header .rewardconfirm-popup-class {
+        border-radius: 15px;
+        /* ปรับค่า radius ตามที่ต้องการ */
+    }
+
+    .rewardconfirm-header .rewardconfirm-button-class {
+        border-radius: 5px;
+        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+    }
+}
+
+@media only screen and (max-width:420px) {
+    .rewardconfirm-contrainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .rewardconfirm-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .rewardconfirm-header .rewardconfirm-title {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #333333;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .rewardconfirm-header .rewardconfirm-card {
+        width: 90%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .rewardconfirm-header .reward-image {
+        width: 180px;
+        height: 220px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin: 8px 5px 5px 5px;
+    }
+
+    .rewardconfirm-header .reward-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .rewardconfirm-header .reward-name {
+        font-family: 'NotoSansThai';
+        font-size: 20px;
+        font-weight: 700;
+        color: #333333;
+        padding: 10px;
+
+        max-width: 900px;
+        white-space: normal;
+        /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+        word-wrap: break-word;
+        /* ตัดคำเมื่อความยาวเกินความกว้าง */
+    }
+
+    .rewardconfirm-header .points-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .rewardconfirm-header .points-container span {
+        font-family: 'NotoSansThai';
+        font-size: 18px;
+        font-weight: 700;
+        color: #333333;
+        text-align: left;
+        margin-top: 2px;
+    }
+
+    .rewardconfirm-header .point-image {
+        width: 30px;
+        height: 28px;
+        margin-right: 5px;
+    }
+
+    .rewardconfirm-header .rewardconfirm-footer {
+        display: flex;
+        align-items: center;
+        padding: 280px 0 0 0;
+    }
+
+    .rewardconfirm-header .confirm-button {
+        display: flex;
+    }
+
+    .rewardconfirm-header .rewardconfirm-popup-class {
+        border-radius: 15px;
+        /* ปรับค่า radius ตามที่ต้องการ */
+    }
+
+    .rewardconfirm-header .rewardconfirm-button-class {
+        border-radius: 5px;
+        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+    }
+}
+
+@media only screen and (max-width:410px) {
+    .rewardconfirm-contrainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .rewardconfirm-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .rewardconfirm-header .rewardconfirm-title {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #333333;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .rewardconfirm-header .rewardconfirm-card {
+        width: 90%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .rewardconfirm-header .reward-image {
+        width: 170px;
+        height: 220px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin: 8px 5px 5px 5px;
+    }
+
+    .rewardconfirm-header .reward-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .rewardconfirm-header .reward-name {
+        font-family: 'NotoSansThai';
+        font-size: 20px;
+        font-weight: 700;
+        color: #333333;
+        padding: 10px;
+
+        max-width: 900px;
+        white-space: normal;
+        /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+        word-wrap: break-word;
+        /* ตัดคำเมื่อความยาวเกินความกว้าง */
+    }
+
+    .rewardconfirm-header .points-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .rewardconfirm-header .points-container span {
+        font-family: 'NotoSansThai';
+        font-size: 18px;
+        font-weight: 700;
+        color: #333333;
+        text-align: left;
+        margin-top: 2px;
+    }
+
+    .rewardconfirm-header .point-image {
+        width: 30px;
+        height: 28px;
+        margin-right: 5px;
+    }
+
+    .rewardconfirm-header .rewardconfirm-footer {
+        display: flex;
+        align-items: center;
+        padding: 280px 0 0 0;
+    }
+
+    .rewardconfirm-header .confirm-button {
+        display: flex;
+    }
+
+    .rewardconfirm-header .rewardconfirm-popup-class {
+        border-radius: 15px;
+        /* ปรับค่า radius ตามที่ต้องการ */
+    }
+
+    .rewardconfirm-header .rewardconfirm-button-class {
+        border-radius: 5px;
+        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .rewardconfirm-contrainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .rewardconfirm-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .rewardconfirm-header .rewardconfirm-title {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #333333;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .rewardconfirm-header .rewardconfirm-card {
+        width: 90%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .rewardconfirm-header .reward-image {
+        width: 160px;
+        height: 220px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin: 8px 5px 5px 5px;
+    }
+
+    .rewardconfirm-header .reward-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .rewardconfirm-header .reward-name {
+        font-family: 'NotoSansThai';
+        font-size: 20px;
+        font-weight: 700;
+        color: #333333;
+        padding: 10px;
+
+        max-width: 900px;
+        white-space: normal;
+        /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+        word-wrap: break-word;
+        /* ตัดคำเมื่อความยาวเกินความกว้าง */
+    }
+
+    .rewardconfirm-header .points-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .rewardconfirm-header .points-container span {
+        font-family: 'NotoSansThai';
+        font-size: 18px;
+        font-weight: 700;
+        color: #333333;
+        text-align: left;
+        margin-top: 2px;
+    }
+
+    .rewardconfirm-header .point-image {
+        width: 30px;
+        height: 28px;
+        margin-right: 5px;
+    }
+
+    .rewardconfirm-header .rewardconfirm-footer {
+        display: flex;
+        align-items: center;
+        padding: 280px 0 0 0;
+    }
+
+    .rewardconfirm-header .confirm-button {
+        display: flex;
+    }
+
+    .rewardconfirm-header .rewardconfirm-popup-class {
+        border-radius: 15px;
+        /* ปรับค่า radius ตามที่ต้องการ */
+    }
+
+    .rewardconfirm-header .rewardconfirm-button-class {
+        border-radius: 5px;
+        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .rewardconfirm-contrainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .rewardconfirm-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .rewardconfirm-header .rewardconfirm-title {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #333333;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .rewardconfirm-header .rewardconfirm-card {
+        width: 90%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .rewardconfirm-header .reward-image {
+        width: 160px;
+        height: 220px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin: 8px 5px 5px 5px;
+    }
+
+    .rewardconfirm-header .reward-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .rewardconfirm-header .reward-name {
+        font-family: 'NotoSansThai';
+        font-size: 20px;
+        font-weight: 700;
+        color: #333333;
+        padding: 10px;
+
+        max-width: 900px;
+        white-space: normal;
+        /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+        word-wrap: break-word;
+        /* ตัดคำเมื่อความยาวเกินความกว้าง */
+    }
+
+    .rewardconfirm-header .points-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .rewardconfirm-header .points-container span {
+        font-family: 'NotoSansThai';
+        font-size: 18px;
+        font-weight: 700;
+        color: #333333;
+        text-align: left;
+        margin-top: 2px;
+    }
+
+    .rewardconfirm-header .point-image {
+        width: 30px;
+        height: 28px;
+        margin-right: 5px;
+    }
+
+    .rewardconfirm-header .rewardconfirm-footer {
+        display: flex;
+        align-items: center;
+        padding: 280px 0 0 0;
+    }
+
+    .rewardconfirm-header .confirm-button {
+        display: flex;
+    }
+
+    .rewardconfirm-header .rewardconfirm-popup-class {
+        border-radius: 15px; /* ปรับค่า radius ตามที่ต้องการ */
+    }
+
+    .rewardconfirm-header .rewardconfirm-button-class {
+        border-radius: 5px;
+        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .rewardconfirm-contrainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .rewardconfirm-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .rewardconfirm-header .rewardconfirm-title {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #333333;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .rewardconfirm-header .rewardconfirm-card {
+        width: 90%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .rewardconfirm-header .reward-image {
+        width: 160px;
+        height: 220px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin: 8px 5px 5px 5px;
+    }
+
+    .rewardconfirm-header .reward-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .rewardconfirm-header .reward-name {
+        font-family: 'NotoSansThai';
+        font-size: 20px;
+        font-weight: 700;
+        color: #333333;
+        padding: 10px;
+
+        max-width: 900px;
+        white-space: normal;
+        /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+        word-wrap: break-word;
+        /* ตัดคำเมื่อความยาวเกินความกว้าง */
+    }
+
+    .rewardconfirm-header .points-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .rewardconfirm-header .points-container span {
+        font-family: 'NotoSansThai';
+        font-size: 18px;
+        font-weight: 700;
+        color: #333333;
+        text-align: left;
+        margin-top: 2px;
+    }
+
+    .rewardconfirm-header .point-image {
+        width: 30px;
+        height: 28px;
+        margin-right: 5px;
+    }
+
+    .rewardconfirm-header .rewardconfirm-footer {
+        display: flex;
+        align-items: center;
+        padding: 280px 0 0 0;
+    }
+
+    .rewardconfirm-header .confirm-button {
+        display: flex;
+    }
+
+    .rewardconfirm-header .rewardconfirm-popup-class {
+        border-radius: 15px; /* ปรับค่า radius ตามที่ต้องการ */
+    }
+
+    .rewardconfirm-header .rewardconfirm-button-class {
+        border-radius: 5px;
+        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+    }
 }

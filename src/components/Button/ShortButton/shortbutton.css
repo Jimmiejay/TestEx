@@ -1,23 +1,19 @@
 .Btn {
-    /* width: 115px; */
     width: 200px;
     height: 36px;
-    /* height: 50px; */
     background-color: #DE2D1E;
     color: #fff;
     padding: 2px 0 0 5px;
     border: none;
     border-radius: 21px;
     font-size: 20px;
-    font-family: 'Sukhumvit Set';
-    font-weight: 900;
+    font-family: 'NotoSansThai';
+    font-weight: 700;
     cursor: pointer;
-    margin: 10px 10px 0 0;
     transition: background-color 0.3s;
 }
 
 .Btn:hover {
-    /* background-color: #c52a18; */
     background-color: #B82418;
 }
 
@@ -34,4 +30,113 @@
 .Btn:disabled {
     pointer-events: none;
     background-color: #B8B8B8;
+}
+
+@media only screen and (max-width:520px){
+    .Btn {
+        width: 180px;
+        height: 36px;
+        background-color: #DE2D1E;
+        color: #fff;
+        padding: 2px 0 0 5px;
+        border: none;
+        border-radius: 21px;
+        font-size: 20px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .Btn:hover {
+        background-color: #B82418;
+    }
+    
+    .Btn:active{
+        background-color: #fd031c;
+    }
+    
+    .Btn.disabled {
+        background-color: #ccc;
+        color: #FFFFFF;
+        cursor: not-allowed;
+    }
+    
+    .Btn:disabled {
+        pointer-events: none;
+        background-color: #B8B8B8;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .Btn {
+        width: 160px;
+        height: 36px;
+        background-color: #DE2D1E;
+        color: #fff;
+        padding: 2px 0 0 5px;
+        border: none;
+        border-radius: 21px;
+        font-size: 20px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .Btn:hover {
+        background-color: #B82418;
+    }
+    
+    .Btn:active{
+        background-color: #fd031c;
+    }
+    
+    .Btn.disabled {
+        background-color: #ccc;
+        color: #FFFFFF;
+        cursor: not-allowed;
+    }
+    
+    .Btn:disabled {
+        pointer-events: none;
+        background-color: #B8B8B8;
+    }
+}
+
+@media only screen and (max-width:360px){
+    .Btn {
+        width: 140px;
+        height: 36px;
+        background-color: #DE2D1E;
+        color: #fff;
+        padding: 2px 0 0 5px;
+        border: none;
+        border-radius: 21px;
+        font-size: 20px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-left: 10px;
+    }
+    
+    .Btn:hover {
+        background-color: #B82418;
+    }
+    
+    .Btn:active{
+        background-color: #fd031c;
+    }
+    
+    .Btn.disabled {
+        background-color: #ccc;
+        color: #FFFFFF;
+        cursor: not-allowed;
+    }
+    
+    .Btn:disabled {
+        pointer-events: none;
+        background-color: #B8B8B8;
+    }
 }
