@@ -1,6 +1,6 @@
 import React from 'react';
 import './leaverequestform.css';
-import NomalForm from './FormLeave/NomalForm/NomalForm';
+import NormalForm from './FormLeave/NormalForm/NormalForm';
 
 
 
@@ -8,7 +8,7 @@ const LeaveRequestForm = () => {
     return (
         <div className='leaverequestform-container'>
             <div className='leaverequestform-content'>
-                < NomalForm />
+                < NormalForm />
             </div>
         </div>
     )
