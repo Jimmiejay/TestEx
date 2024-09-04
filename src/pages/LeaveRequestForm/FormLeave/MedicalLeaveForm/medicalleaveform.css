@@ -32,7 +32,7 @@
 }
 
 .medical-grid .row-4 {
-    padding: 210px 20px 0px 20px;
+    padding: 190px 20px 0px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,7 +69,7 @@
         width: 100%;
         padding: 10px;
         border: 1px solid #C1C1C1;
-        border-radius: 5px;
+        border-radius: 8px;
 
         font-family: 'NotoSansThai';
         font-size: 16px;

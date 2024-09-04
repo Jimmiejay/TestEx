@@ -32,7 +32,6 @@ const MedicalLeaveForm = () => {
 
   const handleNext = (event) => {
     event.preventDefault();
-
     let tempErrors = {};
 
     if (!leaveType) {
@@ -52,12 +51,11 @@ const MedicalLeaveForm = () => {
         details
       };
       // console.log('Form Data Submitted: ', formDataLeave);
-
       // ส่งข้อมูลไปยังหน้า MedicalConfirm
       navigate('/leaverequestform/medicalleaveform/medicalconfirm', {
         state: { leaveType, details },
       });
-    }
+    };
   };
 
 

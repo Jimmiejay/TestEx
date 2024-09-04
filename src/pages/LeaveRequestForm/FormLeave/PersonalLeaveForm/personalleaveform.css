@@ -1,34 +1,80 @@
-.personalleave-form-container {
-    background-color: #fff;
-    padding: 50px;
+.personal-form-container {
     width: 100%;
     height: 100%;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-height: 100vh;
 }
 
-.personal-header {
-    text-align: center;
+.personal-form-container .personal-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
 
-.personal-title {
+.personal-grid .row-1 {
+    padding: 20px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.personal-grid .row-2 {
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.personal-grid .row-3 {
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.personal-grid .row-4 {
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.personal-grid .row-5 {
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.personal-grid .row-6 {
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.personal-grid .row-7 {
+    padding: 50px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.personal-form-container .personal-header {
+    display: flex;
+    justify-content: center;
+}
+
+.personal-form-container .personal-header .personal-title {
     font-family: 'NotoSansThai';
     font-size: 26px;
     font-weight: 700;
     color: #333333;
-    margin-top: 20px;
-    margin-bottom: 50px;
 }
 
-.personal-form {
+
+.personal-form-container .personal-form-group {
     display: flex;
     flex-direction: column;
-}
-
-.personal-form-group {
-    margin-bottom: 15px;
-
 
     label {
         font-family: 'NotoSansThai';
@@ -36,36 +82,44 @@
         color: #333333;
         font-weight: 400;
     }
+
+    .personal-required {
+        color: #FF0000;
+    }
+
+    .personal-input-field {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #C1C1C1;
+        border-radius: 8px;
+
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .error-input {
+        border: 1px solid #DE2D1E;
+    }
+    
+    .error-message {
+        color: #DE2D1E;
+        font-size: 14px;
+        margin-top: 5px;
+    }
 }
 
-.personal-input-field {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #C1C1C1;
-    border-radius: 8px;
 
-    font-family: 'NotoSansThai';
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.personal-required {
-    color: #FF0000;
-}
-
-.personal-day-count {
+.personal-form-container .personal-grid .row-5 .personal-day-count {
     font-family: 'NotoSansThai';
     font-size: 14px;
     color: #C1C1C1;
     text-align: left;
     font-weight: 400;
-    margin-top: -10px;
-    margin-bottom: 10px;
 }
 
-input[type="text"],
+.personal-form-container .personal-form-group input[type="text"],
 input[type="number"],
-
 textarea {
     width: 100%;
     padding: 8px;
@@ -76,7 +130,7 @@ textarea {
     color: #000;
 }
 
-textarea {
+.personal-form-container .personal-form-group textarea {
     resize: vertical;
     height: 195px;
 }
@@ -87,7 +141,17 @@ textarea {
     color: #C1C1C1;
 }
 
-select option[disabled] {
+.personal-form-container .personal-form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7'%3E%3Cpath fill='%23000000' d='M0 0l5 5 5-5z'/%3E%3C/svg%3E") no-repeat right 20px center; */
+    background: url('/src/assets/arrow.svg') no-repeat right 20px center;
+    background-size: 18px 17px;
+    padding-right: 30px;
+}
+
+.personal-form-container .personal-form-group select option[disabled] {
     color: #C1C1C1;
     font-style: italic;
     font-family: 'NotoSansThai';
@@ -95,24 +159,9 @@ select option[disabled] {
     font-weight: 400;
 }
 
-select option:not([disabled]) {
+.personal-form-container .personal-form-group select option:not([disabled]) {
     font-family: 'NotoSansThai';
     font-size: 16px;
     font-weight: 400;
     color: black;
-}
-
-.personal-submit-button {
-    background-color: #ff3b30;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1.2em;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-.personal-submit-button:hover {
-    background-color: #e6302a;
 }
