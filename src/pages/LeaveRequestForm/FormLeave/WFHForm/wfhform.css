@@ -1,34 +1,71 @@
 .wfh-form-container {
-    background-color: #fff;
-    padding: 50px;
     width: 100%;
     height: 100%;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-height: 100vh;
 }
 
-.wfh-header {
+.wfh-form-container .wfh-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.wfh-grid .row-1{
+    padding: 20px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wfh-grid .row-2{
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wfh-grid .row-3{
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wfh-grid .row-4{
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wfh-grid .row-5{
+    padding: 10px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wfh-grid .row-6{
+    padding: 50px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wfh-form-container .wfh-header {
     text-align: center;
 }
 
-.wfh-title {
+.wfh-form-container .wfh-header .wfh-title {
     font-family: 'NotoSansThai';
     font-size: 26px;
     font-weight: 700;
     color: #333333;
-    margin-top: 20px;
-    margin-bottom: 50px;
 }
 
-.wfh-form {
+.wfh-form-container .wfh-form-group {
     display: flex;
     flex-direction: column;
-}
-
-.wfh-form-group {
-    margin-bottom: 15px;
-
 
     label {
         font-family: 'NotoSansThai';
@@ -36,24 +73,34 @@
         color: #333333;
         font-weight: 400;
     }
+
+    .wfh-required {
+        color: #FF0000;
+    }
+
+    .wfh-input-field {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #C1C1C1;
+        border-radius: 8px;
+    
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .error-input {
+        border: 1px solid #DE2D1E;
+    }
+    
+    .error-message {
+        color: #DE2D1E;
+        font-size: 14px;
+        margin-top: 5px;
+    }
 }
 
-.wfh-input-field {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #C1C1C1;
-    border-radius: 8px;
-
-    font-family: 'NotoSansThai';
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.wfh-required {
-    color: #FF0000;
-}
-
-.wfh-day-count {
+.wfh-form-container .wfh-form-group .row-3 .wfh-day-count {
     font-family: 'NotoSansThai';
     font-size: 14px;
     color: #C1C1C1;
@@ -63,9 +110,8 @@
     margin-bottom: 10px;
 }
 
-input[type="text"],
+.wfh-form-container .wfh-form-group input[type="text"],
 input[type="number"],
-
 textarea {
     width: 100%;
     padding: 8px;
@@ -76,18 +122,28 @@ textarea {
     color: #000;
 }
 
-textarea {
+.wfh-form-container .wfh-form-group textarea {
     resize: vertical;
     height: 195px;
 }
 
-::placeholder {
+.wfh-form-container .wfh-form-group textarea::placeholder {
     font-family: 'NotoSansThai';
     font-size: 16px;
     color: #C1C1C1;
 }
 
-select option[disabled] {
+.wfh-form-container .wfh-form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7'%3E%3Cpath fill='%23000000' d='M0 0l5 5 5-5z'/%3E%3C/svg%3E") no-repeat right 20px center; */
+    background: url('/src/assets/arrow.svg') no-repeat right 20px center;
+    background-size: 18px 17px;
+    padding-right: 30px;
+}
+
+.wfh-form-container .wfh-form-group select option[disabled] {
     color: #C1C1C1;
     font-style: italic;
     font-family: 'NotoSansThai';
@@ -95,20 +151,20 @@ select option[disabled] {
     font-weight: 400;
 }
 
-select option:not([disabled]) {
+.wfh-form-container .wfh-form-group select option:not([disabled]) {
     font-family: 'NotoSansThai';
     font-size: 16px;
     font-weight: 400;
     color: black;
 }
 
-.time-period-buttons {
+.wfh-form-container .wfh-form-group .time-period-buttons {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
-.time-period-button {
+.wfh-form-container .wfh-form-group .time-period-button {
     flex: 1;
     background-color: #fff;
     border: 1px solid #C1C1C1;
@@ -124,7 +180,7 @@ select option:not([disabled]) {
     text-align: center;
 }
 
-.time-period-button.selected {
+.wfh-form-container .wfh-form-group .time-period-button.selected {
     background-color: #ff3b30;
     border: none;
     font-family: 'NotoSansThai';
@@ -133,29 +189,14 @@ select option:not([disabled]) {
     color: #fff;
 }
 
-.time-period-button:last-child {
+.wfh-form-container .wfh-form-group .time-period-button:last-child {
     margin-right: 0;
 }
 
-.time-period-details {
+.wfh-form-container .wfh-form-group .time-period-details {
     font-family: 'NotoSansThai';
     font-size: 14px;
     color: #C1C1C1;
-    margin-top: 10px;
+    margin-top: 5px;
     text-align: left;
-}
-
-.wfh-submit-button {
-    background-color: #ff3b30;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1.2em;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-.wfh-submit-button:hover {
-    background-color: #e6302a;
 }

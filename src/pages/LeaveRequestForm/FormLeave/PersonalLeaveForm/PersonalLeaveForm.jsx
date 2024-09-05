@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './personalleaveform.css'
 import { useNavigate } from 'react-router-dom';
 import Button from '../../../../components/Button/LongButton/LongButton';
-import Swal from 'sweetalert2';
 
 
 const PersonalLeaveForm = () => {

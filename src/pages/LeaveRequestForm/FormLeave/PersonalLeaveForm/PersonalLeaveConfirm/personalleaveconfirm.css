@@ -89,12 +89,19 @@
     padding: 10px;
     border: 1px solid #F7F7F7;
     border-radius: 5px;
-    font-size: 1em;
 
     font-family: 'NotoSansThai';
     font-size: 16px;
     font-weight: 400;
     color: #000000;
+}
+
+.personalconfirm-group input{
+    height: 50px;
+}
+
+.personalconfirm-group textarea{
+    height: 195px;
 }
 
 .personalconfirm-group input[readonly],
