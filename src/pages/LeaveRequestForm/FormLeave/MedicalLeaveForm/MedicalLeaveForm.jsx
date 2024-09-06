@@ -33,25 +33,25 @@ const MedicalLeaveForm = () => {
   const handleInputChange = (field, value) => {
     // อัปเดตค่าของฟิลด์ที่ถูกแก้ไข
     switch (field) {
-        case 'leaveType':
-            setLeaveType(value);
-            break;
-        case 'selectedDate':
-            setSelectedDate(value);
-            break;
-        case 'details':
-            setDetails(value);
-            break;
-        default:
-            break;
+      case 'leaveType':
+        setLeaveType(value);
+        break;
+      case 'selectedDate':
+        setSelectedDate(value);
+        break;
+      case 'details':
+        setDetails(value);
+        break;
+      default:
+        break;
     }
 
     // ลบข้อผิดพลาดถ้ามีการกรอกข้อมูลแล้ว
     setErrors((prevErrors) => ({
-        ...prevErrors,
-        [field]: value ? null : prevErrors[field], // ลบข้อผิดพลาดถ้ามีการกรอกข้อมูลแล้ว
+      ...prevErrors,
+      [field]: value ? null : prevErrors[field], // ลบข้อผิดพลาดถ้ามีการกรอกข้อมูลแล้ว
     }));
-};
+  };
 
   const handleNext = (event) => {
     event.preventDefault();

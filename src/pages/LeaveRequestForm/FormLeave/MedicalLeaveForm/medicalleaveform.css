@@ -79,11 +79,13 @@
     .error-input {
         border: 1px solid #DE2D1E;
     }
-    
+
     .error-message {
         color: #DE2D1E;
         font-size: 14px;
         margin-top: 5px;
+        font-family: 'NotoSansThai';
+        font-weight: 400;
     }
 }
 
@@ -142,100 +144,102 @@ textarea {
     color: black;
 }
 
-@media only screen and (max-width:1250px){
+@media only screen and (max-width:1250px) {
     .medical-form-container {
         width: 100%;
         height: 100%;
         background-color: #fff;
         max-height: 100vh;
     }
-    
+
     .medical-form-container .medical-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .medical-grid .row-1 {
         padding: 20px 20px 30px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-grid .row-2 {
         padding: 20px 20px 0px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-grid .row-3 {
         padding: 20px 20px 0px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-grid .row-4 {
         padding: 240px 20px 0px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-form-container .header {
         display: flex;
         justify-content: center;
     }
-    
+
     .medical-form-container .header.title {
         font-family: 'NotoSansThai';
         font-size: 26px;
         font-weight: 700;
         color: #333333;
     }
-    
+
     .medical-form-container .form-group {
         display: flex;
         flex-direction: column;
-    
+
         label {
             font-family: 'NotoSansThai';
             font-size: 14px;
             color: #333333;
             font-weight: 400;
         }
-    
+
         .required {
             color: #FF0000;
         }
-    
+
         .input-field {
             width: 100%;
             padding: 10px;
             border: 1px solid #C1C1C1;
             border-radius: 8px;
-    
+
             font-family: 'NotoSansThai';
             font-size: 16px;
             font-weight: 400;
         }
-    
+
         .error-input {
             border: 1px solid #DE2D1E;
         }
-        
+
         .error-message {
             color: #DE2D1E;
             font-size: 14px;
             margin-top: 5px;
+            font-family: 'NotoSansThai';
+            font-weight: 400;
         }
     }
-    
+
     .medical-form-container .form-group .input-details::placeholder {
         color: #C1C1C1;
     }
-    
+
     .medical-form-container .form-group input[type="text"],
     input[type="number"],
     textarea {
@@ -248,18 +252,18 @@ textarea {
         box-sizing: border-box;
         color: #000;
     }
-    
+
     .medical-form-container .form-group textarea {
         resize: vertical;
         height: 195px;
     }
-    
+
     .medical-form-container .form-group textarea ::placeholder {
         font-family: 'NotoSansThai';
         font-size: 16px;
         color: #C1C1C1;
     }
-    
+
     .medical-form-container .form-group select {
         appearance: none;
         -webkit-appearance: none;
@@ -269,9 +273,9 @@ textarea {
         background-size: 18px 17px;
         padding-right: 30px;
     }
-    
-    
-    
+
+
+
     .medical-form-container .form-group select option[disabled] {
         color: #C1C1C1;
         font-style: italic;
@@ -279,7 +283,7 @@ textarea {
         font-size: 16px;
         font-weight: 400;
     }
-    
+
     .medical-form-container .form-group select option:not([disabled]) {
         font-family: 'NotoSansThai';
         font-size: 16px;
@@ -288,100 +292,102 @@ textarea {
     }
 }
 
-@media only screen and (max-width:810px){
+@media only screen and (max-width:810px) {
     .medical-form-container {
         width: 100%;
         height: 100%;
         background-color: #fff;
         max-height: 100vh;
     }
-    
+
     .medical-form-container .medical-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .medical-grid .row-1 {
         padding: 20px 20px 30px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-grid .row-2 {
         padding: 20px 20px 0px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-grid .row-3 {
         padding: 20px 20px 0px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-grid .row-4 {
         padding: 240px 20px 0px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-form-container .header {
         display: flex;
         justify-content: center;
     }
-    
+
     .medical-form-container .header.title {
         font-family: 'NotoSansThai';
         font-size: 26px;
         font-weight: 700;
         color: #333333;
     }
-    
+
     .medical-form-container .form-group {
         display: flex;
         flex-direction: column;
-    
+
         label {
             font-family: 'NotoSansThai';
             font-size: 14px;
             color: #333333;
             font-weight: 400;
         }
-    
+
         .required {
             color: #FF0000;
         }
-    
+
         .input-field {
             width: 100%;
             padding: 10px;
             border: 1px solid #C1C1C1;
             border-radius: 8px;
-    
+
             font-family: 'NotoSansThai';
             font-size: 16px;
             font-weight: 400;
         }
-    
+
         .error-input {
             border: 1px solid #DE2D1E;
         }
-        
+
         .error-message {
             color: #DE2D1E;
             font-size: 14px;
             margin-top: 5px;
+            font-family: 'NotoSansThai';
+            font-weight: 400;
         }
     }
-    
+
     .medical-form-container .form-group .input-details::placeholder {
         color: #C1C1C1;
     }
-    
+
     .medical-form-container .form-group input[type="text"],
     input[type="number"],
     textarea {
@@ -394,18 +400,18 @@ textarea {
         box-sizing: border-box;
         color: #000;
     }
-    
+
     .medical-form-container .form-group textarea {
         resize: vertical;
         height: 195px;
     }
-    
+
     .medical-form-container .form-group textarea ::placeholder {
         font-family: 'NotoSansThai';
         font-size: 16px;
         color: #C1C1C1;
     }
-    
+
     .medical-form-container .form-group select {
         appearance: none;
         -webkit-appearance: none;
@@ -415,9 +421,9 @@ textarea {
         background-size: 18px 17px;
         padding-right: 30px;
     }
-    
-    
-    
+
+
+
     .medical-form-container .form-group select option[disabled] {
         color: #C1C1C1;
         font-style: italic;
@@ -425,7 +431,7 @@ textarea {
         font-size: 16px;
         font-weight: 400;
     }
-    
+
     .medical-form-container .form-group select option:not([disabled]) {
         font-family: 'NotoSansThai';
         font-size: 16px;
@@ -434,100 +440,102 @@ textarea {
     }
 }
 
-@media only screen and (max-width:610px){
+@media only screen and (max-width:610px) {
     .medical-form-container {
         width: 100%;
         height: 100%;
         background-color: #fff;
         max-height: 100vh;
     }
-    
+
     .medical-form-container .medical-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .medical-grid .row-1 {
         padding: 20px 20px 30px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-grid .row-2 {
         padding: 20px 20px 0px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-grid .row-3 {
         padding: 20px 20px 0px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-grid .row-4 {
         padding: 240px 20px 0px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-form-container .header {
         display: flex;
         justify-content: center;
     }
-    
+
     .medical-form-container .header.title {
         font-family: 'NotoSansThai';
         font-size: 26px;
         font-weight: 700;
         color: #333333;
     }
-    
+
     .medical-form-container .form-group {
         display: flex;
         flex-direction: column;
-    
+
         label {
             font-family: 'NotoSansThai';
             font-size: 14px;
             color: #333333;
             font-weight: 400;
         }
-    
+
         .required {
             color: #FF0000;
         }
-    
+
         .input-field {
             width: 100%;
             padding: 10px;
             border: 1px solid #C1C1C1;
             border-radius: 8px;
-    
+
             font-family: 'NotoSansThai';
             font-size: 16px;
             font-weight: 400;
         }
-    
+
         .error-input {
             border: 1px solid #DE2D1E;
         }
-        
+
         .error-message {
             color: #DE2D1E;
             font-size: 14px;
             margin-top: 5px;
+            font-family: 'NotoSansThai';
+            font-weight: 400;
         }
     }
-    
+
     .medical-form-container .form-group .input-details::placeholder {
         color: #C1C1C1;
     }
-    
+
     .medical-form-container .form-group input[type="text"],
     input[type="number"],
     textarea {
@@ -540,18 +548,18 @@ textarea {
         box-sizing: border-box;
         color: #000;
     }
-    
+
     .medical-form-container .form-group textarea {
         resize: vertical;
         height: 195px;
     }
-    
+
     .medical-form-container .form-group textarea ::placeholder {
         font-family: 'NotoSansThai';
         font-size: 16px;
         color: #C1C1C1;
     }
-    
+
     .medical-form-container .form-group select {
         appearance: none;
         -webkit-appearance: none;
@@ -561,9 +569,9 @@ textarea {
         background-size: 18px 17px;
         padding-right: 30px;
     }
-    
-    
-    
+
+
+
     .medical-form-container .form-group select option[disabled] {
         color: #C1C1C1;
         font-style: italic;
@@ -571,7 +579,7 @@ textarea {
         font-size: 16px;
         font-weight: 400;
     }
-    
+
     .medical-form-container .form-group select option:not([disabled]) {
         font-family: 'NotoSansThai';
         font-size: 16px;
@@ -580,100 +588,102 @@ textarea {
     }
 }
 
-@media only screen and (max-width:440px){
+@media only screen and (max-width:440px) {
     .medical-form-container {
         width: 100%;
         height: 100%;
         background-color: #fff;
         max-height: 100vh;
     }
-    
+
     .medical-form-container .medical-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .medical-grid .row-1 {
         padding: 20px 20px 30px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-grid .row-2 {
         padding: 20px 20px 0px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-grid .row-3 {
         padding: 20px 20px 0px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-grid .row-4 {
         padding: 240px 20px 0px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-form-container .header {
         display: flex;
         justify-content: center;
     }
-    
+
     .medical-form-container .header.title {
         font-family: 'NotoSansThai';
         font-size: 26px;
         font-weight: 700;
         color: #333333;
     }
-    
+
     .medical-form-container .form-group {
         display: flex;
         flex-direction: column;
-    
+
         label {
             font-family: 'NotoSansThai';
             font-size: 14px;
             color: #333333;
             font-weight: 400;
         }
-    
+
         .required {
             color: #FF0000;
         }
-    
+
         .input-field {
             width: 100%;
             padding: 10px;
             border: 1px solid #C1C1C1;
             border-radius: 8px;
-    
+
             font-family: 'NotoSansThai';
             font-size: 16px;
             font-weight: 400;
         }
-    
+
         .error-input {
             border: 1px solid #DE2D1E;
         }
-        
+
         .error-message {
             color: #DE2D1E;
             font-size: 14px;
             margin-top: 5px;
+            font-family: 'NotoSansThai';
+            font-weight: 400;
         }
     }
-    
+
     .medical-form-container .form-group .input-details::placeholder {
         color: #C1C1C1;
     }
-    
+
     .medical-form-container .form-group input[type="text"],
     input[type="number"],
     textarea {
@@ -686,18 +696,18 @@ textarea {
         box-sizing: border-box;
         color: #000;
     }
-    
+
     .medical-form-container .form-group textarea {
         resize: vertical;
         height: 195px;
     }
-    
+
     .medical-form-container .form-group textarea ::placeholder {
         font-family: 'NotoSansThai';
         font-size: 16px;
         color: #C1C1C1;
     }
-    
+
     .medical-form-container .form-group select {
         appearance: none;
         -webkit-appearance: none;
@@ -707,9 +717,9 @@ textarea {
         background-size: 18px 17px;
         padding-right: 30px;
     }
-    
-    
-    
+
+
+
     .medical-form-container .form-group select option[disabled] {
         color: #C1C1C1;
         font-style: italic;
@@ -717,7 +727,7 @@ textarea {
         font-size: 16px;
         font-weight: 400;
     }
-    
+
     .medical-form-container .form-group select option:not([disabled]) {
         font-family: 'NotoSansThai';
         font-size: 16px;
@@ -726,100 +736,102 @@ textarea {
     }
 }
 
-@media only screen and (max-width:420px){
+@media only screen and (max-width:420px) {
     .medical-form-container {
         width: 100%;
         height: 100%;
         background-color: #fff;
         max-height: 100vh;
     }
-    
+
     .medical-form-container .medical-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .medical-grid .row-1 {
         padding: 20px 20px 30px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-grid .row-2 {
         padding: 20px 20px 0px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-grid .row-3 {
         padding: 20px 20px 0px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-grid .row-4 {
         padding: 240px 20px 0px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-form-container .header {
         display: flex;
         justify-content: center;
     }
-    
+
     .medical-form-container .header.title {
         font-family: 'NotoSansThai';
         font-size: 26px;
         font-weight: 700;
         color: #333333;
     }
-    
+
     .medical-form-container .form-group {
         display: flex;
         flex-direction: column;
-    
+
         label {
             font-family: 'NotoSansThai';
             font-size: 14px;
             color: #333333;
             font-weight: 400;
         }
-    
+
         .required {
             color: #FF0000;
         }
-    
+
         .input-field {
             width: 100%;
             padding: 10px;
             border: 1px solid #C1C1C1;
             border-radius: 8px;
-    
+
             font-family: 'NotoSansThai';
             font-size: 16px;
             font-weight: 400;
         }
-    
+
         .error-input {
             border: 1px solid #DE2D1E;
         }
-        
+
         .error-message {
             color: #DE2D1E;
             font-size: 14px;
             margin-top: 5px;
+            font-family: 'NotoSansThai';
+            font-weight: 400;
         }
     }
-    
+
     .medical-form-container .form-group .input-details::placeholder {
         color: #C1C1C1;
     }
-    
+
     .medical-form-container .form-group input[type="text"],
     input[type="number"],
     textarea {
@@ -832,18 +844,18 @@ textarea {
         box-sizing: border-box;
         color: #000;
     }
-    
+
     .medical-form-container .form-group textarea {
         resize: vertical;
         height: 195px;
     }
-    
+
     .medical-form-container .form-group textarea ::placeholder {
         font-family: 'NotoSansThai';
         font-size: 16px;
         color: #C1C1C1;
     }
-    
+
     .medical-form-container .form-group select {
         appearance: none;
         -webkit-appearance: none;
@@ -853,9 +865,9 @@ textarea {
         background-size: 18px 17px;
         padding-right: 30px;
     }
-    
-    
-    
+
+
+
     .medical-form-container .form-group select option[disabled] {
         color: #C1C1C1;
         font-style: italic;
@@ -863,7 +875,7 @@ textarea {
         font-size: 16px;
         font-weight: 400;
     }
-    
+
     .medical-form-container .form-group select option:not([disabled]) {
         font-family: 'NotoSansThai';
         font-size: 16px;
@@ -872,100 +884,102 @@ textarea {
     }
 }
 
-@media only screen and (max-width:370px){
+@media only screen and (max-width:370px) {
     .medical-form-container {
         width: 100%;
         height: 100%;
         background-color: #fff;
         max-height: 100vh;
     }
-    
+
     .medical-form-container .medical-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .medical-grid .row-1 {
         padding: 20px 20px 30px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-grid .row-2 {
         padding: 20px 20px 0px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-grid .row-3 {
         padding: 20px 20px 0px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-grid .row-4 {
         padding: 240px 20px 0px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .medical-form-container .header {
         display: flex;
         justify-content: center;
     }
-    
+
     .medical-form-container .header.title {
         font-family: 'NotoSansThai';
         font-size: 26px;
         font-weight: 700;
         color: #333333;
     }
-    
+
     .medical-form-container .form-group {
         display: flex;
         flex-direction: column;
-    
+
         label {
             font-family: 'NotoSansThai';
             font-size: 14px;
             color: #333333;
             font-weight: 400;
         }
-    
+
         .required {
             color: #FF0000;
         }
-    
+
         .input-field {
             width: 100%;
             padding: 10px;
             border: 1px solid #C1C1C1;
             border-radius: 8px;
-    
+
             font-family: 'NotoSansThai';
             font-size: 16px;
             font-weight: 400;
         }
-    
+
         .error-input {
             border: 1px solid #DE2D1E;
         }
-        
+
         .error-message {
             color: #DE2D1E;
             font-size: 14px;
             margin-top: 5px;
+            font-family: 'NotoSansThai';
+            font-weight: 400;
         }
     }
-    
+
     .medical-form-container .form-group .input-details::placeholder {
         color: #C1C1C1;
     }
-    
+
     .medical-form-container .form-group input[type="text"],
     input[type="number"],
     textarea {
@@ -978,18 +992,18 @@ textarea {
         box-sizing: border-box;
         color: #000;
     }
-    
+
     .medical-form-container .form-group textarea {
         resize: vertical;
         height: 195px;
     }
-    
+
     .medical-form-container .form-group textarea ::placeholder {
         font-family: 'NotoSansThai';
         font-size: 16px;
         color: #C1C1C1;
     }
-    
+
     .medical-form-container .form-group select {
         appearance: none;
         -webkit-appearance: none;
@@ -999,9 +1013,9 @@ textarea {
         background-size: 18px 17px;
         padding-right: 30px;
     }
-    
-    
-    
+
+
+
     .medical-form-container .form-group select option[disabled] {
         color: #C1C1C1;
         font-style: italic;
@@ -1009,7 +1023,7 @@ textarea {
         font-size: 16px;
         font-weight: 400;
     }
-    
+
     .medical-form-container .form-group select option:not([disabled]) {
         font-family: 'NotoSansThai';
         font-size: 16px;

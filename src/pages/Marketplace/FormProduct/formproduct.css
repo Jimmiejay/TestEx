@@ -1,65 +1,258 @@
 .formproduct-container{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    max-height: 100vh;
+}
+
+.formproduct-container .product-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.product-grid .row-1{
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-grid .row-2{
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-grid .row-3{
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-grid .row-4{
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-grid .row-5{
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-grid .row-6{
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-grid .row-7{
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-grid .row-8{
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formproduct-container .header {
     display: flex;
     justify-content: center;
-    min-width: 100%;
-    max-height: 100%;
-    /* background-color: #C8A1E0; */
-
-    margin: 0 auto;
-    padding: 20px;
-    /* border: 1px solid #ddd;
-    border-radius: 8px; */
 }
 
-.formproduct-container .formproduct-content {
-    width: 100vw;
-    height: 100vh;
-    /* background-color: darkgray; */
-}
-
-.formproduct-container .formproduct-txt {
-    text-align: center;
-}
-
-.formproduct-container .formproduct-txt h1 {
+.formproduct-container .header .title {
     font-family: 'NotoSansThai';
-    font-size: 30px; /*เปลี่ยนจาก 26 เป็น 30 แทน*/
+    font-size: 26px;
     font-weight: 700;
     color: #DE2D1E;
-    margin: 20px;
 }
 
-.formproduct-container .formproduct-txt h2 {
-    font-family: 'Prompt';
-    font-size:24px; /*เปลี่ยนจาก 26 เป็น 30 แทน*/
-    font-weight: 400;
-    color: #333333;
-    margin-left: 10px;
-    text-align: left;
+.formproduct-container .formproduct-group {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        color: #333333;
+        font-weight: 400;
+    }
+
+    .required {
+        color: #FF0000;
+    }
+
+    .input-field {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #C1C1C1;
+        border-radius: 8px;
+
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .input-detail {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #C1C1C1;
+        border-radius: 8px;
+
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .error-input {
+        border: 1px solid #DE2D1E;
+    }
+    
+    .error-message {
+        color: #DE2D1E;
+        font-size: 14px;
+        margin-top: 5px;
+        font-family: 'NotoSansThai';
+        font-weight: 400;
+    }
 }
 
-.formproduct-container .formproduct-txt h3 {
-    font-family: 'NotoSansThai';
-    font-size: 20px; /*เปลี่ยนจาก 26 เป็น 30 แทน*/
-    font-weight: 400;
-    color: #333333;
-    margin-left: 10px;
-}
-
-.formproduct-container .formproduct-profile {
+.formproduct-group .user-group{
     display: flex;
     align-items: center;
-    padding: 0 0 0 15px;
-    width: 100%;
 }
 
-.formproduct-container .formproduct-profile img {
-    width: 80px;
-    height: 80px;
+.formproduct-group .user-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     margin-right: 10px;
 }
 
-.formproduct-container .formproduct-uploadimg {
+.formproduct-group .user-info {
+    font-family: 'NotoSansThai';
+    font-size: 18px; 
+    font-weight: 400;
+    color: #333333;
+}
+
+.formproduct-group .product-image-input {
     width: 100%;
-    padding: 0 15px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.formproduct-group .drop_zone {
+    /* position: relative; */
+    border: 1px solid #C1C1C1;
+    width: 100%; 
+    height: 190px;
+    /* เปลี่ยนจาก 130 เป็น 190  */
+    /* width: 375px; */
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.formproduct-group .drop_zone:hover {
+    background-color: #f0f0f0;
+}
+
+.formproduct-group .drop_zone p{
+    font-family: 'NotoSansThai';
+    font-size: 14px;
+    font-weight: 700;
+    color: #C1C1C1;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.formproduct-group .drop_zone img{
+    width: 45px;
+    height: 45px;
+    margin-top: 20px;
+}
+
+.formproduct-group .dropped-image {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+.formproduct-group input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #C1C1C1;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #000;
+}
+
+.formproduct-group textarea {
+    resize: vertical;
+    height: 94px;
+}
+
+.formproduct-group ::placeholder{
+    font-family: 'NotoSansThai';
+    font-size: 14px;
+    color: #C1C1C1;
+}
+
+.formproduct-group .delivery-options {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 10px;
+}
+
+.formproduct-group .delivery-option {
+    width: 110px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 20px;
+
+    font-size: 16px;
+    font-family: 'NotoSansThai';
+    font-weight: 700;
+    color: #C1C1C1;
+}
+
+.formproduct-group .delivery-option.selected {
+    background-color: #DE2D1E;
+    color: #fff;
+    border-color: #C1C1C1;
+}
+
+.formproduct-group .delivery-option:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: not-allowed;
 }

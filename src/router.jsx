@@ -58,7 +58,7 @@ const router = createBrowserRouter([
         element: (<MyProduct />),
     },
     { 
-        path: "/api/marketplace/formproduct",
+        path: "/marketplace/formproduct",
         element: (<FormProduct />),
     },
     { 

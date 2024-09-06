@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './myproducts.css'
 import CallProduct from '../Callproduct/CallProduct';
 import SearchBar from '../../../components/SearchBar/SearchBar'
@@ -7,18 +7,24 @@ import Add from '../../../assets/newadd.png'
 import { useNavigate } from 'react-router-dom';
 
 const MyProducts = () => {
+  const [profileImage, setProfileImage] = useState(null);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    // กำหนดค่าต่างๆ ที่คุณต้องการภายใน useEffect
+    setProfileImage(Paom);
+}, []);
 
   const handleSearch = (searchTerm) => {
     console.log('Searching for:', searchTerm)
   };
 
   const handleImageClick = () => {
-    navigate('/api/marketplace/myproducts');
+    navigate('/marketplace/myproducts');
   };
 
   const handleClick = () => {
-    navigate('/api/marketplace/formproduct');
+    navigate('/marketplace/formproduct');
 };
 
   return (
@@ -29,8 +35,8 @@ const MyProducts = () => {
         </div>
         <div className='myproducts-profile'>
           <img
-            src={Paom}
-            alt="P'Aom"
+            src={profileImage}
+            alt="profileImage"
             onClick={handleImageClick}
             style={{ cursor: 'pointer' }}
           />
@@ -39,6 +45,9 @@ const MyProducts = () => {
           </div>
         </div>
         <div className='myproducts-call-product'>
+          <CallProduct />
+          <CallProduct />
+          <CallProduct />
           <CallProduct />
           <CallProduct />
           <CallProduct />

@@ -16,7 +16,7 @@ const SearchBar = ({ onSearch }) => {
     };
 
     const handleChangeClick = () => {
-        navigate('/api/marketplace/changehistory');
+        navigate('/marketplace/changehistory');
     };
 
     return (
