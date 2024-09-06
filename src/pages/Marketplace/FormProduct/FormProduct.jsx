@@ -129,7 +129,7 @@ const FormProduct = () => {
             <div className='product-grid'>
                 <div className='row-1'>
                     <div className='header'>
-                        <h2 className="title">แจ้งลา</h2>
+                        <h2 className="title">รายการสินค้าใหม่</h2>
                     </div>
                 </div>
                 <div className='row-2'>
