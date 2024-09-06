@@ -38,12 +38,20 @@ const PersonalLeaveForm = () => {
         const start = e.target.value;
         setStartDate(start);
         calculateDays(start, endDate);
+        setErrors((prevErrors) => ({
+            ...prevErrors,
+            startDate: start ? null : prevErrors.startDate,
+        }));
     };
 
     const handleEndDateChange = (e) => {
         const end = e.target.value;
         setEndDate(end);
         calculateDays(startDate, end);
+        setErrors((prevErrors) => ({
+            ...prevErrors,
+            endDate: end ? null : prevErrors.endDate,
+        }));
     };
 
     const calculateDays = (start, end) => {
@@ -69,6 +77,26 @@ const PersonalLeaveForm = () => {
         } else {
             setDayCount('');
         }
+    };
+
+    const handleInputChange = (field, value) => {
+        // อัปเดตค่าของฟิลด์ที่ถูกแก้ไข
+        switch (field) {
+            case 'leaveType':
+                setLeaveType(value);
+                break;
+            case 'details':
+                setDetails(value);
+                break;
+            default:
+                break;
+        }
+
+        // ลบข้อผิดพลาดถ้ามีการกรอกข้อมูลแล้ว
+        setErrors((prevErrors) => ({
+            ...prevErrors,
+            [field]: value ? null : prevErrors[field], // ลบข้อผิดพลาดถ้ามีการกรอกข้อมูลแล้ว
+        }));
     };
 
     const handlePersonalNext = (event) => {
@@ -173,7 +201,7 @@ const PersonalLeaveForm = () => {
                         <textarea
                             id="details"
                             value={details}
-                            onChange={(e) => setDetails(e.target.value)}
+                            onChange={(e) => handleInputChange('details', e.target.value)}
                             className={`personal-input-details ${errors.details ? 'error-input' : ''}`}
                             placeholder="รายละเอียด"
                         />

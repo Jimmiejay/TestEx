@@ -30,6 +30,26 @@ const NormalForm = () => {
         }
     };
 
+    const handleInputChange = (field, value) => {
+        // อัปเดตค่าของฟิลด์ที่ถูกแก้ไข
+        switch (field) {
+            case 'leaveType':
+                setLeaveType(value);
+                break;
+            case 'details':
+                setDetails(value);
+                break;
+            default:
+                break;
+        }
+
+        // ลบข้อผิดพลาดถ้ามีการกรอกข้อมูลแล้ว
+        setErrors((prevErrors) => ({
+            ...prevErrors,
+            [field]: value ? null : prevErrors[field], // ลบข้อผิดพลาดถ้ามีการกรอกข้อมูลแล้ว
+        }));
+    };
+
     const handleNext = (event) => {
         event.preventDefault();
 
@@ -81,7 +101,7 @@ const NormalForm = () => {
                         <textarea
                             id="details"
                             value={details}
-                            onChange={(e) => setDetails(e.target.value)}
+                            onChange={(e) => handleInputChange('details', e.target.value)}
                             className={`input-details ${errors.details ? 'error-input' : ''}`}
                             placeholder="รายละเอียด"
                         />

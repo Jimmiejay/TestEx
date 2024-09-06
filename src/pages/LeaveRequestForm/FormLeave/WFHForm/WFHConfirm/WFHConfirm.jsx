@@ -19,13 +19,13 @@ const WFHConfirm = () => {
                 title: "คุณได้แจ้งลาสำเร็จ",
                 text: "คุณแจ้ง ลาป่วย เรียบร้อยแล้ว",
                 icon: "success",
-                cancelButtonText: 'เรียบร้อย',
-                cancelButtonColor: "#29AE4C",
+                confirmButtonText: 'เรียบร้อย',
+                confirmButtonColor: "#29AE4C",
                 width: '375px',
                 height: '290px',
                 customClass: {
-                    popup: 'medicalconfirm-popup-class',
-                    confirmButton: 'medicalconfirm-button-class'
+                    popup: 'wfhconfirm-popup-class',
+                    confirmButton: 'wfhconfirm-button-class'
                 }
             }).then(() => {
                 setisTransferDone(true);
@@ -35,13 +35,15 @@ const WFHConfirm = () => {
                 title: "โอ้ว..ไม่นะ",
                 text: "มีอะไรบางอย่างผิดพลาด",
                 icon: "error",
-                confirmButtonText: 'ปิด',
-                confirmButtonColor: "#CFCFCF",
+                showCancelButton: true,  // เพิ่มการแสดงปุ่ม cancel
+                showConfirmButton: false,
+                cancelButtonText: 'ปิด',
+                cancelButtonColor: "#CFCFCF",
                 width: '375px',
                 height: '290px',
                 customClass: {
-                    popup: 'medicalconfirm-popup-class',
-                    confirmButton: 'medicalconfirm-button-class'
+                    popup: 'wfhconfirm-popup-class',
+                    confirmButton: 'wfhconfirm-button-class'
                 }
             });
         }
@@ -66,8 +68,8 @@ const WFHConfirm = () => {
     //                 confirmButtonColor: "#29AE4C",
     //                 width: '375px',
     //                 customClass: {
-    //                     popup: 'medicalconfirm-popup-class',
-    //                     confirmButton: 'medicalconfirm-button-class'
+    //                     popup: 'wfhconfirm-popup-class',
+    //                     confirmButton: 'wfhconfirm-button-class'
     //                 }
     //             }).then(() => {
     //                 setisTransferDone(true);
@@ -77,15 +79,18 @@ const WFHConfirm = () => {
     //         }
     //     } catch (error) {
     //         Swal.fire({
-    //             title: "การแจ้งลาไม่สำเร็จ",
-    //             text: "เกิดข้อผิดพลาดบางอย่าง กรุณาลองใหม่อีกครั้ง",
+    //            //             title: "โอ้ว..ไม่นะ",
+    //             text: "มีอะไรบางอย่างผิดพลาด",
     //             icon: "error",
-    //             confirmButtonText: 'ลองใหม่',
-    //             confirmButtonColor: "#DE2D1E",
+    //             showCancelButton: true,  // เพิ่มการแสดงปุ่ม cancel
+    //             showConfirmButton: false,
+    //             cancelButtonText: 'ปิด',
+    //             cancelButtonColor: "#CFCFCF",
     //             width: '375px',
+    //             height: '290px',
     //             customClass: {
-    //                 popup: 'error-popup-class',
-    //                 confirmButton: 'error-button-class'
+    //                 popup: 'wfhconfirm-popup-class',
+    //                 confirmButton: 'wfhconfirm-button-class'
     //             }
     //         });
     //     }

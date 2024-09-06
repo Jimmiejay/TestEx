@@ -32,7 +32,7 @@
 }
 
 .normal-grid .row-4 {
-    padding: 180px 20px 0px 20px;
+    padding: 240px 20px 0px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,4 +141,887 @@ textarea {
     font-weight: 400;
     color: black;
 
+}
+
+
+@media only screen and (max-width:1250px){
+    .normal-form-container {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .normal-form-container .normal-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .normal-grid .row-1 {
+        padding: 20px 20px 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-grid .row-2 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-grid .row-3 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-grid .row-4 {
+        padding: 240px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-form-container .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .normal-form-container .header.title {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #333333;
+    
+    }
+    
+    .normal-form-container .form-group {
+        display: flex;
+        flex-direction: column;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 14px;
+            color: #333333;
+            font-weight: 400;
+        }
+    
+        .required {
+            color: #FF0000;
+        }
+    
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #C1C1C1;
+            border-radius: 8px;
+    
+            font-family: 'NotoSansThai';
+            font-size: 16px;
+            font-weight: 400;
+        }
+    
+        .error-input {
+            border: 1px solid #DE2D1E;
+        }
+        
+        .error-message {
+            color: #DE2D1E;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    }
+    
+    .normal-form-container .form-group .input-details::placeholder {
+        color: #C1C1C1;
+    }
+    
+    .normal-form-container .form-group input[type="text"],
+    input[type="number"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #C1C1C1;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        color: #000;
+    }
+    
+    .normal-form-container .form-group textarea {
+        resize: vertical;
+        height: 195px;
+    }
+    
+    .normal-form-container .form-group textarea ::placeholder {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        color: #C1C1C1;
+    }
+    
+    .normal-form-container .form-group select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        /* background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7'%3E%3Cpath fill='%23000000' d='M0 0l5 5 5-5z'/%3E%3C/svg%3E") no-repeat right 20px center; */
+        background: url('/src/assets/arrow.svg') no-repeat right 20px center;
+        background-size: 18px 17px;
+        padding-right: 30px;
+    }
+    
+    
+    
+    .normal-form-container .form-group select option[disabled] {
+        color: #C1C1C1;
+        font-style: italic;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .normal-form-container .form-group select option:not([disabled]) {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: black;
+    
+    }
+}
+
+@media only screen and (max-width:810px){
+    .normal-form-container {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .normal-form-container .normal-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .normal-grid .row-1 {
+        padding: 20px 20px 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-grid .row-2 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-grid .row-3 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-grid .row-4 {
+        padding: 240px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-form-container .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .normal-form-container .header.title {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #333333;
+    
+    }
+    
+    .normal-form-container .form-group {
+        display: flex;
+        flex-direction: column;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 14px;
+            color: #333333;
+            font-weight: 400;
+        }
+    
+        .required {
+            color: #FF0000;
+        }
+    
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #C1C1C1;
+            border-radius: 8px;
+    
+            font-family: 'NotoSansThai';
+            font-size: 16px;
+            font-weight: 400;
+        }
+    
+        .error-input {
+            border: 1px solid #DE2D1E;
+        }
+        
+        .error-message {
+            color: #DE2D1E;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    }
+    
+    .normal-form-container .form-group .input-details::placeholder {
+        color: #C1C1C1;
+    }
+    
+    .normal-form-container .form-group input[type="text"],
+    input[type="number"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #C1C1C1;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        color: #000;
+    }
+    
+    .normal-form-container .form-group textarea {
+        resize: vertical;
+        height: 195px;
+    }
+    
+    .normal-form-container .form-group textarea ::placeholder {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        color: #C1C1C1;
+    }
+    
+    .normal-form-container .form-group select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        /* background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7'%3E%3Cpath fill='%23000000' d='M0 0l5 5 5-5z'/%3E%3C/svg%3E") no-repeat right 20px center; */
+        background: url('/src/assets/arrow.svg') no-repeat right 20px center;
+        background-size: 18px 17px;
+        padding-right: 30px;
+    }
+    
+    
+    
+    .normal-form-container .form-group select option[disabled] {
+        color: #C1C1C1;
+        font-style: italic;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .normal-form-container .form-group select option:not([disabled]) {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: black;
+    
+    }
+}
+
+@media only screen and (max-width:610px){
+    .normal-form-container {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .normal-form-container .normal-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .normal-grid .row-1 {
+        padding: 20px 20px 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-grid .row-2 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-grid .row-3 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-grid .row-4 {
+        padding: 240px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-form-container .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .normal-form-container .header.title {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #333333;
+    
+    }
+    
+    .normal-form-container .form-group {
+        display: flex;
+        flex-direction: column;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 14px;
+            color: #333333;
+            font-weight: 400;
+        }
+    
+        .required {
+            color: #FF0000;
+        }
+    
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #C1C1C1;
+            border-radius: 8px;
+    
+            font-family: 'NotoSansThai';
+            font-size: 16px;
+            font-weight: 400;
+        }
+    
+        .error-input {
+            border: 1px solid #DE2D1E;
+        }
+        
+        .error-message {
+            color: #DE2D1E;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    }
+    
+    .normal-form-container .form-group .input-details::placeholder {
+        color: #C1C1C1;
+    }
+    
+    .normal-form-container .form-group input[type="text"],
+    input[type="number"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #C1C1C1;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        color: #000;
+    }
+    
+    .normal-form-container .form-group textarea {
+        resize: vertical;
+        height: 195px;
+    }
+    
+    .normal-form-container .form-group textarea ::placeholder {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        color: #C1C1C1;
+    }
+    
+    .normal-form-container .form-group select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        /* background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7'%3E%3Cpath fill='%23000000' d='M0 0l5 5 5-5z'/%3E%3C/svg%3E") no-repeat right 20px center; */
+        background: url('/src/assets/arrow.svg') no-repeat right 20px center;
+        background-size: 18px 17px;
+        padding-right: 30px;
+    }
+    
+    
+    
+    .normal-form-container .form-group select option[disabled] {
+        color: #C1C1C1;
+        font-style: italic;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .normal-form-container .form-group select option:not([disabled]) {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: black;
+    
+    }
+}
+
+@media only screen and (max-width:440px){
+    .normal-form-container {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .normal-form-container .normal-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .normal-grid .row-1 {
+        padding: 20px 20px 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-grid .row-2 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-grid .row-3 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-grid .row-4 {
+        padding: 240px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-form-container .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .normal-form-container .header.title {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #333333;
+    
+    }
+    
+    .normal-form-container .form-group {
+        display: flex;
+        flex-direction: column;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 14px;
+            color: #333333;
+            font-weight: 400;
+        }
+    
+        .required {
+            color: #FF0000;
+        }
+    
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #C1C1C1;
+            border-radius: 8px;
+    
+            font-family: 'NotoSansThai';
+            font-size: 16px;
+            font-weight: 400;
+        }
+    
+        .error-input {
+            border: 1px solid #DE2D1E;
+        }
+        
+        .error-message {
+            color: #DE2D1E;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    }
+    
+    .normal-form-container .form-group .input-details::placeholder {
+        color: #C1C1C1;
+    }
+    
+    .normal-form-container .form-group input[type="text"],
+    input[type="number"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #C1C1C1;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        color: #000;
+    }
+    
+    .normal-form-container .form-group textarea {
+        resize: vertical;
+        height: 195px;
+    }
+    
+    .normal-form-container .form-group textarea ::placeholder {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        color: #C1C1C1;
+    }
+    
+    .normal-form-container .form-group select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        /* background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7'%3E%3Cpath fill='%23000000' d='M0 0l5 5 5-5z'/%3E%3C/svg%3E") no-repeat right 20px center; */
+        background: url('/src/assets/arrow.svg') no-repeat right 20px center;
+        background-size: 18px 17px;
+        padding-right: 30px;
+    }
+    
+    
+    
+    .normal-form-container .form-group select option[disabled] {
+        color: #C1C1C1;
+        font-style: italic;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .normal-form-container .form-group select option:not([disabled]) {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: black;
+    
+    }
+}
+
+@media only screen and (max-width:420px){
+    .normal-form-container {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .normal-form-container .normal-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .normal-grid .row-1 {
+        padding: 20px 20px 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-grid .row-2 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-grid .row-3 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-grid .row-4 {
+        padding: 240px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-form-container .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .normal-form-container .header.title {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #333333;
+    
+    }
+    
+    .normal-form-container .form-group {
+        display: flex;
+        flex-direction: column;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 14px;
+            color: #333333;
+            font-weight: 400;
+        }
+    
+        .required {
+            color: #FF0000;
+        }
+    
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #C1C1C1;
+            border-radius: 8px;
+    
+            font-family: 'NotoSansThai';
+            font-size: 16px;
+            font-weight: 400;
+        }
+    
+        .error-input {
+            border: 1px solid #DE2D1E;
+        }
+        
+        .error-message {
+            color: #DE2D1E;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    }
+    
+    .normal-form-container .form-group .input-details::placeholder {
+        color: #C1C1C1;
+    }
+    
+    .normal-form-container .form-group input[type="text"],
+    input[type="number"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #C1C1C1;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        color: #000;
+    }
+    
+    .normal-form-container .form-group textarea {
+        resize: vertical;
+        height: 195px;
+    }
+    
+    .normal-form-container .form-group textarea ::placeholder {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        color: #C1C1C1;
+    }
+    
+    .normal-form-container .form-group select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        /* background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7'%3E%3Cpath fill='%23000000' d='M0 0l5 5 5-5z'/%3E%3C/svg%3E") no-repeat right 20px center; */
+        background: url('/src/assets/arrow.svg') no-repeat right 20px center;
+        background-size: 18px 17px;
+        padding-right: 30px;
+    }
+    
+    
+    
+    .normal-form-container .form-group select option[disabled] {
+        color: #C1C1C1;
+        font-style: italic;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .normal-form-container .form-group select option:not([disabled]) {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: black;
+    
+    }
+}
+
+@media only screen and (max-width:370px){
+    .normal-form-container {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .normal-form-container .normal-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .normal-grid .row-1 {
+        padding: 20px 20px 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-grid .row-2 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-grid .row-3 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-grid .row-4 {
+        padding: 240px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .normal-form-container .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .normal-form-container .header.title {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #333333;
+    
+    }
+    
+    .normal-form-container .form-group {
+        display: flex;
+        flex-direction: column;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 14px;
+            color: #333333;
+            font-weight: 400;
+        }
+    
+        .required {
+            color: #FF0000;
+        }
+    
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #C1C1C1;
+            border-radius: 8px;
+    
+            font-family: 'NotoSansThai';
+            font-size: 16px;
+            font-weight: 400;
+        }
+    
+        .error-input {
+            border: 1px solid #DE2D1E;
+        }
+        
+        .error-message {
+            color: #DE2D1E;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    }
+    
+    .normal-form-container .form-group .input-details::placeholder {
+        color: #C1C1C1;
+    }
+    
+    .normal-form-container .form-group input[type="text"],
+    input[type="number"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #C1C1C1;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        color: #000;
+    }
+    
+    .normal-form-container .form-group textarea {
+        resize: vertical;
+        height: 195px;
+    }
+    
+    .normal-form-container .form-group textarea ::placeholder {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        color: #C1C1C1;
+    }
+    
+    .normal-form-container .form-group select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        /* background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7'%3E%3Cpath fill='%23000000' d='M0 0l5 5 5-5z'/%3E%3C/svg%3E") no-repeat right 20px center; */
+        background: url('/src/assets/arrow.svg') no-repeat right 20px center;
+        background-size: 18px 17px;
+        padding-right: 30px;
+    }
+    
+    
+    
+    .normal-form-container .form-group select option[disabled] {
+        color: #C1C1C1;
+        font-style: italic;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .normal-form-container .form-group select option:not([disabled]) {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: black;
+    
+    }
 }

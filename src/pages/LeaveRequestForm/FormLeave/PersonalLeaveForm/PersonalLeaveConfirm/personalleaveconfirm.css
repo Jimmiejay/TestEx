@@ -47,14 +47,14 @@
 }
 
 .personalconfirm-grid .row-6 {
-    padding: 20px 20px 0px 20px;
+    padding: 15px 20px 0px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .personalconfirm-grid .row-7 {
-    padding: 50px 20px 0px 20px;
+    padding: 60px 20px 0px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,6 +83,14 @@
     }
 }
 
+.personalconfirm-grid .row-5 .personal-day-count span {
+    font-family: 'NotoSansThai';
+    font-size: 14px;
+    color: #C1C1C1;
+    text-align: left;
+    font-weight: 400;
+}
+
 .personalconfirm-group input,
 .personalconfirm-group textarea {
     width: 100%;
@@ -96,11 +104,11 @@
     color: #000000;
 }
 
-.personalconfirm-group input{
+.personalconfirm-group input {
     height: 50px;
 }
 
-.personalconfirm-group textarea{
+.personalconfirm-group textarea {
     height: 195px;
 }
 
@@ -125,5 +133,845 @@
 
 .personalconfirm-form .personalconfirm-group .personalconfirm-button-class {
     border-radius: 25px;
-    /* ปรับค่า radius ของปุ่มตามที่ต้องการ */   
+    /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+}
+
+@media only screen and (max-width:1250px){
+    .personalconfirm-form {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .personalconfirm-form .personalconfirm-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .personalconfirm-grid .row-1 {
+        padding: 20px 20px 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .personalconfirm-grid .row-2 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-3 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-4 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-5 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-6 {
+        padding: 15px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-7 {
+        padding: 60px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-form .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .personalconfirm-form .header.title {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #333333;
+    }
+    
+    .personalconfirm-form .personalconfirm-group {
+        text-align: left;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 14px;
+            color: #333333;
+            font-weight: 400;
+        }
+    }
+    
+    .personalconfirm-grid .row-5 .personal-day-count span {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        color: #C1C1C1;
+        text-align: left;
+        font-weight: 400;
+    }
+    
+    .personalconfirm-group input,
+    .personalconfirm-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #F7F7F7;
+        border-radius: 5px;
+    
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #000000;
+    }
+    
+    .personalconfirm-group input {
+        height: 50px;
+    }
+    
+    .personalconfirm-group textarea {
+        height: 195px;
+    }
+    
+    .personalconfirm-group input[readonly],
+    .personalconfirm-group textarea[readonly] {
+        background-color: #F7F7F7;
+        /* เปลี่ยนสีพื้นหลังเพื่อแสดงว่าเป็นฟิลด์ที่ไม่สามารถแก้ไขได้ */
+        cursor: not-allowed;
+        /* เปลี่ยนเคอร์เซอร์เป็น not-allowed เมื่อโฮเวอร์ */
+    }
+    
+    .personalconfirm-group input[readonly]:focus,
+    .personalconfirm-group textarea[readonly]:focus {
+        outline: none;
+        /* ปิดการแสดงผลการโฟกัส */
+    }
+    
+    .personalconfirm-form .personalconfirm-group .personalconfirm-popup-class {
+        border-radius: 15px;
+        /* ปรับค่า radius ตามที่ต้องการ */
+    }
+    
+    .personalconfirm-form .personalconfirm-group .personalconfirm-button-class {
+        border-radius: 25px;
+        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+    }
+}
+
+@media only screen and (max-width:810px){
+    .personalconfirm-form {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .personalconfirm-form .personalconfirm-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .personalconfirm-grid .row-1 {
+        padding: 20px 20px 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .personalconfirm-grid .row-2 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-3 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-4 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-5 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-6 {
+        padding: 15px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-7 {
+        padding: 60px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-form .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .personalconfirm-form .header.title {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #333333;
+    }
+    
+    .personalconfirm-form .personalconfirm-group {
+        text-align: left;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 14px;
+            color: #333333;
+            font-weight: 400;
+        }
+    }
+    
+    .personalconfirm-grid .row-5 .personal-day-count span {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        color: #C1C1C1;
+        text-align: left;
+        font-weight: 400;
+    }
+    
+    .personalconfirm-group input,
+    .personalconfirm-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #F7F7F7;
+        border-radius: 5px;
+    
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #000000;
+    }
+    
+    .personalconfirm-group input {
+        height: 50px;
+    }
+    
+    .personalconfirm-group textarea {
+        height: 195px;
+    }
+    
+    .personalconfirm-group input[readonly],
+    .personalconfirm-group textarea[readonly] {
+        background-color: #F7F7F7;
+        /* เปลี่ยนสีพื้นหลังเพื่อแสดงว่าเป็นฟิลด์ที่ไม่สามารถแก้ไขได้ */
+        cursor: not-allowed;
+        /* เปลี่ยนเคอร์เซอร์เป็น not-allowed เมื่อโฮเวอร์ */
+    }
+    
+    .personalconfirm-group input[readonly]:focus,
+    .personalconfirm-group textarea[readonly]:focus {
+        outline: none;
+        /* ปิดการแสดงผลการโฟกัส */
+    }
+    
+    .personalconfirm-form .personalconfirm-group .personalconfirm-popup-class {
+        border-radius: 15px;
+        /* ปรับค่า radius ตามที่ต้องการ */
+    }
+    
+    .personalconfirm-form .personalconfirm-group .personalconfirm-button-class {
+        border-radius: 25px;
+        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+    }
+}
+
+@media only screen and (max-width:610px){
+    .personalconfirm-form {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .personalconfirm-form .personalconfirm-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .personalconfirm-grid .row-1 {
+        padding: 20px 20px 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .personalconfirm-grid .row-2 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-3 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-4 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-5 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-6 {
+        padding: 15px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-7 {
+        padding: 60px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-form .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .personalconfirm-form .header.title {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #333333;
+    }
+    
+    .personalconfirm-form .personalconfirm-group {
+        text-align: left;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 14px;
+            color: #333333;
+            font-weight: 400;
+        }
+    }
+    
+    .personalconfirm-grid .row-5 .personal-day-count span {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        color: #C1C1C1;
+        text-align: left;
+        font-weight: 400;
+    }
+    
+    .personalconfirm-group input,
+    .personalconfirm-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #F7F7F7;
+        border-radius: 5px;
+    
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #000000;
+    }
+    
+    .personalconfirm-group input {
+        height: 50px;
+    }
+    
+    .personalconfirm-group textarea {
+        height: 195px;
+    }
+    
+    .personalconfirm-group input[readonly],
+    .personalconfirm-group textarea[readonly] {
+        background-color: #F7F7F7;
+        /* เปลี่ยนสีพื้นหลังเพื่อแสดงว่าเป็นฟิลด์ที่ไม่สามารถแก้ไขได้ */
+        cursor: not-allowed;
+        /* เปลี่ยนเคอร์เซอร์เป็น not-allowed เมื่อโฮเวอร์ */
+    }
+    
+    .personalconfirm-group input[readonly]:focus,
+    .personalconfirm-group textarea[readonly]:focus {
+        outline: none;
+        /* ปิดการแสดงผลการโฟกัส */
+    }
+    
+    .personalconfirm-form .personalconfirm-group .personalconfirm-popup-class {
+        border-radius: 15px;
+        /* ปรับค่า radius ตามที่ต้องการ */
+    }
+    
+    .personalconfirm-form .personalconfirm-group .personalconfirm-button-class {
+        border-radius: 25px;
+        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+    }
+}
+
+@media only screen and (max-width:440px){
+    .personalconfirm-form {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .personalconfirm-form .personalconfirm-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .personalconfirm-grid .row-1 {
+        padding: 20px 20px 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .personalconfirm-grid .row-2 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-3 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-4 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-5 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-6 {
+        padding: 15px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-7 {
+        padding: 60px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-form .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .personalconfirm-form .header.title {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #333333;
+    }
+    
+    .personalconfirm-form .personalconfirm-group {
+        text-align: left;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 14px;
+            color: #333333;
+            font-weight: 400;
+        }
+    }
+    
+    .personalconfirm-grid .row-5 .personal-day-count span {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        color: #C1C1C1;
+        text-align: left;
+        font-weight: 400;
+    }
+    
+    .personalconfirm-group input,
+    .personalconfirm-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #F7F7F7;
+        border-radius: 5px;
+    
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #000000;
+    }
+    
+    .personalconfirm-group input {
+        height: 50px;
+    }
+    
+    .personalconfirm-group textarea {
+        height: 195px;
+    }
+    
+    .personalconfirm-group input[readonly],
+    .personalconfirm-group textarea[readonly] {
+        background-color: #F7F7F7;
+        /* เปลี่ยนสีพื้นหลังเพื่อแสดงว่าเป็นฟิลด์ที่ไม่สามารถแก้ไขได้ */
+        cursor: not-allowed;
+        /* เปลี่ยนเคอร์เซอร์เป็น not-allowed เมื่อโฮเวอร์ */
+    }
+    
+    .personalconfirm-group input[readonly]:focus,
+    .personalconfirm-group textarea[readonly]:focus {
+        outline: none;
+        /* ปิดการแสดงผลการโฟกัส */
+    }
+    
+    .personalconfirm-form .personalconfirm-group .personalconfirm-popup-class {
+        border-radius: 15px;
+        /* ปรับค่า radius ตามที่ต้องการ */
+    }
+    
+    .personalconfirm-form .personalconfirm-group .personalconfirm-button-class {
+        border-radius: 25px;
+        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+    }
+}
+
+@media only screen and (max-width:420px){
+    .personalconfirm-form {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .personalconfirm-form .personalconfirm-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .personalconfirm-grid .row-1 {
+        padding: 20px 20px 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .personalconfirm-grid .row-2 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-3 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-4 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-5 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-6 {
+        padding: 15px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-7 {
+        padding: 60px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-form .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .personalconfirm-form .header.title {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #333333;
+    }
+    
+    .personalconfirm-form .personalconfirm-group {
+        text-align: left;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 14px;
+            color: #333333;
+            font-weight: 400;
+        }
+    }
+    
+    .personalconfirm-grid .row-5 .personal-day-count span {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        color: #C1C1C1;
+        text-align: left;
+        font-weight: 400;
+    }
+    
+    .personalconfirm-group input,
+    .personalconfirm-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #F7F7F7;
+        border-radius: 5px;
+    
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #000000;
+    }
+    
+    .personalconfirm-group input {
+        height: 50px;
+    }
+    
+    .personalconfirm-group textarea {
+        height: 195px;
+    }
+    
+    .personalconfirm-group input[readonly],
+    .personalconfirm-group textarea[readonly] {
+        background-color: #F7F7F7;
+        /* เปลี่ยนสีพื้นหลังเพื่อแสดงว่าเป็นฟิลด์ที่ไม่สามารถแก้ไขได้ */
+        cursor: not-allowed;
+        /* เปลี่ยนเคอร์เซอร์เป็น not-allowed เมื่อโฮเวอร์ */
+    }
+    
+    .personalconfirm-group input[readonly]:focus,
+    .personalconfirm-group textarea[readonly]:focus {
+        outline: none;
+        /* ปิดการแสดงผลการโฟกัส */
+    }
+    
+    .personalconfirm-form .personalconfirm-group .personalconfirm-popup-class {
+        border-radius: 15px;
+        /* ปรับค่า radius ตามที่ต้องการ */
+    }
+    
+    .personalconfirm-form .personalconfirm-group .personalconfirm-button-class {
+        border-radius: 25px;
+        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+    }
+}
+
+@media only screen and (max-width:370px){
+    .personalconfirm-form {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .personalconfirm-form .personalconfirm-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .personalconfirm-grid .row-1 {
+        padding: 20px 20px 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .personalconfirm-grid .row-2 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-3 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-4 {
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-5 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-6 {
+        padding: 15px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-grid .row-7 {
+        padding: 60px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .personalconfirm-form .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .personalconfirm-form .header.title {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #333333;
+    }
+    
+    .personalconfirm-form .personalconfirm-group {
+        text-align: left;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 14px;
+            color: #333333;
+            font-weight: 400;
+        }
+    }
+    
+    .personalconfirm-grid .row-5 .personal-day-count span {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        color: #C1C1C1;
+        text-align: left;
+        font-weight: 400;
+    }
+    
+    .personalconfirm-group input,
+    .personalconfirm-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #F7F7F7;
+        border-radius: 5px;
+    
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #000000;
+    }
+    
+    .personalconfirm-group input {
+        height: 50px;
+    }
+    
+    .personalconfirm-group textarea {
+        height: 195px;
+    }
+    
+    .personalconfirm-group input[readonly],
+    .personalconfirm-group textarea[readonly] {
+        background-color: #F7F7F7;
+        /* เปลี่ยนสีพื้นหลังเพื่อแสดงว่าเป็นฟิลด์ที่ไม่สามารถแก้ไขได้ */
+        cursor: not-allowed;
+        /* เปลี่ยนเคอร์เซอร์เป็น not-allowed เมื่อโฮเวอร์ */
+    }
+    
+    .personalconfirm-group input[readonly]:focus,
+    .personalconfirm-group textarea[readonly]:focus {
+        outline: none;
+        /* ปิดการแสดงผลการโฟกัส */
+    }
+    
+    .personalconfirm-form .personalconfirm-group .personalconfirm-popup-class {
+        border-radius: 15px;
+        /* ปรับค่า radius ตามที่ต้องการ */
+    }
+    
+    .personalconfirm-form .personalconfirm-group .personalconfirm-button-class {
+        border-radius: 25px;
+        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+    }
 }

@@ -13,8 +13,8 @@ const MedicalConfirm = () => {
 
     //อันนี้แบบกำหนด isSuccess
     const handleConfirm = () => {
-        // const isSuccess = true; 
-        const isSuccess = false; 
+        const isSuccess = true; 
+        // const isSuccess = false; 
         // คุณสามารถเปลี่ยนเป็นเงื่อนไขจริงที่ต้องการตรวจสอบ
         
         if (isSuccess){
@@ -22,8 +22,8 @@ const MedicalConfirm = () => {
                 title: "คุณได้แจ้งลาสำเร็จ",
                 text: "คุณแจ้ง ลาป่วย เรียบร้อยแล้ว",
                 icon: "success",
-                cancelButtonText: 'เรียบร้อย',
-                cancelButtonColor: "#29AE4C",
+                confirmButtonText: 'เรียบร้อย',
+                confirmButtonColor: "#29AE4C",
                 width: '375px',
                 height: '290px',
                 customClass: {
@@ -38,8 +38,10 @@ const MedicalConfirm = () => {
                 title: "โอ้ว..ไม่นะ",
                 text: "มีอะไรบางอย่างผิดพลาด",
                 icon: "error",
-                confirmButtonText: 'ปิด',
-                confirmButtonColor: "#CFCFCF",
+                showCancelButton: true,  // เพิ่มการแสดงปุ่ม cancel
+                showConfirmButton: false,
+                cancelButtonText: 'ปิด',
+                cancelButtonColor: "#CFCFCF",
                 width: '375px',
                 height: '290px',
                 customClass: {
@@ -62,12 +64,13 @@ const MedicalConfirm = () => {
     //         // ตรวจสอบสถานะจาก response
     //         if (response.status === 200) {
     //             Swal.fire({
-    //                 title: "คุณได้แจ้งลาสำเร็จ",
+    //                  title: "คุณได้แจ้งลาสำเร็จ",
     //                 text: "คุณแจ้ง ลาป่วย เรียบร้อยแล้ว",
     //                 icon: "success",
     //                 confirmButtonText: 'เรียบร้อย',
     //                 confirmButtonColor: "#29AE4C",
     //                 width: '375px',
+    //                 height: '290px',
     //                 customClass: {
     //                     popup: 'medicalconfirm-popup-class',
     //                     confirmButton: 'medicalconfirm-button-class'
@@ -80,15 +83,18 @@ const MedicalConfirm = () => {
     //         }
     //     } catch (error) {
     //         Swal.fire({
-    //             title: "การแจ้งลาไม่สำเร็จ",
-    //             text: "เกิดข้อผิดพลาดบางอย่าง กรุณาลองใหม่อีกครั้ง",
+    //             //             title: "โอ้ว..ไม่นะ",
+    //             text: "มีอะไรบางอย่างผิดพลาด",
     //             icon: "error",
-    //             confirmButtonText: 'ลองใหม่',
-    //             confirmButtonColor: "#DE2D1E",
+    //             showCancelButton: true,  // เพิ่มการแสดงปุ่ม cancel
+    //             showConfirmButton: false,
+    //             cancelButtonText: 'ปิด',
+    //             cancelButtonColor: "#CFCFCF",
     //             width: '375px',
+    //             height: '290px',
     //             customClass: {
-    //                 popup: 'error-popup-class',
-    //                 confirmButton: 'error-button-class'
+    //                 popup: 'medicalconfirm-popup-class',
+    //                 confirmButton: 'medicalconfirm-button-class'
     //             }
     //         });
     //     }

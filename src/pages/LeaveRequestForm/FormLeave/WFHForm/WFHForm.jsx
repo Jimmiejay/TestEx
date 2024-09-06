@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import './wfhform.css';
 import { useNavigate } from 'react-router-dom';
-import Button from '../../../../components/Button/LongButton/LongButton';
+import ButtonNext from '../../../../components/Button/LongButton/LongButton';
 import Swal from 'sweetalert2';
 
 const WFHForm = () => {
     const [leaveType, setLeaveType] = useState("Work From Home");
     const [details, setDetails] = useState("");
     const [selectedDate, setSelectedDate] = useState('');
-    const [timePeriod, setTimePeriod] = useState('เช้า');
+    const [timePeriod, setTimePeriod] = useState('');
     const [timeDetails, setTimeDetails] = useState('');
     const [errors, setErrors] = useState({});
     const navigate = useNavigate();
@@ -36,6 +36,11 @@ const WFHForm = () => {
     const handleDateChange = (e) => {
         const Date = e.target.value;
         setSelectedDate(Date);
+        setErrors((prevErrors) => ({
+            ...prevErrors,
+            selectedDate: Date ? null : prevErrors.selectedDate,
+        }));
+
     };
 
     const handleTimePeriodChange = (period) => {
@@ -48,6 +53,7 @@ const WFHForm = () => {
             return;
         }
         setTimePeriod(period);
+        setErrors((prevErrors) => ({ ...prevErrors, timePeriod: '' })); // ลบข้อผิดพลาดถ้าเลือกแล้ว
     };
 
     useEffect(() => {
@@ -68,38 +74,38 @@ const WFHForm = () => {
         }
     }, [timePeriod]); // ใช้ dependency เป็น timePeriod
 
+    const handleInputChange = (field, value) => {
+        // อัปเดตค่าของฟิลด์ที่ถูกแก้ไข
+        switch (field) {
+            case 'leaveType':
+                setLeaveType(value);
+                break;
+            case 'details':
+                setDetails(value);
+                break;
+            default:
+                break;
+        }
+
+        // ลบข้อผิดพลาดถ้ามีการกรอกข้อมูลแล้ว
+        setErrors((prevErrors) => ({
+            ...prevErrors,
+            [field]: value ? null : prevErrors[field], // ลบข้อผิดพลาดถ้ามีการกรอกข้อมูลแล้ว
+        }));
+    };
 
     const handleWfhSubmit = (event) => {
         event.preventDefault();
-
-        // if (date === "") {
-        //     Swal.fire({
-        //         icon: 'warning',
-        //         title: 'แจ้งเตือน',
-        //         text: 'กรุณากรอกวันเดือนปี',
-        //     });
-        //     return;
-        // }
-
-        // if (details === "") {
-        //     Swal.fire({
-        //         icon: 'warning',
-        //         title: 'แจ้งเตือน',
-        //         text: 'กรุณากรอกรายละเอียด',
-        //     });
-        //     return;
-        // }
-
         let tempErrors = {};
 
         if (!leaveType) {
             tempErrors.leaveType = 'กรุณาเลือกรายการ';
         }
         if (!selectedDate) {
-            tempErrors.startDate = 'กรุณาใส่วันที่';
+            tempErrors.selectedDate = 'กรุณาใส่วันที่';
         }
         if (!timePeriod) {
-            tempErrors.endDate = 'กรุณาใส่วันที่';
+            tempErrors.timePeriod = 'กรุณาเลือกช่วงเวลา';
         }
         if (!details) {
             tempErrors.details = 'กรุณาใส่รายละเอียด';
@@ -107,7 +113,7 @@ const WFHForm = () => {
         if (Object.keys(tempErrors).length > 0) {
             setErrors(tempErrors);
         } else {
-            setErrors({});
+            setErrors((prevErrors) => ({ ...prevErrors, [field]: value ? null : prevErrors[field] })); // ลบข้อผิดพลาดถ้าเลือกแล้ว
             // เพิ่มฟังก์ชันที่ต้องการเมื่อฟอร์มถูกกรอกครบถ้วน
             const formDataWFH = {
                 leaveType,
@@ -146,6 +152,7 @@ const WFHForm = () => {
                             onChange={handleLeaveTypeChange}
                             className={`wfh-input-field ${errors.leaveType ? 'error-input' : ''}`}
                         >
+                            <option value="" disabled>เลือกรายการ</option>
                             <option value="ลาป่วย">ลาป่วย</option>
                             <option value="ลากิจ">ลากิจ</option>
                             <option value="Work From Home">Work From Home</option>
@@ -172,21 +179,21 @@ const WFHForm = () => {
                         <div className="time-period-buttons">
                             <button
                                 type="button"
-                                className={`time-period-button ${timePeriod === 'เช้า' ? 'selected' : ''}`}
+                                className={`time-period-button ${timePeriod === 'เช้า' ? 'selected' : ''} ${errors.timePeriod ? 'error-input' : ''}`}
                                 onClick={() => handleTimePeriodChange('เช้า')}
                             >
                                 เช้า
                             </button>
                             <button
                                 type="button"
-                                className={`time-period-button ${timePeriod === 'บ่าย' ? 'selected' : ''}`}
+                                className={`time-period-button ${timePeriod === 'บ่าย' ? 'selected' : ''} ${errors.timePeriod ? 'error-input' : ''}`}
                                 onClick={() => handleTimePeriodChange('บ่าย')}
                             >
                                 บ่าย
                             </button>
                             <button
                                 type="button"
-                                className={`time-period-button ${timePeriod === 'ทั้งวัน' ? 'selected' : ''}`}
+                                className={`time-period-button ${timePeriod === 'ทั้งวัน' ? 'selected' : ''} ${errors.timePeriod ? 'error-input' : ''}`}
                                 onClick={() => handleTimePeriodChange('ทั้งวัน')}
                             >
                                 ทั้งวัน
@@ -195,6 +202,7 @@ const WFHForm = () => {
                         <div className="time-period-details">
                             <span>{timeDetails}</span>
                         </div>
+                        {errors.timePeriod && <div className="error-message">{errors.timePeriod}</div>}
                     </div>
                 </div>
                 <div className='row-5'>
@@ -203,16 +211,16 @@ const WFHForm = () => {
                         <textarea
                             id="details"
                             value={details}
-                            onChange={(e) => setDetails(e.target.value)}
-                            className="personal-input-field"
+                            onChange={(e) => handleInputChange('details', e.target.value)}
+                            className={`wfh-input-field  ${errors.details ? 'error-input' : ''}`}
                             placeholder="รายละเอียด"
                         />
-
+                        {errors.details && <div className="error-message">{errors.details}</div>}
                     </div>
                 </div>
                 <div className='row-6'>
                     <div onClick={handleWfhSubmit} type="button" className='next-button' >
-                        <Button text='ถัดไป' />
+                        <ButtonNext text='ถัดไป' />
                     </div>
                 </div>
             </div>

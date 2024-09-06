@@ -12,43 +12,45 @@ const PersonalLeaveConfirm = () => {
     //อันนี้แบบกำหนด isSuccess
     const handleConfirm = () => {
         const isSuccess = true; 
-        // const isSuccess = false; 
+        // const isSuccess = false;
         // คุณสามารถเปลี่ยนเป็นเงื่อนไขจริงที่ต้องการตรวจสอบ
-        
-        if (isSuccess){
+
+        if (isSuccess) {
             Swal.fire({
                 title: "คุณได้แจ้งลาสำเร็จ",
                 text: "คุณแจ้ง ลาป่วย เรียบร้อยแล้ว",
                 icon: "success",
-                cancelButtonText: 'เรียบร้อย',
-                cancelButtonColor: "#29AE4C",
+                confirmButtonText: 'เรียบร้อย',
+                confirmButtonColor: "#29AE4C",
                 width: '375px',
                 height: '290px',
                 customClass: {
-                    popup: 'medicalconfirm-popup-class',
-                    confirmButton: 'medicalconfirm-button-class'
+                    popup: 'personalconfirm-popup-class',
+                    confirmButton: 'personalconfirm-button-class'
                 }
             }).then(() => {
                 setisTransferDone(true);
             });
-        } else{
+        } else {
             Swal.fire({
                 title: "โอ้ว..ไม่นะ",
                 text: "มีอะไรบางอย่างผิดพลาด",
                 icon: "error",
-                confirmButtonText: 'ปิด',
-                confirmButtonColor: "#CFCFCF",
+                showCancelButton: true,  // เพิ่มการแสดงปุ่ม cancel
+                showConfirmButton: false,
+                cancelButtonText: 'ปิด',
+                cancelButtonColor: "#CFCFCF",
                 width: '375px',
                 height: '290px',
                 customClass: {
-                    popup: 'medicalconfirm-popup-class',
-                    confirmButton: 'medicalconfirm-button-class'
+                    popup: 'personalconfirm-popup-class',
+                    confirmButton: 'personalconfirm-button-class'
                 }
             });
         }
     }
 
-    // อันนี้แบบไม่กำหนดค่า isSuccess เป็น true หรือ false แบบตรงๆ
+    // // อันนี้แบบไม่กำหนดค่า isSuccess เป็น true หรือ false แบบตรงๆ
     // const handleConfirm = async () => {
     //     try {
     //         // สมมุติว่าเรียกใช้งาน API เพื่อบันทึกข้อมูล
@@ -56,7 +58,7 @@ const PersonalLeaveConfirm = () => {
     //             leaveType,
     //             details,
     //         });
-    
+
     //         // ตรวจสอบสถานะจาก response
     //         if (response.status === 200) {
     //             Swal.fire({
@@ -66,9 +68,10 @@ const PersonalLeaveConfirm = () => {
     //                 confirmButtonText: 'เรียบร้อย',
     //                 confirmButtonColor: "#29AE4C",
     //                 width: '375px',
+    //                 height: '290px',
     //                 customClass: {
-    //                     popup: 'medicalconfirm-popup-class',
-    //                     confirmButton: 'medicalconfirm-button-class'
+    //                     popup: 'personalconfirm-popup-class',
+    //                     confirmButton: 'personalconfirm-button-class'
     //                 }
     //             }).then(() => {
     //                 setisTransferDone(true);
@@ -78,15 +81,18 @@ const PersonalLeaveConfirm = () => {
     //         }
     //     } catch (error) {
     //         Swal.fire({
-    //             title: "การแจ้งลาไม่สำเร็จ",
-    //             text: "เกิดข้อผิดพลาดบางอย่าง กรุณาลองใหม่อีกครั้ง",
+    //             title: "โอ้ว..ไม่นะ",
+    //             text: "มีอะไรบางอย่างผิดพลาด",
     //             icon: "error",
-    //             confirmButtonText: 'ลองใหม่',
-    //             confirmButtonColor: "#DE2D1E",
+    //             showCancelButton: true,  // เพิ่มการแสดงปุ่ม cancel
+    //             showConfirmButton: false,
+    //             cancelButtonText: 'ปิด',
+    //             cancelButtonColor: "#CFCFCF",
     //             width: '375px',
+    //             height: '290px',
     //             customClass: {
-    //                 popup: 'error-popup-class',
-    //                 confirmButton: 'error-button-class'
+    //                 popup: 'personalconfirm-popup-class',
+    //                 confirmButton: 'personalconfirm-button-class'
     //             }
     //         });
     //     }
@@ -124,7 +130,7 @@ const PersonalLeaveConfirm = () => {
                     </div>
                 </div>
                 <div className='row-6'>
-                    <div className="medicalconfirm-group">
+                    <div className="personalconfirm-group">
                         <label htmlFor="details">รายละเอียด</label>
                         <textarea id="details" value={details} readOnly />
                     </div>
