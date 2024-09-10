@@ -47,15 +47,6 @@ const Marketplace = () => {
                 </div>
                 <div className='marketplace-call-product'>
                     <CallProduct />
-                    <CallProduct />
-                    <CallProduct />
-                    <CallProduct />
-                    <CallProduct />
-                    <CallProduct />
-                    <CallProduct />
-                    <CallProduct />
-                    <CallProduct />
-                    <CallProduct />
                 </div>
                 <button className="floating-button" onClick={handleClick}>
                     <i className="fas fa-plus">

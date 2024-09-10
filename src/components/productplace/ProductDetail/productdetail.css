@@ -1,10 +1,13 @@
 .product-grid {
+    width: 100%;
+    min-width: 98vw;
     display: flex;
+    /* ใช้ Flexbox */
+    gap: 10px;
+    /* เว้นระยะห่างระหว่างการ์ด */
+    justify-content: flex-start;
+    /* จัดให้อยู่ทางซ้าย */
     flex-wrap: wrap;
-    /* width: 230px; */
-    height: 320px;
-    justify-content: left;
-    /* gap: 20px; */
-    padding: 0 0 10px 0px;
-    /* background-color: #f5f5f5; */
+    /* การ์ดจะเลื่อนไปแถวใหม่หากหน้าจอเล็กเกินไป */
+    padding: 10px 0 0 10px;
 }

@@ -211,6 +211,10 @@ textarea {
     color: #000;
 }
 
+.formproduct-group input {
+    height: 40px;
+}
+
 .formproduct-group textarea {
     resize: vertical;
     height: 94px;

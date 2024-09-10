@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 // import ClipLoader from "react-spinners/ClipLoader";
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
-import Button from '../../../components/Button/LongButton/LongButton'
+import ConfirmButton from '../../../components/Button/LongButton/LongButton'
 const MySwal = withReactContent(Swal);
 
 const RewardConfirm = () => {
@@ -54,7 +54,7 @@ const RewardConfirm = () => {
                 </div>
                 <div className='rewardconfirm-footer'>
                     <div onClick={handleRedeem} type="button" className={`confirm-button ${isRedeemed ? 'disabled' : ''}`} >
-                        <Button text={isRedeemed ? 'ดำเนินการเรียบร้อยแล้ว' : 'ยืนยัน'} disabled={isRedeemed} />
+                        <ConfirmButton text={isRedeemed ? 'ดำเนินการเรียบร้อยแล้ว' : 'ยืนยัน'} disabled={isRedeemed} />
                     </div>
                 </div>
             </div>

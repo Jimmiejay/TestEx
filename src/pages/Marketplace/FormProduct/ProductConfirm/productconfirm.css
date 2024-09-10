@@ -1,0 +1,174 @@
+.productconfirm-form {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    max-height: 100vh;
+}
+
+.productconfirm-form .productconfirm-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.productconfirm-grid .row-1 {
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productconfirm-grid .row-2 {
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productconfirm-grid .row-3 {
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productconfirm-grid .row-4 {
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productconfirm-grid .row-5 {
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productconfirm-grid .row-6 {
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productconfirm-grid .row-7 {
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productconfirm-grid .row-8 {
+    padding: 30px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productconfirm-form .header {
+    display: flex;
+    justify-content: center;
+}
+
+.productconfirm-form .header .title {
+    font-family: 'NotoSansThai';
+    font-size: 26px;
+    font-weight: 700;
+    color: #DE2D1E;
+}
+
+.productconfirm-form .productconfirm-group {
+    text-align: left;
+
+    label {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        color: #333333;
+        font-weight: 400;
+    }
+}
+
+.productconfirm-form .productconfirm-picgroup{
+    text-align: center;
+
+    label {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        color: #333333;
+        font-weight: 400;
+    }
+}
+
+.productconfirm-group .user-group {
+    display: flex;
+    align-items: center;
+}
+
+.productconfirm-group .user-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.productconfirm-group .user-info {
+    font-family: 'NotoSansThai';
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.productconfirm-picgroup .product-image {
+    width: 50%;
+    height: 370px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.productconfirm-group input[type="text"],
+.productconfirm-group input[type="number"],
+.productconfirm-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #F7F7F7;
+    border-radius: 5px;
+
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.productconfirm-group input {
+    height: 40px;
+}
+
+.productconfirm-group textarea {
+    resize: vertical;
+    height: 94px;
+}
+
+.productconfirm-group input[readonly],
+.productconfirm-group textarea[readonly] {
+    background-color: #F7F7F7;
+    /* เปลี่ยนสีพื้นหลังเพื่อแสดงว่าเป็นฟิลด์ที่ไม่สามารถแก้ไขได้ */
+    cursor: not-allowed;
+    /* เปลี่ยนเคอร์เซอร์เป็น not-allowed เมื่อโฮเวอร์ */
+}
+
+.productconfirm-group input[readonly]:focus,
+.productconfirm-group textarea[readonly]:focus {
+    outline: none;
+    /* ปิดการแสดงผลการโฟกัส */
+}
+
+.productconfirm-form .productconfirm-group .productconfirm-popup-class {
+    border-radius: 15px;
+    /* ปรับค่า radius ตามที่ต้องการ */
+}
+
+.productconfirm-form .productconfirm-group .productconfirm-button-class {
+    border-radius: 25px;
+    /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+}

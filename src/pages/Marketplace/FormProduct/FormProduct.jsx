@@ -8,6 +8,8 @@ import NextButton from '../../../components/Button/LongButton/LongButton'
 
 const FormProduct = () => {
     const [profileImage, setProfileImage] = useState(null);
+    const [profileName, setProfileName] = useState('');
+    const [profilePhone, setProfilePhone] = useState('');
     const [productName, setProductName] = useState('');
     const [point, setPoint] = useState('');
     const [description, setDescription] = useState('');
@@ -20,6 +22,8 @@ const FormProduct = () => {
     useEffect(() => {
         // กำหนดค่าต่างๆ ที่คุณต้องการภายใน useEffect
         setProfileImage(Paom);
+        setProfileName('aom');
+        setProfilePhone('098-xxx-xxxx')
     }, []);
 
 
@@ -73,13 +77,16 @@ const FormProduct = () => {
                 point,
                 description,
                 condition,
-                image
+                file: image,
+                profileName,
+                profilePhone,
+                profileImage
             };
             console.log('Form Data Submitted: ', formData);
             // ส่งข้อมูลไปยังหน้า MedicalConfirm
-            // navigate('/leaverequestform/medicalleaveform/medicalconfirm', {
-            //     state: { leaveType, details },
-            // });
+            navigate('/marketplace/formproduct/productconfirm', {
+                state: { profileName, profilePhone, profileImage, file: image, productName, point, description, condition },
+            });
 
         };
 
@@ -118,7 +125,9 @@ const FormProduct = () => {
     const handleFileSelect = (event) => {
         const file = event.target.files[0];
         if (file) {
-            setImage(URL.createObjectURL(file));
+            const imageUrl = URL.createObjectURL(file);
+            setImage(imageUrl);
+            // setImage(URL.createObjectURL(file));
             setImageError('');
             console.log(`File selected: ${file.name}`);
         }
@@ -143,14 +152,14 @@ const FormProduct = () => {
                                 style={{ cursor: 'pointer' }}
                             />
                             <div className='user-info'>
-                                aom<br />098-xxx-xxxx
+                                {profileName}<br />{profilePhone}
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className='row-3'>
                     <div className='formproduct-group'>
-                        <div className={`drop_zone ${imageError ? 'error-input' : ''}`} 
+                        <div className={`drop_zone ${imageError ? 'error-input' : ''}`}
                             id="drop_zone"
                             onDrop={dropHandler}
                             onDragOver={dragOverHandler}
@@ -204,6 +213,7 @@ const FormProduct = () => {
                     <div className='formproduct-group'>
                         <label htmlFor="description">คำอธิบาย<span className="required">*</span></label>
                         <textarea
+                            type='text'
                             id="description"
                             placeholder='คำอธิบาย'
                             value={description}

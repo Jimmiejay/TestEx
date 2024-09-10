@@ -1,6 +1,8 @@
-.product-card{
-    width: 200px;
-    height: 290px;
+.product-card {
+    flex: 1 1 250px;  /* ความกว้างขั้นต่ำของการ์ดเป็น 300px และให้ขยายได้ */
+    max-width: 250px; /* จำกัดความกว้างสูงสุดของการ์ด */
+    /* width: 200px; */
+    height: 360px;
     border-radius: 15px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
     overflow: hidden;
@@ -11,6 +13,12 @@
 
 .product-card:hover {
     transform: translateY(-10px);
+}
+
+.product-info-row {
+    display: flex;
+    justify-content: space-between; /* จัดการให้เว้นช่องว่างระหว่างสองส่วน */
+    align-items: center; /* จัดการให้ข้อความอยู่ตรงกลางในแนวตั้ง */
 }
 
 .product-image {
@@ -24,6 +32,7 @@
 }
 
 .product-title {
+    font-family: 'NotoSansThai';
     font-size: 12px;
     color: #333;
     margin: 0px 0 0 10px;
@@ -32,11 +41,13 @@
 }
 
 
-.product-description {
+.product-byname {
+    font-family: 'NotoSansThai';
     font-size: 14px;
     color: #777;
     text-align: left;
-    margin-left: 10px; 
+    margin-left: 10px;
+    padding-top: 5px;
 }
 
 .price-container {
@@ -47,6 +58,7 @@
 }
 
 .product-price {
+    font-family: 'NotoSansThai';
     font-size: 16px;
     color: #f08a24;
     font-weight: bold;
@@ -58,8 +70,17 @@
 .price-circle img {
     width: 20px;
     height: 20px;
-   
+
     /* margin-right: 10px; */
     margin-left: 6px;
     margin-top: 5px;
+}
+
+.product-datetime {
+    font-family: 'NotoSansThai';
+    font-size: 12px;
+    color: #999;
+    /* margin-left: 10px; */
+    padding-top: 5px;
+    padding-right: 5px;
 }

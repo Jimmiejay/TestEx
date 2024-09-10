@@ -11,6 +11,7 @@ import Marketplace from "./pages/Marketplace/Marketplace";
 import ChangeHistory from "./pages/Marketplace/ChangeHistory/ChangeHistory";
 import MyProduct from "./pages/Marketplace/MyProducts/MyProducts";
 import FormProduct from "./pages/Marketplace/FormProduct/FormProduct";
+import ProductConfirm from "./pages/Marketplace/FormProduct/ProductConfirm/ProductConfirm";
 import LeaveRequestForm from "./pages/LeaveRequestForm/LeaveRequestForm";
 import MedicalLeaveForm from "./pages/LeaveRequestForm/FormLeave/MedicalLeaveForm/MedicalLeaveForm";
 import PersonalLeaveForm from "./pages/LeaveRequestForm/FormLeave/PersonalLeaveForm/PersonalLeaveForm";
@@ -20,6 +21,7 @@ import MemberCard from "./pages/MemberCard/MemberCard";
 import PersonalLeaveConfirm from "./pages/LeaveRequestForm/FormLeave/PersonalLeaveForm/PersonalLeaveConfirm/PersonalLeaveConfirm";
 import WFHConfirm from "./pages/LeaveRequestForm/FormLeave/WFHForm/WFHConfirm/WFHConfirm";
 import RewardConfirm from "./pages/Reward/RewardConfirm/RewardConfirm";
+import MarketplaceDetail from "./pages/Marketplace/MarketplaceDetail/MarketplaceDetail";
 
 
 
@@ -50,6 +52,10 @@ const router = createBrowserRouter([
         element: (<Marketplace />),
     },
     { 
+        path: "/marketplace/marketplacedetail",
+        element: (<MarketplaceDetail />),
+    },
+    { 
         path: "/marketplace/changehistory",
         element: (<ChangeHistory />),
     },
@@ -60,6 +66,10 @@ const router = createBrowserRouter([
     { 
         path: "/marketplace/formproduct",
         element: (<FormProduct />),
+    },
+    { 
+        path: "/marketplace/formproduct/productconfirm",
+        element: (<ProductConfirm />),
     },
     { 
         path: "/leaverequestform",

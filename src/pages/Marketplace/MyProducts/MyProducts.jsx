@@ -45,13 +45,7 @@ const MyProducts = () => {
           </div>
         </div>
         <div className='myproducts-call-product'>
-          <CallProduct />
-          <CallProduct />
-          <CallProduct />
-          <CallProduct />
-          <CallProduct />
-          <CallProduct />
-          <CallProduct />
+          <CallProduct owner="aom"/> {/* ส่งชื่อผู้ใช้เพื่อกรองสินค้า */}
         </div>
         <button className="floating-button" onClick={handleClick}>
           <i className="fas fa-plus">

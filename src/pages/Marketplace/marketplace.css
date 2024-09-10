@@ -44,7 +44,7 @@
 
 .marketplace-container .marketplace-call-product {
     min-width: 100%;
-    width: 97vw;
+    width: 95vw;
     display: flex;
     /* justify-content: space-between; */
   
@@ -52,7 +52,7 @@
     flex-wrap: wrap;
     gap: 10px;
     row-gap: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .marketplace-container .floating-button img{
