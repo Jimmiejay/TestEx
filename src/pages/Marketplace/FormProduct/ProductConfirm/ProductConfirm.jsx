@@ -8,7 +8,8 @@ const ProductConfirm = () => {
     const location = useLocation();
     const navigate = useNavigate();
 
-    const { profileName, profilePhone, profileImage, file, productName, point, description, condition } = location.state || {};
+    const { profileName, profilePhone, profileImage, file,
+        productName, point, description, condition } = location.state || {};
 
     const [imagePreview, setImagePreview] = useState(null);
 

@@ -1,6 +1,6 @@
 .LongBtn {
 
-     width: 99vw;
+     width: 96vw;
      height: 50px;
      background-color: #DE2D1E;
      color: #fff;
@@ -32,4 +32,422 @@
 .LongBtn:disabled {
     pointer-events: none;
     background-color: #B8B8B8;
+}
+
+@media only screen and (max-width:1120px){
+    .LongBtn {
+
+        width: 95vw;
+        height: 50px;
+        background-color: #DE2D1E;
+        color: #fff;
+        padding: 2px 0 0 5px;
+        border: none;
+        border-radius: 38px;
+        font-size: 18px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s;
+   }
+   
+   .LongBtn:hover {
+       /* background-color: #c52a18; */
+       background-color: #B82418;
+   }
+   
+   .LongBtn:active{
+       background-color: #fd031c;
+   }
+   
+   .LongBtn.disabled {
+       background-color: #ccc;
+       color: #777;
+       cursor: not-allowed;
+   }
+   
+   .LongBtn:disabled {
+       pointer-events: none;
+       background-color: #B8B8B8;
+   }
+}
+
+@media only screen and (max-width:1000px){
+    .LongBtn {
+
+        width: 95vw;
+        height: 50px;
+        background-color: #DE2D1E;
+        color: #fff;
+        padding: 2px 0 0 5px;
+        border: none;
+        border-radius: 38px;
+        font-size: 18px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s;
+   }
+   
+   .LongBtn:hover {
+       /* background-color: #c52a18; */
+       background-color: #B82418;
+   }
+   
+   .LongBtn:active{
+       background-color: #fd031c;
+   }
+   
+   .LongBtn.disabled {
+       background-color: #ccc;
+       color: #777;
+       cursor: not-allowed;
+   }
+   
+   .LongBtn:disabled {
+       pointer-events: none;
+       background-color: #B8B8B8;
+   }
+}
+
+@media only screen and (max-width:900px){
+    .LongBtn {
+
+        width: 94vw;
+        height: 50px;
+        background-color: #DE2D1E;
+        color: #fff;
+        padding: 2px 0 0 5px;
+        border: none;
+        border-radius: 38px;
+        font-size: 18px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s;
+   }
+   
+   .LongBtn:hover {
+       /* background-color: #c52a18; */
+       background-color: #B82418;
+   }
+   
+   .LongBtn:active{
+       background-color: #fd031c;
+   }
+   
+   .LongBtn.disabled {
+       background-color: #ccc;
+       color: #777;
+       cursor: not-allowed;
+   }
+   
+   .LongBtn:disabled {
+       pointer-events: none;
+       background-color: #B8B8B8;
+   }
+}
+
+@media only screen and (max-width:800px){
+    .LongBtn {
+
+        width: 94vw;
+        height: 50px;
+        background-color: #DE2D1E;
+        color: #fff;
+        padding: 2px 0 0 5px;
+        border: none;
+        border-radius: 38px;
+        font-size: 18px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s;
+   }
+   
+   .LongBtn:hover {
+       /* background-color: #c52a18; */
+       background-color: #B82418;
+   }
+   
+   .LongBtn:active{
+       background-color: #fd031c;
+   }
+   
+   .LongBtn.disabled {
+       background-color: #ccc;
+       color: #777;
+       cursor: not-allowed;
+   }
+   
+   .LongBtn:disabled {
+       pointer-events: none;
+       background-color: #B8B8B8;
+   }
+}
+
+@media only screen and (max-width:740px){
+    .LongBtn {
+
+        width: 93vw;
+        height: 50px;
+        background-color: #DE2D1E;
+        color: #fff;
+        padding: 2px 0 0 5px;
+        border: none;
+        border-radius: 38px;
+        font-size: 18px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s;
+   }
+   
+   .LongBtn:hover {
+       /* background-color: #c52a18; */
+       background-color: #B82418;
+   }
+   
+   .LongBtn:active{
+       background-color: #fd031c;
+   }
+   
+   .LongBtn.disabled {
+       background-color: #ccc;
+       color: #777;
+       cursor: not-allowed;
+   }
+   
+   .LongBtn:disabled {
+       pointer-events: none;
+       background-color: #B8B8B8;
+   }
+}
+
+@media only screen and (max-width:670px){
+    .LongBtn {
+
+        width: 93vw;
+        height: 50px;
+        background-color: #DE2D1E;
+        color: #fff;
+        padding: 2px 0 0 5px;
+        border: none;
+        border-radius: 38px;
+        font-size: 18px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s;
+   }
+   
+   .LongBtn:hover {
+       /* background-color: #c52a18; */
+       background-color: #B82418;
+   }
+   
+   .LongBtn:active{
+       background-color: #fd031c;
+   }
+   
+   .LongBtn.disabled {
+       background-color: #ccc;
+       color: #777;
+       cursor: not-allowed;
+   }
+   
+   .LongBtn:disabled {
+       pointer-events: none;
+       background-color: #B8B8B8;
+   }
+}
+
+@media only screen and (max-width:650px){
+    .LongBtn {
+
+        width: 92vw;
+        height: 50px;
+        background-color: #DE2D1E;
+        color: #fff;
+        padding: 2px 0 0 5px;
+        border: none;
+        border-radius: 38px;
+        font-size: 18px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s;
+   }
+   
+   .LongBtn:hover {
+       /* background-color: #c52a18; */
+       background-color: #B82418;
+   }
+   
+   .LongBtn:active{
+       background-color: #fd031c;
+   }
+   
+   .LongBtn.disabled {
+       background-color: #ccc;
+       color: #777;
+       cursor: not-allowed;
+   }
+   
+   .LongBtn:disabled {
+       pointer-events: none;
+       background-color: #B8B8B8;
+   }
+}
+
+@media only screen and (max-width:610px){
+    .LongBtn {
+
+        width: 90vw;
+        height: 50px;
+        background-color: #DE2D1E;
+        color: #fff;
+        padding: 2px 0 0 5px;
+        border: none;
+        border-radius: 38px;
+        font-size: 18px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s;
+   }
+   
+   .LongBtn:hover {
+       /* background-color: #c52a18; */
+       background-color: #B82418;
+   }
+   
+   .LongBtn:active{
+       background-color: #fd031c;
+   }
+   
+   .LongBtn.disabled {
+       background-color: #ccc;
+       color: #777;
+       cursor: not-allowed;
+   }
+   
+   .LongBtn:disabled {
+       pointer-events: none;
+       background-color: #B8B8B8;
+   }
+}
+
+@media only screen and (max-width:500px){
+    .LongBtn {
+
+        width: 90vw;
+        height: 50px;
+        background-color: #DE2D1E;
+        color: #fff;
+        padding: 2px 0 0 5px;
+        border: none;
+        border-radius: 38px;
+        font-size: 18px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s;
+   }
+   
+   .LongBtn:hover {
+       /* background-color: #c52a18; */
+       background-color: #B82418;
+   }
+   
+   .LongBtn:active{
+       background-color: #fd031c;
+   }
+   
+   .LongBtn.disabled {
+       background-color: #ccc;
+       color: #777;
+       cursor: not-allowed;
+   }
+   
+   .LongBtn:disabled {
+       pointer-events: none;
+       background-color: #B8B8B8;
+   }
+}
+
+@media only screen and (max-width:450px){
+    .LongBtn {
+
+        width: 89vw;
+        height: 50px;
+        background-color: #DE2D1E;
+        color: #fff;
+        padding: 2px 0 0 5px;
+        border: none;
+        border-radius: 38px;
+        font-size: 18px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s;
+   }
+   
+   .LongBtn:hover {
+       /* background-color: #c52a18; */
+       background-color: #B82418;
+   }
+   
+   .LongBtn:active{
+       background-color: #fd031c;
+   }
+   
+   .LongBtn.disabled {
+       background-color: #ccc;
+       color: #777;
+       cursor: not-allowed;
+   }
+   
+   .LongBtn:disabled {
+       pointer-events: none;
+       background-color: #B8B8B8;
+    }
+}
+
+@media only screen and (max-width:430px){
+    .LongBtn {
+
+        width: 87vw;
+        height: 50px;
+        background-color: #DE2D1E;
+        color: #fff;
+        padding: 2px 0 0 5px;
+        border: none;
+        border-radius: 38px;
+        font-size: 18px;
+        font-family: 'NotoSansThai';
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s;
+   }
+   
+   .LongBtn:hover {
+       /* background-color: #c52a18; */
+       background-color: #B82418;
+   }
+   
+   .LongBtn:active{
+       background-color: #fd031c;
+   }
+   
+   .LongBtn.disabled {
+       background-color: #ccc;
+       color: #777;
+       cursor: not-allowed;
+   }
+   
+   .LongBtn:disabled {
+       pointer-events: none;
+       background-color: #B8B8B8;
+    }
 }

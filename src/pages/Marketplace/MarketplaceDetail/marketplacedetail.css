@@ -1,0 +1,163 @@
+.marketplacedetail-container {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    max-height: 100vh;
+}
+
+.marketplacedetail-container .marketplacedetail-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.marketplacedetail-grid .row-1 {
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.marketplacedetail-grid .row-2 {
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.marketplacedetail-grid .row-3 {
+    padding: 10px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.marketplacedetail-grid .row-4 {
+    padding: 10px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.marketplacedetail-grid .row-5 {
+    padding: 10px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.marketplacedetail-grid .row-6 {
+    padding: 40px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.marketplacedetail-container .header {
+    display: flex;
+    justify-content: center;
+}
+
+.marketplacedetail-container .header .title {
+    font-family: 'NotoSansThai';
+    font-size: 26px;
+    font-weight: 700;
+    color: #DE2D1E;
+}
+
+.marketplacedetail-container .productimage {
+    /* width: 375px; */
+    width: 35%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 15px;
+    align-self: center;
+}
+
+.marketplacedetail-container .marketplacedetail-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.marketplacedetail-group .productname {
+    font-family: 'NotoSansThai';
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.marketplacedetail-group .productdetail {
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    white-space: pre-line;
+}
+
+.marketplacedetail-group .user-group {
+    display: flex;
+    align-items: center;
+}
+
+.marketplacedetail-group .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.marketplacedetail-group .user-info {
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.marketplacedetail-container .reward-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 5px 0;
+}
+
+.marketplacedetail-container .points-group {
+    display: flex;
+    align-items: center;
+}
+
+.marketplacedetail-container .points-image {
+    width: 33px;
+    height: 30px;
+    margin-bottom: 5px;
+    margin-right: 11px;
+}
+
+.marketplacedetail-container .points-image span:first-child {
+    margin-right: 11px;
+}
+
+.marketplacedetail-container .current-points {
+    font-family: 'NotoSansThai';
+    color: #333333;
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 2px;
+    margin-bottom: 3px;
+
+}
+
+.marketplacedetail-container .points-divider {
+    font-family: 'NotoSansThai';
+    color: #777777;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+.marketplacedetail-container .redeem-btn {
+    padding: 2px 0 0 5px;
+    border: none;
+    border-radius: 21px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    text-align: right;
+}

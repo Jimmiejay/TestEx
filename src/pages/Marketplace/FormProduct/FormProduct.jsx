@@ -20,7 +20,7 @@ const FormProduct = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        // กำหนดค่าต่างๆ ที่คุณต้องการภายใน useEffect
+        // กำหนดค่าต่างๆ ที่ต้องการภายใน useEffect
         setProfileImage(Paom);
         setProfileName('aom');
         setProfilePhone('098-xxx-xxxx')

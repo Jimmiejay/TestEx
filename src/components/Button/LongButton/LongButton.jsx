@@ -3,11 +3,11 @@ import './longbutton.css';
 
 const LongButton = (props) => {
 
-    const { text, disabled } = props;
+    const { text, disabled, onClick } = props;
 
     return (
         <>
-            <button className={`LongBtn ${disabled ? 'disabled' : ''}`} disabled={disabled}>
+            <button className={`LongBtn ${disabled ? 'disabled' : ''}`} disabled={disabled} onClick={onClick}>
                 {text}
             </button>
         </>

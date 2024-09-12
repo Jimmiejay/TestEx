@@ -19,7 +19,7 @@ const Reward = () => {
     const [isSubmitting, setIsSubmitting] = useState(false)
 
     useEffect(() => {
-        // กำหนดค่าต่างๆ ที่คุณต้องการภายใน useEffect
+        // กำหนดค่าต่างๆ ที่ต้องการภายใน useEffect
         setCurrentPoints(550);
         setRewardPoints(500);
         setRewardName("The Monsters Labubu Fall in Wild Vinyl Plush Doll");

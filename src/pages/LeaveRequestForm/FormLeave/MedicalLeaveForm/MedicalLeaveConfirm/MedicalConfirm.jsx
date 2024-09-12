@@ -10,14 +10,17 @@ const MedicalConfirm = () => {
     const location = useLocation();
     const { leaveType, details } = location.state || {};
 
+    const [isSuccess, setIsSuccess] = useState(false); // สถานะสำหรับป้องกันการกดซ้ำ
+
 
     //อันนี้แบบกำหนด isSuccess
     const handleConfirm = () => {
-        const isSuccess = true; 
+        const isSuccess = true;
         // const isSuccess = false; 
         // คุณสามารถเปลี่ยนเป็นเงื่อนไขจริงที่ต้องการตรวจสอบ
-        
-        if (isSuccess){
+        setIsSuccess(true); // ตั้งค่าให้ปุ่มถูก disabled หลังจากกด
+
+        if (isSuccess) {
             Swal.fire({
                 title: "คุณได้แจ้งลาสำเร็จ",
                 text: "คุณแจ้ง ลาป่วย เรียบร้อยแล้ว",
@@ -33,7 +36,7 @@ const MedicalConfirm = () => {
             }).then(() => {
                 setisTransferDone(true);
             });
-        } else{
+        } else {
             Swal.fire({
                 title: "โอ้ว..ไม่นะ",
                 text: "มีอะไรบางอย่างผิดพลาด",
@@ -60,7 +63,7 @@ const MedicalConfirm = () => {
     //             leaveType,
     //             details,
     //         });
-    
+
     //         // ตรวจสอบสถานะจาก response
     //         if (response.status === 200) {
     //             Swal.fire({
@@ -121,8 +124,12 @@ const MedicalConfirm = () => {
                     </div>
                 </div>
                 <div className='row-4'>
-                    <div onClick={handleConfirm} type="button" className='next-button' >
-                        <Button text='ยืนยัน' />
+                    <div type="button" className={`next-button ${isSuccess ? 'disabled' : ''}`} >
+                        <Button
+                            onClick={handleConfirm}
+                            disabled={isSuccess}
+                            text={isSuccess ? 'ดำเนินการเรียบร้อยแล้ว' : 'ยืนยัน'}
+                        />
                     </div>
                 </div>
             </div>

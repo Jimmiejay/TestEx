@@ -22,6 +22,8 @@ import PersonalLeaveConfirm from "./pages/LeaveRequestForm/FormLeave/PersonalLea
 import WFHConfirm from "./pages/LeaveRequestForm/FormLeave/WFHForm/WFHConfirm/WFHConfirm";
 import RewardConfirm from "./pages/Reward/RewardConfirm/RewardConfirm";
 import MarketplaceDetail from "./pages/Marketplace/MarketplaceDetail/MarketplaceDetail";
+import ConfirmExchange from "./pages/Marketplace/MarketplaceDetail/ConfirmExchange/ConfirmExchange";
+import ExchangePage from "./pages/Marketplace/MarketplaceDetail/ExchangePage/ExchangePage";
 
 
 
@@ -54,6 +56,14 @@ const router = createBrowserRouter([
     { 
         path: "/marketplace/marketplacedetail",
         element: (<MarketplaceDetail />),
+    },
+    { 
+        path: "/marketplace/marketplacedetail/exchange",
+        element: (<ExchangePage />),
+    },
+    { 
+        path: "/marketplace/marketplacedetail/exchange/confirmexchange",
+        element: (<ConfirmExchange />),
     },
     { 
         path: "/marketplace/changehistory",

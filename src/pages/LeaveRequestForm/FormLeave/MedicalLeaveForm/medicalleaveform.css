@@ -32,10 +32,11 @@
 }
 
 .medical-grid .row-4 {
-    padding: 240px 20px 0px 20px;
+    padding: 240px 20px 0px 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 100vw;
 }
 
 .medical-form-container .header {
@@ -179,7 +180,7 @@ textarea {
     }
 
     .medical-grid .row-4 {
-        padding: 240px 20px 0px 20px;
+        padding: 240px 20px 0px 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -327,7 +328,7 @@ textarea {
     }
 
     .medical-grid .row-4 {
-        padding: 240px 20px 0px 20px;
+        padding: 240px 20px 0px 8px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -475,7 +476,7 @@ textarea {
     }
 
     .medical-grid .row-4 {
-        padding: 240px 20px 0px 20px;
+        padding: 240px 20px 0px 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -623,7 +624,7 @@ textarea {
     }
 
     .medical-grid .row-4 {
-        padding: 240px 20px 0px 20px;
+        padding: 240px 20px 0px 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -771,7 +772,7 @@ textarea {
     }
 
     .medical-grid .row-4 {
-        padding: 240px 20px 0px 20px;
+        padding: 240px 20px 0px 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -919,7 +920,7 @@ textarea {
     }
 
     .medical-grid .row-4 {
-        padding: 240px 20px 0px 20px;
+        padding: 240px 20px 0px 3px;
         display: flex;
         flex-direction: column;
         justify-content: center;

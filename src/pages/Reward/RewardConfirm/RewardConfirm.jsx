@@ -9,7 +9,7 @@ const MySwal = withReactContent(Swal);
 
 const RewardConfirm = () => {
     const location = useLocation();
-    const { currentPoints, rewardImage, rewardName, pointImage, rewardPoints } = location.state
+    const { currentPoints, rewardImage, rewardName, pointImage, rewardPoints } = location.state || {};
     // const [loading, setLoading] = useState(true);
 
     const [points, setPoints] = useState(currentPoints); // สถานะสำหรับยอดคงเหลือ
