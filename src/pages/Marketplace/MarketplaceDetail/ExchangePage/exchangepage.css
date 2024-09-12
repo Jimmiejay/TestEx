@@ -212,3 +212,2162 @@
     color: #C1C1C1;
 }
 
+@media only screen and (max-width:1250px){
+    .exchangepage-container {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .exchangepage-container .exchangepage-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .exchangepage-grid .row-1 {
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .exchangepage-grid .row-2 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-3 {
+        padding: 20px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-4 {
+        padding: 20px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-5 {
+        padding: 130px 20px 20px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 97vw;
+    }
+    
+    .exchangepage-grid .row-1 .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .exchangepage-grid .row-1 .header.title h2 {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #DE2D1E;
+    }
+    
+    .exchangepage-grid .row-2 .exchangepage-card {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    
+    .exchangepage-card .exchangepage-image {
+        width: 230px;
+        height: 230px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin: 5px 10px 5px 5px;
+    }
+    
+    .exchangepage-card .exchangepage-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        /* height: 100%; */
+    }
+    
+    .exchangepage-card .exchangepage-name {
+        font-family: 'NotoSansThai';
+        font-size: 20px;
+        font-weight: 700;
+        color: #333333;
+        padding: 0 0 5px 0;
+    
+        max-width: 900px;
+        white-space: normal;
+        /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+        word-wrap: break-word;
+        /* ตัดคำเมื่อความยาวเกินความกว้าง */
+    }
+    
+    .exchangepage-card .productdetail {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        font-weight: 400;
+        color: #333333;
+        white-space: pre-line;
+    }
+    
+    .exchangepage-card .user-group {
+        display: flex;
+        align-items: center;
+        padding: 10px 0 0 0;
+    }
+    
+    .exchangepage-card .user-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    .exchangepage-card .user-info {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        font-weight: 400;
+        color: #333333;
+    }
+    
+    .exchangepage-card .points-container {
+        display: flex;
+        align-items: center;
+        padding: 30px 0 0 0;
+    }
+    
+    .exchangepage-card .points-container span {
+        font-family: 'NotoSansThai';
+        font-size: 18px;
+        font-weight: 700;
+        color: #333333;
+        text-align: left;
+        margin-top: 5px;
+    }
+    
+    .exchangepage-card .point-image {
+        width: 30px;
+        height: 28px;
+        margin-right: 5px;
+    }
+    
+    .exchangepage-container .exchangepage-group {
+        display: flex;
+        flex-direction: column;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 14px;
+            color: #333333;
+            font-weight: 400;
+        }
+    
+        .required {
+            color: #FF0000;
+        }
+    
+        .input-field {
+            /* width: 100%; */
+            padding: 10px;
+            border: 1px solid #C1C1C1;
+            border-radius: 8px;
+    
+            font-family: 'NotoSansThai';
+            font-size: 16px;
+            font-weight: 400;
+        }
+    
+        .error-input {
+            border: 1px solid #DE2D1E;
+        }
+    
+        .error-message {
+            color: #DE2D1E;
+            font-size: 14px;
+            margin-top: 5px;
+            font-family: 'NotoSansThai';
+            font-weight: 400;
+        }
+    }
+    
+    .exchangepage-group input[type="text"],
+    .exchangepage-group input[type="number"] {
+        width: 98%;
+        padding: 8px;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        color: #000;
+    }
+    
+    .exchangepage-group input {
+        height: 40px;
+    }
+    
+    .exchangepage-group ::placeholder {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        color: #C1C1C1;
+    }
+}
+
+@media only screen and (max-width:810px){
+    .exchangepage-container {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .exchangepage-container .exchangepage-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .exchangepage-grid .row-1 {
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .exchangepage-grid .row-2 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-3 {
+        padding: 20px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-4 {
+        padding: 20px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-5 {
+        padding: 120px 0px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 99vw;
+    }
+    
+    .exchangepage-grid .row-1 .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .exchangepage-grid .row-1 .header.title h2 {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #DE2D1E;
+    }
+    
+    .exchangepage-grid .row-2 .exchangepage-card {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    
+    .exchangepage-card .exchangepage-image {
+        width: 230px;
+        height: 230px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin: 5px 10px 5px 5px;
+    }
+    
+    .exchangepage-card .exchangepage-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        /* height: 100%; */
+    }
+    
+    .exchangepage-card .exchangepage-name {
+        font-family: 'NotoSansThai';
+        font-size: 20px;
+        font-weight: 700;
+        color: #333333;
+        padding: 0 0 5px 0;
+    
+        max-width: 900px;
+        white-space: normal;
+        /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+        word-wrap: break-word;
+        /* ตัดคำเมื่อความยาวเกินความกว้าง */
+    }
+    
+    .exchangepage-card .productdetail {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        font-weight: 400;
+        color: #333333;
+        white-space: pre-line;
+    }
+    
+    .exchangepage-card .user-group {
+        display: flex;
+        align-items: center;
+        padding: 10px 0 0 0;
+    }
+    
+    .exchangepage-card .user-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    .exchangepage-card .user-info {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        font-weight: 400;
+        color: #333333;
+    }
+    
+    .exchangepage-card .points-container {
+        display: flex;
+        align-items: center;
+        padding: 30px 0 0 0;
+    }
+    
+    .exchangepage-card .points-container span {
+        font-family: 'NotoSansThai';
+        font-size: 18px;
+        font-weight: 700;
+        color: #333333;
+        text-align: left;
+        margin-top: 5px;
+    }
+    
+    .exchangepage-card .point-image {
+        width: 30px;
+        height: 28px;
+        margin-right: 5px;
+    }
+    
+    .exchangepage-container .exchangepage-group {
+        display: flex;
+        flex-direction: column;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 14px;
+            color: #333333;
+            font-weight: 400;
+        }
+    
+        .required {
+            color: #FF0000;
+        }
+    
+        .input-field {
+            /* width: 100%; */
+            padding: 10px;
+            border: 1px solid #C1C1C1;
+            border-radius: 8px;
+    
+            font-family: 'NotoSansThai';
+            font-size: 16px;
+            font-weight: 400;
+        }
+    
+        .error-input {
+            border: 1px solid #DE2D1E;
+        }
+    
+        .error-message {
+            color: #DE2D1E;
+            font-size: 14px;
+            margin-top: 5px;
+            font-family: 'NotoSansThai';
+            font-weight: 400;
+        }
+    }
+    
+    .exchangepage-group input[type="text"],
+    .exchangepage-group input[type="number"] {
+        width: 98%;
+        padding: 8px;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        color: #000;
+    }
+    
+    .exchangepage-group input {
+        height: 40px;
+    }
+    
+    .exchangepage-group ::placeholder {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        color: #C1C1C1;
+    }
+}
+
+@media only screen and (max-width:720px){
+    .exchangepage-container {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .exchangepage-container .exchangepage-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .exchangepage-grid .row-1 {
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .exchangepage-grid .row-2 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-3 {
+        padding: 20px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-4 {
+        padding: 20px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-5 {
+        padding: 100px 0px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 99vw;
+    }
+    
+    .exchangepage-grid .row-1 .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .exchangepage-grid .row-1 .header.title h2 {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #DE2D1E;
+    }
+    
+    .exchangepage-grid .row-2 .exchangepage-card {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    
+    .exchangepage-card .exchangepage-image {
+        width: 230px;
+        height: 230px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin: 5px 10px 5px 5px;
+    }
+    
+    .exchangepage-card .exchangepage-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        /* height: 100%; */
+    }
+    
+    .exchangepage-card .exchangepage-name {
+        font-family: 'NotoSansThai';
+        font-size: 18px;
+        font-weight: 700;
+        color: #333333;
+        padding: 0 0 5px 0;
+    
+        max-width: 900px;
+        white-space: normal;
+        /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+        word-wrap: break-word;
+        /* ตัดคำเมื่อความยาวเกินความกว้าง */
+    }
+    
+    .exchangepage-card .productdetail {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        font-weight: 400;
+        color: #333333;
+        white-space: pre-line;
+    }
+    
+    .exchangepage-card .user-group {
+        display: flex;
+        align-items: center;
+        padding: 10px 0 0 0;
+    }
+    
+    .exchangepage-card .user-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    .exchangepage-card .user-info {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        font-weight: 400;
+        color: #333333;
+    }
+    
+    .exchangepage-card .points-container {
+        display: flex;
+        align-items: center;
+        padding: 30px 0 0 0;
+    }
+    
+    .exchangepage-card .points-container span {
+        font-family: 'NotoSansThai';
+        font-size: 18px;
+        font-weight: 700;
+        color: #333333;
+        text-align: left;
+        margin-top: 5px;
+    }
+    
+    .exchangepage-card .point-image {
+        width: 30px;
+        height: 28px;
+        margin-right: 5px;
+    }
+    
+    .exchangepage-container .exchangepage-group {
+        display: flex;
+        flex-direction: column;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 14px;
+            color: #333333;
+            font-weight: 400;
+        }
+    
+        .required {
+            color: #FF0000;
+        }
+    
+        .input-field {
+            /* width: 100%; */
+            padding: 10px;
+            border: 1px solid #C1C1C1;
+            border-radius: 8px;
+    
+            font-family: 'NotoSansThai';
+            font-size: 16px;
+            font-weight: 400;
+        }
+    
+        .error-input {
+            border: 1px solid #DE2D1E;
+        }
+    
+        .error-message {
+            color: #DE2D1E;
+            font-size: 14px;
+            margin-top: 5px;
+            font-family: 'NotoSansThai';
+            font-weight: 400;
+        }
+    }
+    
+    .exchangepage-group input[type="text"],
+    .exchangepage-group input[type="number"] {
+        width: 98%;
+        padding: 8px;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        color: #000;
+    }
+    
+    .exchangepage-group input {
+        height: 40px;
+    }
+    
+    .exchangepage-group ::placeholder {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        color: #C1C1C1;
+    }
+}
+
+@media only screen and (max-width:680px){
+    .exchangepage-container {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .exchangepage-container .exchangepage-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .exchangepage-grid .row-1 {
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .exchangepage-grid .row-2 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-3 {
+        padding: 20px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-4 {
+        padding: 20px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-5 {
+        padding: 100px 0px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 99vw;
+    }
+    
+    .exchangepage-grid .row-1 .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .exchangepage-grid .row-1 .header.title h2 {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #DE2D1E;
+    }
+    
+    .exchangepage-grid .row-2 .exchangepage-card {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    
+    .exchangepage-card .exchangepage-image {
+        width: 230px;
+        height: 230px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin: 5px 10px 5px 5px;
+    }
+    
+    .exchangepage-card .exchangepage-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        /* height: 100%; */
+    }
+    
+    .exchangepage-card .exchangepage-name {
+        font-family: 'NotoSansThai';
+        font-size: 18px;
+        font-weight: 700;
+        color: #333333;
+        padding: 0 0 5px 0;
+    
+        max-width: 900px;
+        white-space: normal;
+        /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+        word-wrap: break-word;
+        /* ตัดคำเมื่อความยาวเกินความกว้าง */
+    }
+    
+    .exchangepage-card .productdetail {
+        font-family: 'NotoSansThai';
+        font-size: 12px;
+        font-weight: 400;
+        color: #333333;
+        white-space: pre-line;
+    }
+    
+    .exchangepage-card .user-group {
+        display: flex;
+        align-items: center;
+        padding: 10px 0 0 0;
+    }
+    
+    .exchangepage-card .user-avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    .exchangepage-card .user-info {
+        font-family: 'NotoSansThai';
+        font-size: 12px;
+        font-weight: 400;
+        color: #333333;
+    }
+    
+    .exchangepage-card .points-container {
+        display: flex;
+        align-items: center;
+        padding: 30px 0 0 0;
+    }
+    
+    .exchangepage-card .points-container span {
+        font-family: 'NotoSansThai';
+        font-size: 18px;
+        font-weight: 700;
+        color: #333333;
+        text-align: left;
+        margin-top: 5px;
+    }
+    
+    .exchangepage-card .point-image {
+        width: 30px;
+        height: 28px;
+        margin-right: 5px;
+    }
+    
+    .exchangepage-container .exchangepage-group {
+        display: flex;
+        flex-direction: column;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 14px;
+            color: #333333;
+            font-weight: 400;
+        }
+    
+        .required {
+            color: #FF0000;
+        }
+    
+        .input-field {
+            /* width: 100%; */
+            padding: 10px;
+            border: 1px solid #C1C1C1;
+            border-radius: 8px;
+    
+            font-family: 'NotoSansThai';
+            font-size: 16px;
+            font-weight: 400;
+        }
+    
+        .error-input {
+            border: 1px solid #DE2D1E;
+        }
+    
+        .error-message {
+            color: #DE2D1E;
+            font-size: 14px;
+            margin-top: 5px;
+            font-family: 'NotoSansThai';
+            font-weight: 400;
+        }
+    }
+    
+    .exchangepage-group input[type="text"],
+    .exchangepage-group input[type="number"] {
+        width: 98%;
+        padding: 8px;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        color: #000;
+    }
+    
+    .exchangepage-group input {
+        height: 40px;
+    }
+    
+    .exchangepage-group ::placeholder {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        color: #C1C1C1;
+    }
+}
+
+@media only screen and (max-width:630px){
+    .exchangepage-container {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .exchangepage-container .exchangepage-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .exchangepage-grid .row-1 {
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .exchangepage-grid .row-2 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-3 {
+        padding: 20px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-4 {
+        padding: 20px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-5 {
+        padding: 100px 0px 20px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 99vw;
+    }
+    
+    .exchangepage-grid .row-1 .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .exchangepage-grid .row-1 .header.title h2 {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #DE2D1E;
+    }
+    
+    .exchangepage-grid .row-2 .exchangepage-card {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    
+    .exchangepage-card .exchangepage-image {
+        width: 230px;
+        height: 230px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin: 5px 10px 5px 5px;
+    }
+    
+    .exchangepage-card .exchangepage-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        /* height: 100%; */
+    }
+    
+    .exchangepage-card .exchangepage-name {
+        font-family: 'NotoSansThai';
+        font-size: 18px;
+        font-weight: 700;
+        color: #333333;
+        padding: 0 0 5px 0;
+    
+        max-width: 900px;
+        white-space: normal;
+        /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+        word-wrap: break-word;
+        /* ตัดคำเมื่อความยาวเกินความกว้าง */
+    }
+    
+    .exchangepage-card .productdetail {
+        font-family: 'NotoSansThai';
+        font-size: 12px;
+        font-weight: 400;
+        color: #333333;
+        white-space: pre-line;
+    }
+    
+    .exchangepage-card .user-group {
+        display: flex;
+        align-items: center;
+        padding: 10px 0 0 0;
+    }
+    
+    .exchangepage-card .user-avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    .exchangepage-card .user-info {
+        font-family: 'NotoSansThai';
+        font-size: 12px;
+        font-weight: 400;
+        color: #333333;
+    }
+    
+    .exchangepage-card .points-container {
+        display: flex;
+        align-items: center;
+        padding: 30px 0 0 0;
+    }
+    
+    .exchangepage-card .points-container span {
+        font-family: 'NotoSansThai';
+        font-size: 18px;
+        font-weight: 700;
+        color: #333333;
+        text-align: left;
+        margin-top: 5px;
+    }
+    
+    .exchangepage-card .point-image {
+        width: 30px;
+        height: 28px;
+        margin-right: 5px;
+    }
+    
+    .exchangepage-container .exchangepage-group {
+        display: flex;
+        flex-direction: column;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 14px;
+            color: #333333;
+            font-weight: 400;
+        }
+    
+        .required {
+            color: #FF0000;
+        }
+    
+        .input-field {
+            /* width: 100%; */
+            padding: 10px;
+            border: 1px solid #C1C1C1;
+            border-radius: 8px;
+    
+            font-family: 'NotoSansThai';
+            font-size: 16px;
+            font-weight: 400;
+        }
+    
+        .error-input {
+            border: 1px solid #DE2D1E;
+        }
+    
+        .error-message {
+            color: #DE2D1E;
+            font-size: 14px;
+            margin-top: 5px;
+            font-family: 'NotoSansThai';
+            font-weight: 400;
+        }
+    }
+    
+    .exchangepage-group input[type="text"],
+    .exchangepage-group input[type="number"] {
+        width: 98%;
+        padding: 8px;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        color: #000;
+    }
+    
+    .exchangepage-group input {
+        height: 40px;
+    }
+    
+    .exchangepage-group ::placeholder {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        color: #C1C1C1;
+    }
+}
+
+@media only screen and (max-width:560px){
+    .exchangepage-container {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .exchangepage-container .exchangepage-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .exchangepage-grid .row-1 {
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .exchangepage-grid .row-2 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-3 {
+        padding: 20px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-4 {
+        padding: 20px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-5 {
+        padding: 100px 0px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 99vw;
+    }
+    
+    .exchangepage-grid .row-1 .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .exchangepage-grid .row-1 .header.title h2 {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #DE2D1E;
+    }
+    
+    .exchangepage-grid .row-2 .exchangepage-card {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    
+    .exchangepage-card .exchangepage-image {
+        width: 230px;
+        height: 230px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin: 5px 10px 5px 5px;
+    }
+    
+    .exchangepage-card .exchangepage-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        /* height: 100%; */
+    }
+    
+    .exchangepage-card .exchangepage-name {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        font-weight: 700;
+        color: #333333;
+        padding: 0 0 5px 0;
+    
+        max-width: 900px;
+        white-space: normal;
+        /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+        word-wrap: break-word;
+        /* ตัดคำเมื่อความยาวเกินความกว้าง */
+    }
+    
+    .exchangepage-card .productdetail {
+        font-family: 'NotoSansThai';
+        font-size: 12px;
+        font-weight: 400;
+        color: #333333;
+        white-space: pre-line;
+    }
+    
+    .exchangepage-card .user-group {
+        display: flex;
+        align-items: center;
+        padding: 10px 0 0 0;
+    }
+    
+    .exchangepage-card .user-avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    .exchangepage-card .user-info {
+        font-family: 'NotoSansThai';
+        font-size: 12px;
+        font-weight: 400;
+        color: #333333;
+    }
+    
+    .exchangepage-card .points-container {
+        display: flex;
+        align-items: center;
+        padding: 30px 0 0 0;
+    }
+    
+    .exchangepage-card .points-container span {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 700;
+        color: #333333;
+        text-align: left;
+        margin-top: 5px;
+    }
+    
+    .exchangepage-card .point-image {
+        width: 25px;
+        height: 22px;
+        margin-right: 5px;
+    }
+    
+    .exchangepage-container .exchangepage-group {
+        display: flex;
+        flex-direction: column;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 14px;
+            color: #333333;
+            font-weight: 400;
+        }
+    
+        .required {
+            color: #FF0000;
+        }
+    
+        .input-field {
+            /* width: 100%; */
+            padding: 10px;
+            border: 1px solid #C1C1C1;
+            border-radius: 8px;
+    
+            font-family: 'NotoSansThai';
+            font-size: 16px;
+            font-weight: 400;
+        }
+    
+        .error-input {
+            border: 1px solid #DE2D1E;
+        }
+    
+        .error-message {
+            color: #DE2D1E;
+            font-size: 14px;
+            margin-top: 5px;
+            font-family: 'NotoSansThai';
+            font-weight: 400;
+        }
+    }
+    
+    .exchangepage-group input[type="text"],
+    .exchangepage-group input[type="number"] {
+        width: 98%;
+        padding: 8px;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        color: #000;
+    }
+    
+    .exchangepage-group input {
+        height: 40px;
+    }
+    
+    .exchangepage-group ::placeholder {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        color: #C1C1C1;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .exchangepage-container {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .exchangepage-container .exchangepage-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .exchangepage-grid .row-1 {
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .exchangepage-grid .row-2 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-3 {
+        padding: 20px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 97vw;
+    }
+    
+    .exchangepage-grid .row-4 {
+        padding: 20px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 97vw;
+    }
+    
+    .exchangepage-grid .row-5 {
+        padding: 100px 0px 20px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 99vw;
+    }
+    
+    .exchangepage-grid .row-1 .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .exchangepage-grid .row-1 .header.title h2 {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #DE2D1E;
+    }
+    
+    .exchangepage-grid .row-2 .exchangepage-card {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    
+    .exchangepage-card .exchangepage-image {
+        width: 210px;
+        height: 210px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin: 5px 10px 5px 5px;
+    }
+    
+    .exchangepage-card .exchangepage-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        /* height: 100%; */
+    }
+    
+    .exchangepage-card .exchangepage-name {
+        font-family: 'NotoSansThai';
+        font-size: 12px;
+        font-weight: 700;
+        color: #333333;
+        padding: 0 0 5px 0;
+    
+        max-width: 900px;
+        white-space: normal;
+        /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+        word-wrap: break-word;
+        /* ตัดคำเมื่อความยาวเกินความกว้าง */
+    }
+    
+    .exchangepage-card .productdetail {
+        font-family: 'NotoSansThai';
+        font-size: 10px;
+        font-weight: 400;
+        color: #333333;
+        white-space: pre-line;
+    }
+    
+    .exchangepage-card .user-group {
+        display: flex;
+        align-items: center;
+        padding: 10px 0 0 0;
+    }
+    
+    .exchangepage-card .user-avatar {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    .exchangepage-card .user-info {
+        font-family: 'NotoSansThai';
+        font-size: 10px;
+        font-weight: 400;
+        color: #333333;
+    }
+    
+    .exchangepage-card .points-container {
+        display: flex;
+        align-items: center;
+        padding: 30px 0 0 0;
+    }
+    
+    .exchangepage-card .points-container span {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 700;
+        color: #333333;
+        text-align: left;
+        margin-top: 5px;
+    }
+    
+    .exchangepage-card .point-image {
+        width: 20px;
+        height: 18px;
+        margin-right: 5px;
+    }
+    
+    .exchangepage-container .exchangepage-group {
+        display: flex;
+        flex-direction: column;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 12px;
+            color: #333333;
+            font-weight: 400;
+        }
+    
+        .required {
+            color: #FF0000;
+        }
+    
+        .input-field {
+            /* width: 100%; */
+            padding: 10px;
+            border: 1px solid #C1C1C1;
+            border-radius: 8px;
+    
+            font-family: 'NotoSansThai';
+            font-size: 16px;
+            font-weight: 400;
+        }
+    
+        .error-input {
+            border: 1px solid #DE2D1E;
+        }
+    
+        .error-message {
+            color: #DE2D1E;
+            font-size: 14px;
+            margin-top: 5px;
+            font-family: 'NotoSansThai';
+            font-weight: 400;
+        }
+    }
+    
+    .exchangepage-group input[type="text"],
+    .exchangepage-group input[type="number"] {
+        width: 98%;
+        padding: 8px;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        color: #000;
+    }
+    
+    .exchangepage-group input {
+        height: 40px;
+    }
+    
+    .exchangepage-group ::placeholder {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        color: #C1C1C1;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .exchangepage-container {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .exchangepage-container .exchangepage-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .exchangepage-grid .row-1 {
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .exchangepage-grid .row-2 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-3 {
+        padding: 20px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 97vw;
+    }
+    
+    .exchangepage-grid .row-4 {
+        padding: 20px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 97vw;
+    }
+    
+    .exchangepage-grid .row-5 {
+        padding: 130px 0px 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-1 .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .exchangepage-grid .row-1 .header.title h2 {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #DE2D1E;
+    }
+    
+    .exchangepage-grid .row-2 .exchangepage-card {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    
+    .exchangepage-card .exchangepage-image {
+        width: 150px;
+        height: 180px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin: 5px 10px 5px 5px;
+    }
+    
+    .exchangepage-card .exchangepage-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        /* height: 100%; */
+    }
+    
+    .exchangepage-card .exchangepage-name {
+        font-family: 'NotoSansThai';
+        font-size: 11px;
+        font-weight: 700;
+        color: #333333;
+        padding: 0 0 5px 0;
+    
+        max-width: 900px;
+        white-space: normal;
+        /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+        word-wrap: break-word;
+        /* ตัดคำเมื่อความยาวเกินความกว้าง */
+    }
+    
+    .exchangepage-card .productdetail {
+        font-family: 'NotoSansThai';
+        font-size: 10px;
+        font-weight: 400;
+        color: #333333;
+        white-space: pre-line;
+    }
+    
+    .exchangepage-card .user-group {
+        display: flex;
+        align-items: center;
+        padding: 10px 0 0 0;
+    }
+    
+    .exchangepage-card .user-avatar {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    .exchangepage-card .user-info {
+        font-family: 'NotoSansThai';
+        font-size: 10px;
+        font-weight: 400;
+        color: #333333;
+    }
+    
+    .exchangepage-card .points-container {
+        display: flex;
+        align-items: center;
+        padding: 30px 0 0 0;
+    }
+    
+    .exchangepage-card .points-container span {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 700;
+        color: #333333;
+        text-align: left;
+        margin-top: 5px;
+    }
+    
+    .exchangepage-card .point-image {
+        width: 20px;
+        height: 18px;
+        margin-right: 5px;
+    }
+    
+    .exchangepage-container .exchangepage-group {
+        display: flex;
+        flex-direction: column;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 12px;
+            color: #333333;
+            font-weight: 400;
+        }
+    
+        .required {
+            color: #FF0000;
+        }
+    
+        .input-field {
+            /* width: 100%; */
+            padding: 10px;
+            border: 1px solid #C1C1C1;
+            border-radius: 8px;
+    
+            font-family: 'NotoSansThai';
+            font-size: 16px;
+            font-weight: 400;
+        }
+    
+        .error-input {
+            border: 1px solid #DE2D1E;
+        }
+    
+        .error-message {
+            color: #DE2D1E;
+            font-size: 14px;
+            margin-top: 5px;
+            font-family: 'NotoSansThai';
+            font-weight: 400;
+        }
+    }
+    
+    .exchangepage-group input[type="text"],
+    .exchangepage-group input[type="number"] {
+        width: 98%;
+        padding: 8px;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        color: #000;
+    }
+    
+    .exchangepage-group input {
+        height: 40px;
+    }
+    
+    .exchangepage-group ::placeholder {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        color: #C1C1C1;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .exchangepage-container {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .exchangepage-container .exchangepage-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .exchangepage-grid .row-1 {
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .exchangepage-grid .row-2 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-3 {
+        padding: 20px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 95vw;
+    }
+    
+    .exchangepage-grid .row-4 {
+        padding: 20px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 95vw;
+    }
+    
+    .exchangepage-grid .row-5 {
+        padding: 120px 0px 20px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 95vw;
+    }
+    
+    .exchangepage-grid .row-1 .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .exchangepage-grid .row-1 .header.title h2 {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #DE2D1E;
+    }
+    
+    .exchangepage-grid .row-2 .exchangepage-card {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    
+    .exchangepage-card .exchangepage-image {
+        width: 160px;
+        height: 190px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin: 5px 10px 5px 5px;
+    }
+    
+    .exchangepage-card .exchangepage-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        /* height: 100%; */
+    }
+    
+    .exchangepage-card .exchangepage-name {
+        font-family: 'NotoSansThai';
+        font-size: 11px;
+        font-weight: 700;
+        color: #333333;
+        padding: 0 0 5px 0;
+    
+        max-width: 900px;
+        white-space: normal;
+        /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+        word-wrap: break-word;
+        /* ตัดคำเมื่อความยาวเกินความกว้าง */
+    }
+    
+    .exchangepage-card .productdetail {
+        font-family: 'NotoSansThai';
+        font-size: 10px;
+        font-weight: 400;
+        color: #333333;
+        white-space: pre-line;
+    }
+    
+    .exchangepage-card .user-group {
+        display: flex;
+        align-items: center;
+        padding: 10px 0 0 0;
+    }
+    
+    .exchangepage-card .user-avatar {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    .exchangepage-card .user-info {
+        font-family: 'NotoSansThai';
+        font-size: 10px;
+        font-weight: 400;
+        color: #333333;
+    }
+    
+    .exchangepage-card .points-container {
+        display: flex;
+        align-items: center;
+        padding: 30px 0 0 0;
+    }
+    
+    .exchangepage-card .points-container span {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 700;
+        color: #333333;
+        text-align: left;
+        margin-top: 5px;
+    }
+    
+    .exchangepage-card .point-image {
+        width: 20px;
+        height: 18px;
+        margin-right: 5px;
+    }
+    
+    .exchangepage-container .exchangepage-group {
+        display: flex;
+        flex-direction: column;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 12px;
+            color: #333333;
+            font-weight: 400;
+        }
+    
+        .required {
+            color: #FF0000;
+        }
+    
+        .input-field {
+            /* width: 100%; */
+            padding: 10px;
+            border: 1px solid #C1C1C1;
+            border-radius: 8px;
+    
+            font-family: 'NotoSansThai';
+            font-size: 16px;
+            font-weight: 400;
+        }
+    
+        .error-input {
+            border: 1px solid #DE2D1E;
+        }
+    
+        .error-message {
+            color: #DE2D1E;
+            font-size: 14px;
+            margin-top: 5px;
+            font-family: 'NotoSansThai';
+            font-weight: 400;
+        }
+    }
+    
+    .exchangepage-group input[type="text"],
+    .exchangepage-group input[type="number"] {
+        width: 98%;
+        padding: 8px;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        color: #000;
+    }
+    
+    .exchangepage-group input {
+        height: 40px;
+    }
+    
+    .exchangepage-group ::placeholder {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        color: #C1C1C1;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .exchangepage-container {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        max-height: 100vh;
+    }
+    
+    .exchangepage-container .exchangepage-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .exchangepage-grid .row-1 {
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .exchangepage-grid .row-2 {
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vw;
+    }
+    
+    .exchangepage-grid .row-3 {
+        padding: 20px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 95vw;
+    }
+    
+    .exchangepage-grid .row-4 {
+        padding: 20px 0px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 95vw;
+    }
+    
+    .exchangepage-grid .row-5 {
+        padding: 110px 0px 20px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 95vw;
+    }
+    
+    .exchangepage-grid .row-1 .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .exchangepage-grid .row-1 .header.title h2 {
+        font-family: 'NotoSansThai';
+        font-size: 26px;
+        font-weight: 700;
+        color: #DE2D1E;
+    }
+    
+    .exchangepage-grid .row-2 .exchangepage-card {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    
+    .exchangepage-card .exchangepage-image {
+        width: 150px;
+        height: 180px;
+        border-radius: 5px;
+        object-fit: cover;
+        margin: 5px 10px 5px 5px;
+    }
+    
+    .exchangepage-card .exchangepage-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        /* height: 100%; */
+    }
+    
+    .exchangepage-card .exchangepage-name {
+        font-family: 'NotoSansThai';
+        font-size: 12px;
+        font-weight: 700;
+        color: #333333;
+        padding: 0 0 5px 0;
+    
+        max-width: 900px;
+        white-space: normal;
+        /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+        word-wrap: break-word;
+        /* ตัดคำเมื่อความยาวเกินความกว้าง */
+    }
+    
+    .exchangepage-card .productdetail {
+        font-family: 'NotoSansThai';
+        font-size: 10px;
+        font-weight: 400;
+        color: #333333;
+        white-space: pre-line;
+    }
+    
+    .exchangepage-card .user-group {
+        display: flex;
+        align-items: center;
+        padding: 10px 0 0 0;
+    }
+    
+    .exchangepage-card .user-avatar {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    .exchangepage-card .user-info {
+        font-family: 'NotoSansThai';
+        font-size: 10px;
+        font-weight: 400;
+        color: #333333;
+    }
+    
+    .exchangepage-card .points-container {
+        display: flex;
+        align-items: center;
+        padding: 30px 0 0 0;
+    }
+    
+    .exchangepage-card .points-container span {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 700;
+        color: #333333;
+        text-align: left;
+        margin-top: 5px;
+    }
+    
+    .exchangepage-card .point-image {
+        width: 20px;
+        height: 18px;
+        margin-right: 5px;
+    }
+    
+    .exchangepage-container .exchangepage-group {
+        display: flex;
+        flex-direction: column;
+    
+        label {
+            font-family: 'NotoSansThai';
+            font-size: 12px;
+            color: #333333;
+            font-weight: 400;
+        }
+    
+        .required {
+            color: #FF0000;
+        }
+    
+        .input-field {
+            /* width: 100%; */
+            padding: 10px;
+            border: 1px solid #C1C1C1;
+            border-radius: 8px;
+    
+            font-family: 'NotoSansThai';
+            font-size: 16px;
+            font-weight: 400;
+        }
+    
+        .error-input {
+            border: 1px solid #DE2D1E;
+        }
+    
+        .error-message {
+            color: #DE2D1E;
+            font-size: 14px;
+            margin-top: 5px;
+            font-family: 'NotoSansThai';
+            font-weight: 400;
+        }
+    }
+    
+    .exchangepage-group input[type="text"],
+    .exchangepage-group input[type="number"] {
+        width: 98%;
+        padding: 8px;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        color: #000;
+    }
+    
+    .exchangepage-group input {
+        height: 40px;
+    }
+    
+    .exchangepage-group ::placeholder {
+        font-family: 'NotoSansThai';
+        font-size: 14px;
+        color: #C1C1C1;
+    }
+}
