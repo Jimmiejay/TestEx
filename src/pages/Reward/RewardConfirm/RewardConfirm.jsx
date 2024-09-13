@@ -16,27 +16,51 @@ const RewardConfirm = () => {
     const [isRedeemed, setIsRedeemed] = useState(false); // สถานะสำหรับป้องกันการกดซ้ำ
 
     const handleRedeem = async () => {
-        if (isRedeemed) return; // ป้องกันการกดซ้ำระหว่างกำลังประมวลผล
+        const isRedeemed = true;
+        // const isRedeemed = false; 
+        // คุณสามารถเปลี่ยนเป็นเงื่อนไขจริงที่ต้องการตรวจสอบ
 
-        const newPoints = points - rewardPoints;
-        setPoints(newPoints);
-        setIsRedeemed(true); // ตั้งค่าให้ปุ่มถูก disabled หลังจากกด
 
-        // เรียก MySwal.fire ทันทีหลังจากที่ตั้งค่า setPoints
-        await MySwal.fire({
-            icon: 'success',
-            title: 'แลกรางวัลสำเร็จ',
-            html: `<p>คุณมียอดคงเหลือ ${newPoints} คะแนน</p>`,
-            confirmButtonText: 'เรียบร้อย',
-            confirmButtonColor: '#29AE4C',
-            width: '375px',
-            height: '290px',
-            customClass: {
-                popup: 'rewardconfirm-popup-class',
-                confirmButton: 'rewardconfirm-button-class'
-            }
-        });
-    };
+        if (isRedeemed) {
+            const newPoints = points - rewardPoints;
+            setPoints(newPoints);
+            
+            // เรียก MySwal.fire ทันทีหลังจากที่ตั้งค่า setPoints
+            await MySwal.fire({
+                icon: 'success',
+                title: 'แลกรางวัลสำเร็จ',
+                html: `<p class="rewardconfirm-text-class">คุณมียอดคงเหลือ ${newPoints} คะแนน</p>`,
+                confirmButtonText: 'เรียบร้อย',
+                width: '375px',
+                height: '290px',
+                customClass: {
+                    title: 'rewardconfirm-title-class',
+                    popup: 'rewardconfirm-popup-class',
+                    confirmButton: 'rewardconfirm-confirmbutton-class'
+                }
+            }).then(() => {
+                setisTransferDone(true);
+                setIsRedeemed(true); // ตั้งค่าให้ปุ่มถูก disabled หลังจากกด
+            });
+        } else {
+            Swal.fire({
+                title: "โอ้ว..ไม่นะ",
+                html: '<p class="rewardconfirm-text-class">คุณได้กดรับสินค้าสำเร็จ</p>',
+                icon: "error",
+                showCancelButton: true,  // เพิ่มการแสดงปุ่ม cancel
+                showConfirmButton: false,
+                cancelButtonText: 'ปิด',
+                width: '375px',
+                height: '290px',
+                customClass: {
+                    title: 'rewardconfirm-title-class',
+                    popup: 'rewardconfirm-popup-class',
+                    cancelButton: 'rewardconfirm-error-canclebutton-class'
+                }
+            });
+        }
+
+    }
 
     return (
         <div className='rewardconfirm-container'>

@@ -12,6 +12,7 @@ const ProductConfirm = () => {
         productName, point, description, condition } = location.state || {};
 
     const [imagePreview, setImagePreview] = useState(null);
+    const [isSuccess, setIsSuccess] = useState(false); // สถานะสำหรับป้องกันการกดซ้ำ
 
     useEffect(() => {
         if (file) {
@@ -50,33 +51,34 @@ const ProductConfirm = () => {
         if (isSuccess) {
             Swal.fire({
                 title: "สำเร็จ",
-                text: "คุณได้เพิ่มรายการสินค้าเรียบร้อยแล้ว",
+                html: '<p class="productconfirm-text-class">กดใช่ คุณได้เพิ่มรายการสินค้าเรียบร้อยแล้ว</p>',
                 icon: "success",
                 confirmButtonText: 'เรียบร้อย',
-                confirmButtonColor: "#29AE4C",
                 width: '375px',
                 height: '290px',
                 customClass: {
+                    title:'productconfirm-title-class',
                     popup: 'productconfirm-popup-class',
-                    confirmButton: 'productconfirm-button-class'
+                    confirmButton: 'productconfirm-confirmbutton-class'
                 }
             }).then(() => {
                 setisTransferDone(true);
+                setIsSuccess(true); // ตั้งค่าให้ปุ่มถูก disabled หลังจากกด
             });
         } else {
             Swal.fire({
                 title: "โอ้ว..ไม่นะ",
-                text: "มีอะไรบางอย่างผิดพลาด",
+                html: '<p class="productconfirm-text-class">คุณได้กดรับสินค้าสำเร็จ</p>',
                 icon: "error",
                 showCancelButton: true,  // เพิ่มการแสดงปุ่ม cancel
                 showConfirmButton: false,
                 cancelButtonText: 'ปิด',
-                cancelButtonColor: "#CFCFCF",
                 width: '375px',
                 height: '290px',
                 customClass: {
+                    title:'productconfirm-title-class',
                     popup: 'productconfirm-popup-class',
-                    confirmButton: 'productconfirm-button-class'
+                    cancelButton: 'productconfirm-error-canclebutton-class'
                 }
             });
         }
@@ -95,14 +97,14 @@ const ProductConfirm = () => {
     //         if (response.status === 200) {
     //             Swal.fire({
     //                 title: "สำเร็จ",
-    //                 text: "คุณได้เพิ่มรายการสินค้าเรียบร้อยแล้ว",
+    //                 html: '<p class="productconfirm-text-class">กดใช่ คุณได้เพิ่มรายการสินค้าเรียบร้อยแล้ว</p>',
     //                 icon: "success",
     //                 confirmButtonText: 'เรียบร้อย',
-    //                 confirmButtonColor: "#29AE4C",
     //                 width: '375px',
     //                 customClass: {
+    //                     title:'productconfirm-title-class',
     //                     popup: 'productconfirm-popup-class',
-    //                     confirmButton: 'productconfirm-button-class'
+    //                     confirmButton: 'productconfirm-confirmbutton-class'
     //                 }
     //             }).then(() => {
     //                 setisTransferDone(true);
@@ -112,18 +114,18 @@ const ProductConfirm = () => {
     //         }
     //     } catch (error) {
     //         Swal.fire({
-    //            //             title: "โอ้ว..ไม่นะ",
-    //             text: "มีอะไรบางอย่างผิดพลาด",
+    //             title: "โอ้ว..ไม่นะ",
+    //             html: '<p class="productconfirm-text-class">คุณได้กดรับสินค้าสำเร็จ</p>',
     //             icon: "error",
     //             showCancelButton: true,  // เพิ่มการแสดงปุ่ม cancel
     //             showConfirmButton: false,
     //             cancelButtonText: 'ปิด',
-    //             cancelButtonColor: "#CFCFCF",
     //             width: '375px',
     //             height: '290px',
     //             customClass: {
+    //                 title:'productconfirm-title-class',
     //                 popup: 'productconfirm-popup-class',
-    //                 confirmButton: 'productconfirm-button-class'
+    //                 cancelButton: 'productconfirm-error-canclebutton-class'
     //             }
     //         });
     //     }
@@ -195,8 +197,12 @@ const ProductConfirm = () => {
                         </div>
                     </div>
                     <div className='row-8'>
-                        <div onClick={handleConfirm} type="button" className='next-button' >
-                            <Button text='ยืนยัน' />
+                        <div type="button" className={`next-button ${isSuccess ? 'disabled' : ''}`}  >
+                            <Button 
+                            onClick={handleConfirm}
+                            disabled={isSuccess}
+                            text={isSuccess ? 'ดำเนินการเรียบร้อยแล้ว' : 'ยืนยัน'}
+                            />                            
                         </div>
                     </div>
                 </div>

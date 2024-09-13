@@ -26,8 +26,6 @@ import ConfirmExchange from "./pages/Marketplace/MarketplaceDetail/ConfirmExchan
 import ExchangePage from "./pages/Marketplace/MarketplaceDetail/ExchangePage/ExchangePage";
 
 
-
-
 const router = createBrowserRouter([
     {
         path: "/",

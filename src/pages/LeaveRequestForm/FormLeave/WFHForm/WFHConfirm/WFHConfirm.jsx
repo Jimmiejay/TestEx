@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './wfhconfirm.css'
 import Swal from 'sweetalert2';
 import Button from '../../../../../components/Button/LongButton/LongButton';
@@ -7,12 +7,15 @@ import { useLocation } from 'react-router-dom';
 const WFHConfirm = () => {
     const location = useLocation();
     const { leaveType, details, date: selectedDate, timePeriod, timeDetails } = location.state || {};
+    const [isSuccess, setIsSuccess] = useState(false); // สถานะสำหรับป้องกันการกดซ้ำ
 
     //อันนี้แบบกำหนด isSuccess
     const handleConfirm = () => {
         const isSuccess = true;
         // const isSuccess = false; 
         // คุณสามารถเปลี่ยนเป็นเงื่อนไขจริงที่ต้องการตรวจสอบ
+
+        setIsSuccess(true); // ตั้งค่าให้ปุ่มถูก disabled หลังจากกด
 
         if (isSuccess) {
             Swal.fire({
@@ -129,8 +132,12 @@ const WFHConfirm = () => {
                     </div>
                 </div>
                 <div className='row-6'>
-                    <div onClick={handleConfirm} type="button" className='next-button' >
-                        <Button text='ยืนยัน' />
+                    <div type="button" className={`next-button ${isSuccess ? 'disabled' : ''}`} >
+                        <Button
+                            onClick={handleConfirm}
+                            disabled={isSuccess}
+                            text={isSuccess ? 'ดำเนินการเรียบร้อยแล้ว' : 'ยืนยัน'}
+                        />
                     </div>
                 </div>
             </div>

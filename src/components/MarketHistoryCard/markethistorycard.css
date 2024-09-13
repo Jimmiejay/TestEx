@@ -1,0 +1,184 @@
+.markethistory-frame {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.markethistory-frame .markethistory-card {
+    flex: 1 1 250px;
+    /* ความกว้างขั้นต่ำของการ์ดและให้ขยายได้ */
+    max-width: 100vw;
+    /* จำกัดความกว้างสูงสุดของการ์ด */
+    height: 260px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: transform 0.3s ease-in-out;
+
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.markethistory-card:hover {
+    transform: translateY(-5px);
+}
+
+.markethistory-card .markethistory-image {
+    width: 230px;
+    height: 230px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin: 5px 10px 5px 5px;
+}
+
+.markethistory-card .markethistory-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* height: 100%; */
+}
+
+.markethistory-card .markethistory-name {
+    font-family: 'NotoSansThai';
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+    padding: 0 0 5px 0;
+
+    max-width: 900px;
+    white-space: normal;
+    /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
+    word-wrap: break-word;
+    /* ตัดคำเมื่อความยาวเกินความกว้าง */
+}
+
+.markethistory-card .productdetail {
+    font-family: 'NotoSansThai';
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    white-space: pre-line;
+}
+
+.markethistory-card .user-group {
+    display: flex;
+    align-items: center;
+    padding: 10px 0 0 0;
+}
+
+.markethistory-card .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.markethistory-card .user-info {
+    font-family: 'NotoSansThai';
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.markethistory-card .points-container {
+    display: flex;
+    align-items: center;
+    padding: 35px 0 0 0;
+    height: 20px;
+    justify-content: flex-start;
+    /* ปรับให้อยู่ติดกัน */
+    gap: 10px;
+    /* ช่องว่างระหว่างเหรียญกับข้อความ */
+}
+
+.markethistory-card .points-container span {
+    font-family: 'NotoSansThai';
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.markethistory-card .point-image {
+    width: 30px;
+    height: 28px;
+    margin-right: 10px;
+}
+
+.markethistory-card .confirm-button {
+    padding: 0 10px;
+    margin-top: 0px;
+    margin-left: auto;
+    /* ปุ่มอยู่ด้านขวาสุด */
+}
+
+.markethistory-card .confirm-button :disabled {
+    /* padding: 0 10px; */
+    margin-top: 0px;
+    margin-left: auto;
+    /* ปุ่มอยู่ด้านขวาสุด */
+}
+
+.markethistory-popup-class {
+    border-radius: 15px;
+}
+
+.markethistory-title-class {
+    font-family: 'NotoSansThai';
+    font-size: 32px;
+    font-weight: 400;
+    color: #545454;
+    text-align: center;
+}
+
+.markethistory-text-class {
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #545454;
+    text-align: center;
+}
+
+.markethistory-confirmbutton-class {
+    width: 83px;
+    height: 38px;
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: #29AE4C;
+}
+
+.markethistory-canclebutton-class {
+    width: 83px;
+    height: 38px;
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: #CFCFCF;
+}
+
+.markethistory-error-canclebutton-class {
+    width: 83px;
+    height: 38px;
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: #CFCFCF;
+}
+

@@ -34,6 +34,8 @@ const ProductDetail = ({ owner }) => {
     setPoint(['380', '430', '550','430','380','230','430','430'])
   }, []);
 
+  
+
   // กรองสินค้าตาม owner
   const filteredProducts = name.map((n, index) => ({
     image: productImage[index],

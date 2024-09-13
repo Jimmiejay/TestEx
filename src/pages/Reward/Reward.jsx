@@ -122,6 +122,8 @@ const Reward = () => {
                     {/* -- เส้นขีดใต้ --  */}
                     <div class="custom-line"></div>
 
+                    <hr />
+
                     <h3>รายละเอียด</h3>
                     <p className="reward-description">{description}</p>
 
@@ -133,8 +135,12 @@ const Reward = () => {
                             <span className="current-points">{currentPoints}</span>
                             <span className="reward-points-divider">/{rewardPoints}</span> {/* แสดงคะแนนในรูปแบบ 650/500 */}
                         </div>
-                        <div onClick={handleNextSubmit} type="button" className={`redeem-btn ${isSubmitting ? 'disabled' : ''}`} >
-                            <Button text={isSubmitting ? 'แลกแล้ว' : 'แลก'} disabled={currentPoints < rewardPoints} />
+                        <div type="button" className={`redeem-btn ${isSubmitting ? 'disabled' : ''}`} >
+                            <Button 
+                            text={isSubmitting ? 'แลกแล้ว' : 'แลก'} 
+                            disabled={currentPoints < rewardPoints} 
+                            onClick={handleNextSubmit}
+                            />
                         </div>
                     </div>
                 </div>

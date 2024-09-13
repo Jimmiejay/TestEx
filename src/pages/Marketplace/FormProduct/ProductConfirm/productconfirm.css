@@ -164,12 +164,58 @@
     /* ปิดการแสดงผลการโฟกัส */
 }
 
-.productconfirm-form .productconfirm-group .productconfirm-popup-class {
+.productconfirm-popup-class {
     border-radius: 15px;
-    /* ปรับค่า radius ตามที่ต้องการ */
 }
 
-.productconfirm-form .productconfirm-group .productconfirm-button-class {
-    border-radius: 25px;
-    /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+.productconfirm-title-class {
+    font-family: 'NotoSansThai';
+    font-size: 32px;
+    font-weight: 700;
+    color: #545454;
+    text-align: center;
+}
+
+.productconfirm-text-class {
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #545454;
+    text-align: center;
+}
+
+.productconfirm-confirmbutton-class {
+    width: 83px;
+    height: 38px;
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: #29AE4C;
+}
+
+.productconfirm-canclebutton-class {
+    width: 83px;
+    height: 38px;
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: #CFCFCF;
+}
+
+.productconfirm-error-canclebutton-class {
+    width: 60px;
+    height: 38px;
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: #CFCFCF;
 }

@@ -7,7 +7,7 @@ import Nilecon from '../../../assets/nilecon.png';
 
 const MembershipCard = () => {
 
-  const [userData, setUserData] = useState({ points: 500, name: 'aom' });
+  const [userData, setUserData] = useState({ points: 850, name: 'aom' });
    // const [userData, setUserData] = useState({ points: 0, name: '' });
 
   // Uncomment this block when ready to connect to the database

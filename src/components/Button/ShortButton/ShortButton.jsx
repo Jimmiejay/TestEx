@@ -3,11 +3,11 @@ import './shortbutton.css';
 
 const ShortButton = (props) => {
 
-    const { text, disabled } = props;
+    const { text, disabled, onClick } = props;
 
     return (
         <>
-            <button className={`Btn ${disabled ? 'disabled' : ''}`} disabled={disabled}>
+            <button className={`Btn ${disabled ? 'disabled' : ''}`} disabled={disabled} onClick={onClick}>
                 {text}
             </button>
         </>

@@ -7,7 +7,7 @@ const ProductCard = ({ image, title, points, byname }) => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate('/marketplace/marketplacedetail'); //ต้องแก้
+        navigate('/marketplace/marketplacedetail'); 
     };
 
     // ฟังก์ชันแปลงวันที่เวลาให้อยู่ในรูปแบบ วัน/เดือน/ปี, เวลา
