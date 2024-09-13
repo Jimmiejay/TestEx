@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './personalleaveconfirm.css';
 import Swal from 'sweetalert2';
 import Button from '../../../../../components/Button/LongButton/LongButton';
@@ -9,24 +9,27 @@ const PersonalLeaveConfirm = () => {
     const location = useLocation();
     const { leaveType, details, startDate, endDate, dayCount } = location.state || {};
 
+    const [isSuccess, setIsSuccess] = useState(false); // สถานะสำหรับป้องกันการกดซ้ำ
+
     //อันนี้แบบกำหนด isSuccess
     const handleConfirm = () => {
         const isSuccess = true; 
         // const isSuccess = false;
         // คุณสามารถเปลี่ยนเป็นเงื่อนไขจริงที่ต้องการตรวจสอบ
+        setIsSuccess(true); // ตั้งค่าให้ปุ่มถูก disabled หลังจากกด
 
         if (isSuccess) {
             Swal.fire({
                 title: "คุณได้แจ้งลาสำเร็จ",
-                text: "คุณแจ้ง ลาป่วย เรียบร้อยแล้ว",
+                html: `<p class="personalconfirm-text-class">คุณแจ้ง ลากิจ เรียบร้อยแล้ว</p>`,
                 icon: "success",
                 confirmButtonText: 'เรียบร้อย',
-                confirmButtonColor: "#29AE4C",
                 width: '375px',
                 height: '290px',
                 customClass: {
+                    title: 'personalconfirm-title-class',
                     popup: 'personalconfirm-popup-class',
-                    confirmButton: 'personalconfirm-button-class'
+                    confirmButton: 'personalconfirm-confirmbutton-class'
                 }
             }).then(() => {
                 setisTransferDone(true);
@@ -34,17 +37,17 @@ const PersonalLeaveConfirm = () => {
         } else {
             Swal.fire({
                 title: "โอ้ว..ไม่นะ",
-                text: "มีอะไรบางอย่างผิดพลาด",
+                html: `<p class="personalconfirm-text-class">มีอะไรบางอย่างผิดพลาด</p>`,
                 icon: "error",
                 showCancelButton: true,  // เพิ่มการแสดงปุ่ม cancel
                 showConfirmButton: false,
                 cancelButtonText: 'ปิด',
-                cancelButtonColor: "#CFCFCF",
                 width: '375px',
                 height: '290px',
                 customClass: {
+                    title: 'personalconfirm-title-class',
                     popup: 'personalconfirm-popup-class',
-                    confirmButton: 'personalconfirm-button-class'
+                    cancelButton: 'personalconfirm-canclebutton-class'
                 }
             });
         }
@@ -63,15 +66,15 @@ const PersonalLeaveConfirm = () => {
     //         if (response.status === 200) {
     //             Swal.fire({
     //                 title: "คุณได้แจ้งลาสำเร็จ",
-    //                 text: "คุณแจ้ง ลาป่วย เรียบร้อยแล้ว",
+    //                 html: `<p class="personalconfirm-text-class">คุณแจ้ง ลากิจ เรียบร้อยแล้ว</p>`
     //                 icon: "success",
     //                 confirmButtonText: 'เรียบร้อย',
-    //                 confirmButtonColor: "#29AE4C",
     //                 width: '375px',
     //                 height: '290px',
     //                 customClass: {
+    //                     title: 'personalconfirm-title-class',
     //                     popup: 'personalconfirm-popup-class',
-    //                     confirmButton: 'personalconfirm-button-class'
+    //                     confirmButton: 'personalconfirm-confirmbutton-class'
     //                 }
     //             }).then(() => {
     //                 setisTransferDone(true);
@@ -82,17 +85,17 @@ const PersonalLeaveConfirm = () => {
     //     } catch (error) {
     //         Swal.fire({
     //             title: "โอ้ว..ไม่นะ",
-    //             text: "มีอะไรบางอย่างผิดพลาด",
+    //             html: `<p class="personalconfirm-text-class">มีอะไรบางอย่างผิดพลาด</p>`,
     //             icon: "error",
     //             showCancelButton: true,  // เพิ่มการแสดงปุ่ม cancel
     //             showConfirmButton: false,
     //             cancelButtonText: 'ปิด',
-    //             cancelButtonColor: "#CFCFCF",
     //             width: '375px',
     //             height: '290px',
     //             customClass: {
+    //                 title: 'personalconfirm-title-class',
     //                 popup: 'personalconfirm-popup-class',
-    //                 confirmButton: 'personalconfirm-button-class'
+    //                 cancleButton: 'personalconfirm-canclebutton-class'
     //             }
     //         });
     //     }

@@ -51,7 +51,7 @@ const ProductConfirm = () => {
         if (isSuccess) {
             Swal.fire({
                 title: "สำเร็จ",
-                html: '<p class="productconfirm-text-class">กดใช่ คุณได้เพิ่มรายการสินค้าเรียบร้อยแล้ว</p>',
+                html: '<p class="productconfirm-text-class">คุณได้เพิ่มรายการสินค้าเรียบร้อยแล้ว</p>',
                 icon: "success",
                 confirmButtonText: 'เรียบร้อย',
                 width: '375px',
@@ -68,7 +68,7 @@ const ProductConfirm = () => {
         } else {
             Swal.fire({
                 title: "โอ้ว..ไม่นะ",
-                html: '<p class="productconfirm-text-class">คุณได้กดรับสินค้าสำเร็จ</p>',
+                html: '<p class="productconfirm-text-class">มีอะไรบางอย่างผิดพลาด</p>',
                 icon: "error",
                 showCancelButton: true,  // เพิ่มการแสดงปุ่ม cancel
                 showConfirmButton: false,

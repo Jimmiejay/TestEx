@@ -98,15 +98,62 @@
     /* ปิดการแสดงผลการโฟกัส */
 }
 
-.medicalconfirm-form .medicalconfirm-group .medicalconfirm-popup-class {
+.medicalconfirm-popup-class {
     border-radius: 15px;
-    /* ปรับค่า radius ตามที่ต้องการ */
 }
 
-.medicalconfirm-form .medicalconfirm-group .medicalconfirm-button-class {
-    border-radius: 25px;
-    /* ปรับค่า radius ของปุ่มตามที่ต้องการ */   
+.medicalconfirm-title-class {
+    font-family: 'NotoSansThai';
+    font-size: 32px;
+    font-weight: 400;
+    color: #545454;
+    text-align: center;
 }
+
+.medicalconfirm-text-class {
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #545454;
+    text-align: center;
+}
+
+.medicalconfirm-confirmbutton-class {
+    width: 83px;
+    height: 38px;
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: #29AE4C;
+}
+
+.medicalconfirm-canclebutton-class {
+    width: 83px;
+    height: 38px;
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: #CFCFCF;
+}
+
+.medicalconfirm-error-canclebutton-class {
+    width: 83px;
+    height: 38px;
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: #CFCFCF;
+}
+
 
 @media only screen and (max-width:1250px){
     .medicalconfirm-form {
@@ -209,14 +256,60 @@
         /* ปิดการแสดงผลการโฟกัส */
     }
     
-    .medicalconfirm-form .medicalconfirm-group .medicalconfirm-popup-class {
+    .medicalconfirm-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
     
-    .medicalconfirm-form .medicalconfirm-group .medicalconfirm-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */   
+    .medicalconfirm-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .medicalconfirm-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .medicalconfirm-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+    
+    .medicalconfirm-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+    
+    .medicalconfirm-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
@@ -321,14 +414,60 @@
         /* ปิดการแสดงผลการโฟกัส */
     }
     
-    .medicalconfirm-form .medicalconfirm-group .medicalconfirm-popup-class {
+    .medicalconfirm-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
     
-    .medicalconfirm-form .medicalconfirm-group .medicalconfirm-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */   
+    .medicalconfirm-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .medicalconfirm-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .medicalconfirm-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+    
+    .medicalconfirm-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+    
+    .medicalconfirm-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
@@ -432,14 +571,60 @@
         /* ปิดการแสดงผลการโฟกัส */
     }
     
-    .medicalconfirm-form .medicalconfirm-group .medicalconfirm-popup-class {
+    .medicalconfirm-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
     
-    .medicalconfirm-form .medicalconfirm-group .medicalconfirm-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */   
+    .medicalconfirm-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .medicalconfirm-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .medicalconfirm-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+    
+    .medicalconfirm-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+    
+    .medicalconfirm-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
@@ -543,14 +728,60 @@
         /* ปิดการแสดงผลการโฟกัส */
     }
     
-    .medicalconfirm-form .medicalconfirm-group .medicalconfirm-popup-class {
+    .medicalconfirm-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
     
-    .medicalconfirm-form .medicalconfirm-group .medicalconfirm-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */   
+    .medicalconfirm-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .medicalconfirm-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .medicalconfirm-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+    
+    .medicalconfirm-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+    
+    .medicalconfirm-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
@@ -654,14 +885,60 @@
         /* ปิดการแสดงผลการโฟกัส */
     }
     
-    .medicalconfirm-form .medicalconfirm-group .medicalconfirm-popup-class {
+    .medicalconfirm-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
     
-    .medicalconfirm-form .medicalconfirm-group .medicalconfirm-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */   
+    .medicalconfirm-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .medicalconfirm-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .medicalconfirm-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+    
+    .medicalconfirm-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+    
+    .medicalconfirm-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
@@ -765,13 +1042,59 @@
         /* ปิดการแสดงผลการโฟกัส */
     }
     
-    .medicalconfirm-form .medicalconfirm-group .medicalconfirm-popup-class {
+    .medicalconfirm-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
     
-    .medicalconfirm-form .medicalconfirm-group .medicalconfirm-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */   
+    .medicalconfirm-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .medicalconfirm-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .medicalconfirm-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+    
+    .medicalconfirm-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+    
+    .medicalconfirm-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }

@@ -217,7 +217,7 @@ textarea {
 }
 
 .formproduct-group textarea {
-    resize: vertical;
+    resize: none;
     height: 94px;
 }
 

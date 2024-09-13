@@ -29,15 +29,15 @@ const ConfirmExchange = () => {
     if (isSuccess) {
       Swal.fire({
         title: "คุณได้แลกสินค้า",
-        html: `<p>คุณมียอดคงเหลือ ${newPoints} คะแนน</p>`,
+        html: `<p class='confirmexchange-text-class'>คุณมียอดคงเหลือ ${newPoints} คะแนน</p>`,
         icon: "success",
         confirmButtonText: 'เรียบร้อย',
-        confirmButtonColor: "#29AE4C",
         width: '375px',
         height: '290px',
         customClass: {
+          title: 'confirmexchange-title-class',
           popup: 'confirmexchange-popup-class',
-          confirmButton: 'confirmexchange-button-class'
+          confirmButton: 'confirmexchange-confirmbutton-class'
         }
       }).then(() => {
         setisTransferDone(true);
@@ -45,17 +45,17 @@ const ConfirmExchange = () => {
     } else {
       Swal.fire({
         title: "โอ้ว..ไม่นะ",
-        text: "มีอะไรบางอย่างผิดพลาด",
+        html: `<p class='confirmexchange-text-class'>มีอะไรบางอย่างผิดพลาด</p>`,
         icon: "error",
         showCancelButton: true,  // เพิ่มการแสดงปุ่ม cancel
         showConfirmButton: false,
         cancelButtonText: 'ปิด',
-        cancelButtonColor: "#CFCFCF",
         width: '375px',
         height: '290px',
         customClass: {
+          title: 'confirmexchange-title-class',
           popup: 'confirmexchange-popup-class',
-          confirmButton: 'confirmexchange-button-class'
+          cancelButton: 'confirmexchange-canclebutton-class'
         }
       });
     }

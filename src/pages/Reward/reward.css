@@ -126,11 +126,27 @@
 }
 
 .reward-popup-class {
-    border-radius: 15px; /* ปรับค่า radius ตามที่ต้องการ */
+    border-radius: 15px;
+}
+
+.reward-text-class {
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #545454;
+    text-align: center;
 }
 
 .reward-button-class {
-    border-radius: 5px; /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+    width: 83px;
+    height: 38px;
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px #CFCFCF ;
+    padding: 0px;
+    background-color: #CFCFCF;
 }
 
 @media only screen and (max-width:1250px){
@@ -261,11 +277,27 @@
     }
     
     .reward-popup-class {
-        border-radius: 15px; /* ปรับค่า radius ตามที่ต้องการ */
+        border-radius: 15px;
+    }
+    
+    .reward-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
     }
     
     .reward-button-class {
-        border-radius: 5px; /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px #CFCFCF ;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
@@ -397,11 +429,27 @@
     }
     
     .reward-popup-class {
-        border-radius: 15px; /* ปรับค่า radius ตามที่ต้องการ */
+        border-radius: 15px;
+    }
+    
+    .reward-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
     }
     
     .reward-button-class {
-        border-radius: 5px; /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px #CFCFCF ;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
@@ -533,11 +581,27 @@
     }
     
     .reward-popup-class {
-        border-radius: 15px; /* ปรับค่า radius ตามที่ต้องการ */
+        border-radius: 15px;
+    }
+    
+    .reward-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
     }
     
     .reward-button-class {
-        border-radius: 5px; /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px #CFCFCF ;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
@@ -669,11 +733,27 @@
     }
     
     .reward-popup-class {
-        border-radius: 15px; /* ปรับค่า radius ตามที่ต้องการ */
+        border-radius: 15px;
+    }
+    
+    .reward-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
     }
     
     .reward-button-class {
-        border-radius: 5px; /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px #CFCFCF ;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
@@ -805,10 +885,26 @@
     }
     
     .reward-popup-class {
-        border-radius: 15px; /* ปรับค่า radius ตามที่ต้องการ */
+        border-radius: 15px;
+    }
+    
+    .reward-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
     }
     
     .reward-button-class {
-        border-radius: 5px; /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px #CFCFCF ;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }

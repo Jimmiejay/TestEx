@@ -71,10 +71,9 @@ const Reward = () => {
         if (currentPoints < rewardPoints) {
             // alert("คะแนนของคุณไม่พอสำหรับการแลกรางวัลนี้");
             Swal.fire({
-                text: "คะแนนของคุณไม่พอสำหรับการแลกรางวัลนี้",
+                html: `<p class="reward-text-class">คะแนนของคุณไม่พอสำหรับการแลกรางวัลนี้</p>`,
                 icon: "warning",
                 confirmButtonText: 'ย้อนกลับ',
-                confirmButtonColor: '#ff4b4b',
                 width: '375px',
                 height: '290px',
                 customClass: {
@@ -84,7 +83,6 @@ const Reward = () => {
             });
             return;
         }
-
 
         const formDataReward = {
             currentPoints,
@@ -121,8 +119,7 @@ const Reward = () => {
 
                     {/* -- เส้นขีดใต้ --  */}
                     <div class="custom-line"></div>
-
-                    <hr />
+                    {/* <hr /> */}
 
                     <h3>รายละเอียด</h3>
                     <p className="reward-description">{description}</p>
@@ -135,11 +132,10 @@ const Reward = () => {
                             <span className="current-points">{currentPoints}</span>
                             <span className="reward-points-divider">/{rewardPoints}</span> {/* แสดงคะแนนในรูปแบบ 650/500 */}
                         </div>
-                        <div type="button" className={`redeem-btn ${isSubmitting ? 'disabled' : ''}`} >
+                        <div onClick={handleNextSubmit} type="button" className={`redeem-btn ${isSubmitting ? 'disabled' : ''}`} >
                             <Button 
                             text={isSubmitting ? 'แลกแล้ว' : 'แลก'} 
                             disabled={currentPoints < rewardPoints} 
-                            onClick={handleNextSubmit}
                             />
                         </div>
                     </div>

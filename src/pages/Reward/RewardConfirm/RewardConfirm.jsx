@@ -24,6 +24,7 @@ const RewardConfirm = () => {
         if (isRedeemed) {
             const newPoints = points - rewardPoints;
             setPoints(newPoints);
+            setIsRedeemed(true); // ตั้งค่าให้ปุ่มถูก disabled หลังจากกด
             
             // เรียก MySwal.fire ทันทีหลังจากที่ตั้งค่า setPoints
             await MySwal.fire({
@@ -40,7 +41,6 @@ const RewardConfirm = () => {
                 }
             }).then(() => {
                 setisTransferDone(true);
-                setIsRedeemed(true); // ตั้งค่าให้ปุ่มถูก disabled หลังจากกด
             });
         } else {
             Swal.fire({
@@ -59,7 +59,6 @@ const RewardConfirm = () => {
                 }
             });
         }
-
     }
 
     return (
@@ -77,8 +76,12 @@ const RewardConfirm = () => {
                     </div>
                 </div>
                 <div className='rewardconfirm-footer'>
-                    <div onClick={handleRedeem} type="button" className={`confirm-button ${isRedeemed ? 'disabled' : ''}`} >
-                        <ConfirmButton text={isRedeemed ? 'ดำเนินการเรียบร้อยแล้ว' : 'ยืนยัน'} disabled={isRedeemed} />
+                    <div type="button" className={`confirm-button ${isRedeemed ? 'disabled' : ''}`} >
+                        <ConfirmButton 
+                        text={isRedeemed ? 'ดำเนินการเรียบร้อยแล้ว' : 'ยืนยัน'} 
+                        disabled={isRedeemed} 
+                        onClick={handleRedeem}
+                        />
                     </div>
                 </div>
             </div>

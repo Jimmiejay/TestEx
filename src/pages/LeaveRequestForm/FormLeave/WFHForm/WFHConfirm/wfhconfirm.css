@@ -110,14 +110,60 @@
     /* ปิดการแสดงผลการโฟกัส */
 }
 
-.wfhconfirm-form .wfhconfirm-group .wfhconfirm-popup-class {
+.wfhconfirm-popup-class {
     border-radius: 15px;
-    /* ปรับค่า radius ตามที่ต้องการ */
 }
 
-.wfhconfirm-form .wfhconfirm-group .wfhconfirm-button-class {
-    border-radius: 25px;
-    /* ปรับค่า radius ของปุ่มตามที่ต้องการ */   
+.wfhconfirm-title-class {
+    font-family: 'NotoSansThai';
+    font-size: 32px;
+    font-weight: 400;
+    color: #545454;
+    text-align: center;
+}
+
+.wfhconfirm-text-class {
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #545454;
+    text-align: center;
+}
+
+.wfhconfirm-confirmbutton-class {
+    width: 83px;
+    height: 38px;
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: #29AE4C;
+}
+
+.wfhconfirm-canclebutton-class {
+    width: 83px;
+    height: 38px;
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: #CFCFCF;
+}
+
+.wfhconfirm-error-canclebutton-class {
+    width: 83px;
+    height: 38px;
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: #CFCFCF;
 }
 
 @media only screen and (max-width:1250px){
@@ -232,14 +278,60 @@
         /* ปิดการแสดงผลการโฟกัส */
     }
     
-    .wfhconfirm-form .wfhconfirm-group .wfhconfirm-popup-class {
+    .wfhconfirm-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
     
-    .wfhconfirm-form .wfhconfirm-group .wfhconfirm-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */   
+    .wfhconfirm-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .wfhconfirm-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .wfhconfirm-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+    
+    .wfhconfirm-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+    
+    .wfhconfirm-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
@@ -355,14 +447,60 @@
         /* ปิดการแสดงผลการโฟกัส */
     }
     
-    .wfhconfirm-form .wfhconfirm-group .wfhconfirm-popup-class {
+    .wfhconfirm-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
     
-    .wfhconfirm-form .wfhconfirm-group .wfhconfirm-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */   
+    .wfhconfirm-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .wfhconfirm-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .wfhconfirm-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+    
+    .wfhconfirm-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+    
+    .wfhconfirm-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
@@ -478,14 +616,60 @@
         /* ปิดการแสดงผลการโฟกัส */
     }
     
-    .wfhconfirm-form .wfhconfirm-group .wfhconfirm-popup-class {
+    .wfhconfirm-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
     
-    .wfhconfirm-form .wfhconfirm-group .wfhconfirm-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */   
+    .wfhconfirm-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .wfhconfirm-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .wfhconfirm-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+    
+    .wfhconfirm-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+    
+    .wfhconfirm-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
@@ -601,14 +785,60 @@
         /* ปิดการแสดงผลการโฟกัส */
     }
     
-    .wfhconfirm-form .wfhconfirm-group .wfhconfirm-popup-class {
+    .wfhconfirm-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
     
-    .wfhconfirm-form .wfhconfirm-group .wfhconfirm-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */   
+    .wfhconfirm-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .wfhconfirm-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .wfhconfirm-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+    
+    .wfhconfirm-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+    
+    .wfhconfirm-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
@@ -724,14 +954,60 @@
         /* ปิดการแสดงผลการโฟกัส */
     }
     
-    .wfhconfirm-form .wfhconfirm-group .wfhconfirm-popup-class {
+    .wfhconfirm-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
     
-    .wfhconfirm-form .wfhconfirm-group .wfhconfirm-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */   
+    .wfhconfirm-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .wfhconfirm-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .wfhconfirm-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+    
+    .wfhconfirm-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+    
+    .wfhconfirm-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
@@ -847,13 +1123,59 @@
         /* ปิดการแสดงผลการโฟกัส */
     }
     
-    .wfhconfirm-form .wfhconfirm-group .wfhconfirm-popup-class {
+    .wfhconfirm-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
     
-    .wfhconfirm-form .wfhconfirm-group .wfhconfirm-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */   
+    .wfhconfirm-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .wfhconfirm-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .wfhconfirm-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+    
+    .wfhconfirm-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+    
+    .wfhconfirm-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }

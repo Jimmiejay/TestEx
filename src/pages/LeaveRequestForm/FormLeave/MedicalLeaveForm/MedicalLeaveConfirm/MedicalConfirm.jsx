@@ -23,15 +23,15 @@ const MedicalConfirm = () => {
         if (isSuccess) {
             Swal.fire({
                 title: "คุณได้แจ้งลาสำเร็จ",
-                text: "คุณแจ้ง ลาป่วย เรียบร้อยแล้ว",
+                html: `<p class="medicalconfirm-text-class">คุณแจ้ง ลาป่วย เรียบร้อยแล้ว</p>`,
                 icon: "success",
                 confirmButtonText: 'เรียบร้อย',
-                confirmButtonColor: "#29AE4C",
                 width: '375px',
                 height: '290px',
                 customClass: {
+                    title: 'medicalconfirm-title-class',
                     popup: 'medicalconfirm-popup-class',
-                    confirmButton: 'medicalconfirm-button-class'
+                    confirmButton: 'medicalconfirm-confirmbutton-class'
                 }
             }).then(() => {
                 setisTransferDone(true);
@@ -39,17 +39,17 @@ const MedicalConfirm = () => {
         } else {
             Swal.fire({
                 title: "โอ้ว..ไม่นะ",
-                text: "มีอะไรบางอย่างผิดพลาด",
+                html: `<p class="medicalconfirm-text-class">มีอะไรบางอย่างผิดพลาด</p>`,
                 icon: "error",
                 showCancelButton: true,  // เพิ่มการแสดงปุ่ม cancel
                 showConfirmButton: false,
                 cancelButtonText: 'ปิด',
-                cancelButtonColor: "#CFCFCF",
                 width: '375px',
                 height: '290px',
                 customClass: {
+                    title: 'medicalconfirm-title-class',
                     popup: 'medicalconfirm-popup-class',
-                    confirmButton: 'medicalconfirm-button-class'
+                    cancelButton: 'medicalconfirm-canclebutton-class'
                 }
             });
         }
@@ -67,16 +67,16 @@ const MedicalConfirm = () => {
     //         // ตรวจสอบสถานะจาก response
     //         if (response.status === 200) {
     //             Swal.fire({
-    //                  title: "คุณได้แจ้งลาสำเร็จ",
-    //                 text: "คุณแจ้ง ลาป่วย เรียบร้อยแล้ว",
+    //                 title: "คุณได้แจ้งลาสำเร็จ",
+    //                 html: `<p class="medicalconfirm-text-class">คุณแจ้ง ลาป่วย เรียบร้อยแล้ว</p>`,
     //                 icon: "success",
     //                 confirmButtonText: 'เรียบร้อย',
-    //                 confirmButtonColor: "#29AE4C",
     //                 width: '375px',
     //                 height: '290px',
     //                 customClass: {
+    //                     title: 'medicalconfirm-title-class',
     //                     popup: 'medicalconfirm-popup-class',
-    //                     confirmButton: 'medicalconfirm-button-class'
+    //                     confirmButton: 'medicalconfirm-confirmbutton-class'
     //                 }
     //             }).then(() => {
     //                 setisTransferDone(true);
@@ -86,8 +86,8 @@ const MedicalConfirm = () => {
     //         }
     //     } catch (error) {
     //         Swal.fire({
-    //             //             title: "โอ้ว..ไม่นะ",
-    //             text: "มีอะไรบางอย่างผิดพลาด",
+    //             title: "โอ้ว..ไม่นะ",
+    //             html: `<p class="medicalconfirm-text-class">มีอะไรบางอย่างผิดพลาด</p>`,
     //             icon: "error",
     //             showCancelButton: true,  // เพิ่มการแสดงปุ่ม cancel
     //             showConfirmButton: false,
@@ -96,8 +96,9 @@ const MedicalConfirm = () => {
     //             width: '375px',
     //             height: '290px',
     //             customClass: {
+    //                 title: 'medicalconfirm-title-class',
     //                 popup: 'medicalconfirm-popup-class',
-    //                 confirmButton: 'medicalconfirm-button-class'
+    //                 cancelButton: 'medicalconfirm-canclebutton-class'
     //             }
     //         });
     //     }

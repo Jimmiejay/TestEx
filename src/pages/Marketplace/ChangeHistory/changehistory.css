@@ -21,8 +21,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    background-color: cadetblue;
 }
 
 .changehistory-container .changehistory-grid .row-1 .header {

@@ -134,7 +134,7 @@ textarea {
 }
 
 .personal-form-container .personal-form-group textarea {
-    resize: vertical;
+    resize: none;
     height: 195px;
 }
 
@@ -306,7 +306,7 @@ textarea {
     }
 
     .personal-form-container .personal-form-group textarea {
-        resize: vertical;
+        resize: none;
         height: 195px;
     }
 
@@ -478,7 +478,7 @@ textarea {
     }
 
     .personal-form-container .personal-form-group textarea {
-        resize: vertical;
+        resize: none;
         height: 195px;
     }
 
@@ -650,7 +650,7 @@ textarea {
     }
 
     .personal-form-container .personal-form-group textarea {
-        resize: vertical;
+        resize: none;
         height: 195px;
     }
 
@@ -822,7 +822,7 @@ textarea {
     }
 
     .personal-form-container .personal-form-group textarea {
-        resize: vertical;
+        resize: none;
         height: 195px;
     }
 
@@ -994,7 +994,7 @@ textarea {
     }
 
     .personal-form-container .personal-form-group textarea {
-        resize: vertical;
+        resize: none;
         height: 195px;
     }
 
@@ -1166,7 +1166,7 @@ textarea {
     }
 
     .personal-form-container .personal-form-group textarea {
-        resize: vertical;
+        resize: none;
         height: 195px;
     }
 

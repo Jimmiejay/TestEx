@@ -166,7 +166,7 @@
 
 
 .confirmexchange-group input[type="text"],
-.confirmexchange-group input[type="number"]{
+.confirmexchange-group input[type="number"] {
     width: 98%;
     padding: 8px;
     border: 1px solid #F7F7F7;
@@ -190,36 +190,82 @@
     display: flex;
 }
 
-.confirmexchange-container .confirmexchange-group .confirmexchange-popup-class {
+.confirmexchange-popup-class {
     border-radius: 15px;
-    /* ปรับค่า radius ตามที่ต้องการ */
 }
 
-.confirmexchange-container .confirmexchange-group .confirmexchange-button-class {
-    border-radius: 25px;
-    /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+.confirmexchange-title-class {
+    font-family: 'NotoSansThai';
+    font-size: 32px;
+    font-weight: 400;
+    color: #545454;
+    text-align: center;
 }
 
-@media only screen and (max-width:1250px){
+.confirmexchange-text-class {
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #545454;
+    text-align: center;
+}
+
+.confirmexchange-confirmbutton-class {
+    width: 83px;
+    height: 38px;
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: #29AE4C;
+}
+
+.confirmexchange-canclebutton-class {
+    width: 83px;
+    height: 38px;
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: #CFCFCF;
+}
+
+.confirmexchange-error-canclebutton-class {
+    width: 83px;
+    height: 38px;
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: #CFCFCF;
+}
+
+@media only screen and (max-width:1250px) {
     .confirmexchange-container {
         width: 100%;
         height: 100%;
         background-color: #fff;
         max-height: 100vh;
     }
-    
+
     .confirmexchange-container .confirmexchange-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .confirmexchange-grid .row-1 {
         padding: 20px 20px 20px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .confirmexchange-grid .row-2 {
         padding: 0px 20px 0px 20px;
         display: flex;
@@ -227,7 +273,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-3 {
         padding: 20px 0px 0px 20px;
         display: flex;
@@ -235,7 +281,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-4 {
         padding: 20px 0px 0px 20px;
         display: flex;
@@ -243,7 +289,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-5 {
         padding: 130px 20px 20px 25px;
         display: flex;
@@ -251,32 +297,32 @@
         justify-content: center;
         max-width: 99vw;
     }
-    
+
     .confirmexchange-grid .row-1 .header {
         display: flex;
         justify-content: center;
     }
-    
+
     .confirmexchange-grid .row-1 .header.title h2 {
         font-family: 'NotoSansThai';
         font-size: 26px;
         font-weight: 700;
         color: #DE2D1E;
     }
-    
+
     .confirmexchange-grid .row-2 .confirmexchange-card {
         width: 100%;
         height: 100%;
         background-color: #ffffff;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+
         display: flex;
         padding: 10px;
         box-sizing: border-box;
         align-items: center;
     }
-    
+
     .confirmexchange-card .confirmexchange-image {
         width: 230px;
         height: 230px;
@@ -284,7 +330,7 @@
         object-fit: cover;
         margin: 5px 10px 5px 5px;
     }
-    
+
     .confirmexchange-card .confirmexchange-info {
         flex: 1;
         display: flex;
@@ -292,21 +338,21 @@
         /* justify-content: space-between; */
         /* height: 100%; */
     }
-    
+
     .confirmexchange-card .confirmexchange-name {
         font-family: 'NotoSansThai';
         font-size: 20px;
         font-weight: 700;
         color: #333333;
         padding: 0 0 5px 0;
-    
+
         max-width: 900px;
         white-space: normal;
         /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
         word-wrap: break-word;
         /* ตัดคำเมื่อความยาวเกินความกว้าง */
     }
-    
+
     .confirmexchange-card .productdetail {
         font-family: 'NotoSansThai';
         font-size: 14px;
@@ -314,33 +360,33 @@
         color: #333333;
         white-space: pre-line;
     }
-    
+
     .confirmexchange-card .user-group {
         display: flex;
         align-items: center;
         padding: 10px 0 0 0;
     }
-    
+
     .confirmexchange-card .user-avatar {
         width: 40px;
         height: 40px;
         border-radius: 50%;
         margin-right: 10px;
     }
-    
+
     .confirmexchange-card .user-info {
         font-family: 'NotoSansThai';
         font-size: 14px;
         font-weight: 400;
         color: #333333;
     }
-    
+
     .confirmexchange-card .points-container {
         display: flex;
         align-items: center;
         padding: 30px 0 0 0;
     }
-    
+
     .confirmexchange-card .points-container span {
         font-family: 'NotoSansThai';
         font-size: 18px;
@@ -349,16 +395,16 @@
         text-align: left;
         margin-top: 5px;
     }
-    
+
     .confirmexchange-card .point-image {
         width: 30px;
         height: 28px;
         margin-right: 5px;
     }
-    
+
     .confirmexchange-container .confirmexchange-group {
         text-align: left;
-    
+
         label {
             font-family: 'NotoSansThai';
             font-size: 14px;
@@ -366,10 +412,10 @@
             font-weight: 400;
         }
     }
-    
-    
+
+
     .confirmexchange-group input[type="text"],
-    .confirmexchange-group input[type="number"]{
+    .confirmexchange-group input[type="number"] {
         width: 98%;
         padding: 8px;
         border: 1px solid #F7F7F7;
@@ -379,51 +425,97 @@
         color: #000;
         background-color: #F7F7F7;
     }
-    
+
     .confirmexchange-group input {
         height: 40px;
     }
-    
+
     .confirmexchange-group input[readonly] {
         outline: none;
         /* ปิดการแสดงผลการโฟกัส */
     }
-    
+
     .confirmexchange-container .confirm-button {
         display: flex;
     }
-    
-    .confirmexchange-container .confirmexchange-group .confirmexchange-popup-class {
+
+    .confirmexchange-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
-    
-    .confirmexchange-container .confirmexchange-group .confirmexchange-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+
+    .confirmexchange-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+
+    .confirmexchange-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+
+    .confirmexchange-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+
+    .confirmexchange-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+
+    .confirmexchange-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
-@media only screen and (max-width:850px){
+@media only screen and (max-width:850px) {
     .confirmexchange-container {
         width: 100%;
         height: 100%;
         background-color: #fff;
         max-height: 100vh;
     }
-    
+
     .confirmexchange-container .confirmexchange-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .confirmexchange-grid .row-1 {
         padding: 20px 20px 20px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .confirmexchange-grid .row-2 {
         padding: 0px 20px 0px 20px;
         display: flex;
@@ -431,7 +523,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-3 {
         padding: 20px 0px 0px 20px;
         display: flex;
@@ -439,7 +531,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-4 {
         padding: 20px 0px 0px 20px;
         display: flex;
@@ -447,7 +539,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-5 {
         padding: 130px 20px 20px 25px;
         display: flex;
@@ -455,32 +547,32 @@
         justify-content: center;
         max-width: 99vw;
     }
-    
+
     .confirmexchange-grid .row-1 .header {
         display: flex;
         justify-content: center;
     }
-    
+
     .confirmexchange-grid .row-1 .header.title h2 {
         font-family: 'NotoSansThai';
         font-size: 26px;
         font-weight: 700;
         color: #DE2D1E;
     }
-    
+
     .confirmexchange-grid .row-2 .confirmexchange-card {
         width: 100%;
         height: 100%;
         background-color: #ffffff;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+
         display: flex;
         padding: 10px;
         box-sizing: border-box;
         align-items: center;
     }
-    
+
     .confirmexchange-card .confirmexchange-image {
         width: 230px;
         height: 230px;
@@ -488,7 +580,7 @@
         object-fit: cover;
         margin: 5px 10px 5px 5px;
     }
-    
+
     .confirmexchange-card .confirmexchange-info {
         flex: 1;
         display: flex;
@@ -496,21 +588,21 @@
         /* justify-content: space-between; */
         /* height: 100%; */
     }
-    
+
     .confirmexchange-card .confirmexchange-name {
         font-family: 'NotoSansThai';
         font-size: 20px;
         font-weight: 700;
         color: #333333;
         padding: 0 0 5px 0;
-    
+
         max-width: 900px;
         white-space: normal;
         /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
         word-wrap: break-word;
         /* ตัดคำเมื่อความยาวเกินความกว้าง */
     }
-    
+
     .confirmexchange-card .productdetail {
         font-family: 'NotoSansThai';
         font-size: 14px;
@@ -518,33 +610,33 @@
         color: #333333;
         white-space: pre-line;
     }
-    
+
     .confirmexchange-card .user-group {
         display: flex;
         align-items: center;
         padding: 10px 0 0 0;
     }
-    
+
     .confirmexchange-card .user-avatar {
         width: 40px;
         height: 40px;
         border-radius: 50%;
         margin-right: 10px;
     }
-    
+
     .confirmexchange-card .user-info {
         font-family: 'NotoSansThai';
         font-size: 14px;
         font-weight: 400;
         color: #333333;
     }
-    
+
     .confirmexchange-card .points-container {
         display: flex;
         align-items: center;
         padding: 30px 0 0 0;
     }
-    
+
     .confirmexchange-card .points-container span {
         font-family: 'NotoSansThai';
         font-size: 18px;
@@ -553,16 +645,16 @@
         text-align: left;
         margin-top: 5px;
     }
-    
+
     .confirmexchange-card .point-image {
         width: 30px;
         height: 28px;
         margin-right: 5px;
     }
-    
+
     .confirmexchange-container .confirmexchange-group {
         text-align: left;
-    
+
         label {
             font-family: 'NotoSansThai';
             font-size: 14px;
@@ -570,10 +662,10 @@
             font-weight: 400;
         }
     }
-    
-    
+
+
     .confirmexchange-group input[type="text"],
-    .confirmexchange-group input[type="number"]{
+    .confirmexchange-group input[type="number"] {
         width: 98%;
         padding: 8px;
         border: 1px solid #F7F7F7;
@@ -583,51 +675,97 @@
         color: #000;
         background-color: #F7F7F7;
     }
-    
+
     .confirmexchange-group input {
         height: 40px;
     }
-    
+
     .confirmexchange-group input[readonly] {
         outline: none;
         /* ปิดการแสดงผลการโฟกัส */
     }
-    
+
     .confirmexchange-container .confirm-button {
         display: flex;
     }
-    
-    .confirmexchange-container .confirmexchange-group .confirmexchange-popup-class {
+
+    .confirmexchange-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
-    
-    .confirmexchange-container .confirmexchange-group .confirmexchange-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+
+    .confirmexchange-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+
+    .confirmexchange-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+
+    .confirmexchange-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+
+    .confirmexchange-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+
+    .confirmexchange-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
-@media only screen and (max-width:750px){
+@media only screen and (max-width:750px) {
     .confirmexchange-container {
         width: 100%;
         height: 100%;
         background-color: #fff;
         max-height: 100vh;
     }
-    
+
     .confirmexchange-container .confirmexchange-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .confirmexchange-grid .row-1 {
         padding: 20px 20px 20px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .confirmexchange-grid .row-2 {
         padding: 0px 20px 0px 20px;
         display: flex;
@@ -635,7 +773,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-3 {
         padding: 20px 0px 0px 20px;
         display: flex;
@@ -643,7 +781,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-4 {
         padding: 20px 0px 0px 20px;
         display: flex;
@@ -651,7 +789,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-5 {
         padding: 130px 0px 20px 20px;
         display: flex;
@@ -659,32 +797,32 @@
         justify-content: center;
         max-width: 97vw;
     }
-    
+
     .confirmexchange-grid .row-1 .header {
         display: flex;
         justify-content: center;
     }
-    
+
     .confirmexchange-grid .row-1 .header.title h2 {
         font-family: 'NotoSansThai';
         font-size: 26px;
         font-weight: 700;
         color: #DE2D1E;
     }
-    
+
     .confirmexchange-grid .row-2 .confirmexchange-card {
         width: 100%;
         height: 100%;
         background-color: #ffffff;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+
         display: flex;
         padding: 10px;
         box-sizing: border-box;
         align-items: center;
     }
-    
+
     .confirmexchange-card .confirmexchange-image {
         width: 230px;
         height: 230px;
@@ -692,7 +830,7 @@
         object-fit: cover;
         margin: 5px 10px 5px 5px;
     }
-    
+
     .confirmexchange-card .confirmexchange-info {
         flex: 1;
         display: flex;
@@ -700,21 +838,21 @@
         /* justify-content: space-between; */
         /* height: 100%; */
     }
-    
+
     .confirmexchange-card .confirmexchange-name {
         font-family: 'NotoSansThai';
         font-size: 19px;
         font-weight: 700;
         color: #333333;
         padding: 0 0 5px 0;
-    
+
         max-width: 900px;
         white-space: normal;
         /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
         word-wrap: break-word;
         /* ตัดคำเมื่อความยาวเกินความกว้าง */
     }
-    
+
     .confirmexchange-card .productdetail {
         font-family: 'NotoSansThai';
         font-size: 14px;
@@ -722,33 +860,33 @@
         color: #333333;
         white-space: pre-line;
     }
-    
+
     .confirmexchange-card .user-group {
         display: flex;
         align-items: center;
         padding: 10px 0 0 0;
     }
-    
+
     .confirmexchange-card .user-avatar {
         width: 40px;
         height: 40px;
         border-radius: 50%;
         margin-right: 10px;
     }
-    
+
     .confirmexchange-card .user-info {
         font-family: 'NotoSansThai';
         font-size: 14px;
         font-weight: 400;
         color: #333333;
     }
-    
+
     .confirmexchange-card .points-container {
         display: flex;
         align-items: center;
         padding: 30px 0 0 0;
     }
-    
+
     .confirmexchange-card .points-container span {
         font-family: 'NotoSansThai';
         font-size: 18px;
@@ -757,16 +895,16 @@
         text-align: left;
         margin-top: 5px;
     }
-    
+
     .confirmexchange-card .point-image {
         width: 30px;
         height: 28px;
         margin-right: 5px;
     }
-    
+
     .confirmexchange-container .confirmexchange-group {
         text-align: left;
-    
+
         label {
             font-family: 'NotoSansThai';
             font-size: 14px;
@@ -774,10 +912,10 @@
             font-weight: 400;
         }
     }
-    
-    
+
+
     .confirmexchange-group input[type="text"],
-    .confirmexchange-group input[type="number"]{
+    .confirmexchange-group input[type="number"] {
         width: 98%;
         padding: 8px;
         border: 1px solid #F7F7F7;
@@ -787,51 +925,97 @@
         color: #000;
         background-color: #F7F7F7;
     }
-    
+
     .confirmexchange-group input {
         height: 40px;
     }
-    
+
     .confirmexchange-group input[readonly] {
         outline: none;
         /* ปิดการแสดงผลการโฟกัส */
     }
-    
+
     .confirmexchange-container .confirm-button {
         display: flex;
     }
-    
-    .confirmexchange-container .confirmexchange-group .confirmexchange-popup-class {
+
+    .confirmexchange-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
-    
-    .confirmexchange-container .confirmexchange-group .confirmexchange-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+
+    .confirmexchange-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+
+    .confirmexchange-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+
+    .confirmexchange-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+
+    .confirmexchange-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+
+    .confirmexchange-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
-@media only screen and (max-width:680px){
+@media only screen and (max-width:680px) {
     .confirmexchange-container {
         width: 100%;
         height: 100%;
         background-color: #fff;
         max-height: 100vh;
     }
-    
+
     .confirmexchange-container .confirmexchange-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .confirmexchange-grid .row-1 {
         padding: 20px 20px 20px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .confirmexchange-grid .row-2 {
         padding: 0px 20px 0px 20px;
         display: flex;
@@ -839,7 +1023,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-3 {
         padding: 20px 0px 0px 20px;
         display: flex;
@@ -847,7 +1031,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-4 {
         padding: 20px 0px 0px 20px;
         display: flex;
@@ -855,7 +1039,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-5 {
         padding: 130px 15px 20px 20px;
         display: flex;
@@ -863,32 +1047,32 @@
         justify-content: center;
         max-width: 97vw;
     }
-    
+
     .confirmexchange-grid .row-1 .header {
         display: flex;
         justify-content: center;
     }
-    
+
     .confirmexchange-grid .row-1 .header.title h2 {
         font-family: 'NotoSansThai';
         font-size: 26px;
         font-weight: 700;
         color: #DE2D1E;
     }
-    
+
     .confirmexchange-grid .row-2 .confirmexchange-card {
         width: 100%;
         height: 100%;
         background-color: #ffffff;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+
         display: flex;
         padding: 10px;
         box-sizing: border-box;
         align-items: center;
     }
-    
+
     .confirmexchange-card .confirmexchange-image {
         width: 230px;
         height: 230px;
@@ -896,7 +1080,7 @@
         object-fit: cover;
         margin: 5px 10px 5px 5px;
     }
-    
+
     .confirmexchange-card .confirmexchange-info {
         flex: 1;
         display: flex;
@@ -904,21 +1088,21 @@
         /* justify-content: space-between; */
         /* height: 100%; */
     }
-    
+
     .confirmexchange-card .confirmexchange-name {
         font-family: 'NotoSansThai';
         font-size: 17px;
         font-weight: 700;
         color: #333333;
         padding: 0 0 5px 0;
-    
+
         max-width: 900px;
         white-space: normal;
         /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
         word-wrap: break-word;
         /* ตัดคำเมื่อความยาวเกินความกว้าง */
     }
-    
+
     .confirmexchange-card .productdetail {
         font-family: 'NotoSansThai';
         font-size: 13px;
@@ -926,33 +1110,33 @@
         color: #333333;
         white-space: pre-line;
     }
-    
+
     .confirmexchange-card .user-group {
         display: flex;
         align-items: center;
         padding: 10px 0 0 0;
     }
-    
+
     .confirmexchange-card .user-avatar {
         width: 35px;
         height: 35px;
         border-radius: 50%;
         margin-right: 10px;
     }
-    
+
     .confirmexchange-card .user-info {
         font-family: 'NotoSansThai';
         font-size: 13px;
         font-weight: 400;
         color: #333333;
     }
-    
+
     .confirmexchange-card .points-container {
         display: flex;
         align-items: center;
         padding: 30px 0 0 0;
     }
-    
+
     .confirmexchange-card .points-container span {
         font-family: 'NotoSansThai';
         font-size: 16px;
@@ -961,16 +1145,16 @@
         text-align: left;
         margin-top: 5px;
     }
-    
+
     .confirmexchange-card .point-image {
         width: 28px;
         height: 26px;
         margin-right: 5px;
     }
-    
+
     .confirmexchange-container .confirmexchange-group {
         text-align: left;
-    
+
         label {
             font-family: 'NotoSansThai';
             font-size: 14px;
@@ -978,10 +1162,10 @@
             font-weight: 400;
         }
     }
-    
-    
+
+
     .confirmexchange-group input[type="text"],
-    .confirmexchange-group input[type="number"]{
+    .confirmexchange-group input[type="number"] {
         width: 98%;
         padding: 8px;
         border: 1px solid #F7F7F7;
@@ -991,51 +1175,97 @@
         color: #000;
         background-color: #F7F7F7;
     }
-    
+
     .confirmexchange-group input {
         height: 40px;
     }
-    
+
     .confirmexchange-group input[readonly] {
         outline: none;
         /* ปิดการแสดงผลการโฟกัส */
     }
-    
+
     .confirmexchange-container .confirm-button {
         display: flex;
     }
-    
-    .confirmexchange-container .confirmexchange-group .confirmexchange-popup-class {
+
+    .confirmexchange-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
-    
-    .confirmexchange-container .confirmexchange-group .confirmexchange-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+
+    .confirmexchange-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+
+    .confirmexchange-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+
+    .confirmexchange-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+
+    .confirmexchange-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+
+    .confirmexchange-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
-@media only screen and (max-width:610px){
+@media only screen and (max-width:610px) {
     .confirmexchange-container {
         width: 100%;
         height: 100%;
         background-color: #fff;
         max-height: 100vh;
     }
-    
+
     .confirmexchange-container .confirmexchange-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .confirmexchange-grid .row-1 {
         padding: 20px 20px 20px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .confirmexchange-grid .row-2 {
         padding: 0px 20px 0px 20px;
         display: flex;
@@ -1043,7 +1273,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-3 {
         padding: 20px 0px 0px 20px;
         display: flex;
@@ -1051,7 +1281,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-4 {
         padding: 20px 0px 0px 20px;
         display: flex;
@@ -1059,7 +1289,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-5 {
         padding: 130px 15px 20px 20px;
         display: flex;
@@ -1067,32 +1297,32 @@
         justify-content: center;
         max-width: 97vw;
     }
-    
+
     .confirmexchange-grid .row-1 .header {
         display: flex;
         justify-content: center;
     }
-    
+
     .confirmexchange-grid .row-1 .header.title h2 {
         font-family: 'NotoSansThai';
         font-size: 26px;
         font-weight: 700;
         color: #DE2D1E;
     }
-    
+
     .confirmexchange-grid .row-2 .confirmexchange-card {
         width: 100%;
         height: 100%;
         background-color: #ffffff;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+
         display: flex;
         padding: 10px;
         box-sizing: border-box;
         align-items: center;
     }
-    
+
     .confirmexchange-card .confirmexchange-image {
         width: 230px;
         height: 230px;
@@ -1100,7 +1330,7 @@
         object-fit: cover;
         margin: 5px 10px 5px 5px;
     }
-    
+
     .confirmexchange-card .confirmexchange-info {
         flex: 1;
         display: flex;
@@ -1108,21 +1338,21 @@
         /* justify-content: space-between; */
         /* height: 100%; */
     }
-    
+
     .confirmexchange-card .confirmexchange-name {
         font-family: 'NotoSansThai';
         font-size: 16px;
         font-weight: 700;
         color: #333333;
         padding: 0 0 5px 0;
-    
+
         max-width: 900px;
         white-space: normal;
         /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
         word-wrap: break-word;
         /* ตัดคำเมื่อความยาวเกินความกว้าง */
     }
-    
+
     .confirmexchange-card .productdetail {
         font-family: 'NotoSansThai';
         font-size: 12px;
@@ -1130,33 +1360,33 @@
         color: #333333;
         white-space: pre-line;
     }
-    
+
     .confirmexchange-card .user-group {
         display: flex;
         align-items: center;
         padding: 10px 0 0 0;
     }
-    
+
     .confirmexchange-card .user-avatar {
         width: 35px;
         height: 35px;
         border-radius: 50%;
         margin-right: 10px;
     }
-    
+
     .confirmexchange-card .user-info {
         font-family: 'NotoSansThai';
         font-size: 12px;
         font-weight: 400;
         color: #333333;
     }
-    
+
     .confirmexchange-card .points-container {
         display: flex;
         align-items: center;
         padding: 30px 0 0 0;
     }
-    
+
     .confirmexchange-card .points-container span {
         font-family: 'NotoSansThai';
         font-size: 16px;
@@ -1165,16 +1395,16 @@
         text-align: left;
         margin-top: 5px;
     }
-    
+
     .confirmexchange-card .point-image {
         width: 28px;
         height: 26px;
         margin-right: 5px;
     }
-    
+
     .confirmexchange-container .confirmexchange-group {
         text-align: left;
-    
+
         label {
             font-family: 'NotoSansThai';
             font-size: 14px;
@@ -1182,10 +1412,10 @@
             font-weight: 400;
         }
     }
-    
-    
+
+
     .confirmexchange-group input[type="text"],
-    .confirmexchange-group input[type="number"]{
+    .confirmexchange-group input[type="number"] {
         width: 98%;
         padding: 8px;
         border: 1px solid #F7F7F7;
@@ -1195,51 +1425,97 @@
         color: #000;
         background-color: #F7F7F7;
     }
-    
+
     .confirmexchange-group input {
         height: 40px;
     }
-    
+
     .confirmexchange-group input[readonly] {
         outline: none;
         /* ปิดการแสดงผลการโฟกัส */
     }
-    
+
     .confirmexchange-container .confirm-button {
         display: flex;
     }
-    
-    .confirmexchange-container .confirmexchange-group .confirmexchange-popup-class {
+
+    .confirmexchange-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
-    
-    .confirmexchange-container .confirmexchange-group .confirmexchange-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+
+    .confirmexchange-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+
+    .confirmexchange-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+
+    .confirmexchange-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+
+    .confirmexchange-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+
+    .confirmexchange-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
-@media only screen and (max-width:520px){
+@media only screen and (max-width:520px) {
     .confirmexchange-container {
         width: 100%;
         height: 100%;
         background-color: #fff;
         max-height: 100vh;
     }
-    
+
     .confirmexchange-container .confirmexchange-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .confirmexchange-grid .row-1 {
         padding: 20px 20px 20px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .confirmexchange-grid .row-2 {
         padding: 0px 20px 0px 20px;
         display: flex;
@@ -1247,7 +1523,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-3 {
         padding: 20px 0px 0px 20px;
         display: flex;
@@ -1255,7 +1531,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-4 {
         padding: 20px 0px 0px 20px;
         display: flex;
@@ -1263,7 +1539,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-5 {
         padding: 130px 15px 20px 20px;
         display: flex;
@@ -1271,32 +1547,32 @@
         justify-content: center;
         max-width: 97vw;
     }
-    
+
     .confirmexchange-grid .row-1 .header {
         display: flex;
         justify-content: center;
     }
-    
+
     .confirmexchange-grid .row-1 .header.title h2 {
         font-family: 'NotoSansThai';
         font-size: 26px;
         font-weight: 700;
         color: #DE2D1E;
     }
-    
+
     .confirmexchange-grid .row-2 .confirmexchange-card {
         width: 100%;
         height: 100%;
         background-color: #ffffff;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+
         display: flex;
         padding: 10px;
         box-sizing: border-box;
         align-items: center;
     }
-    
+
     .confirmexchange-card .confirmexchange-image {
         width: 230px;
         height: 230px;
@@ -1304,7 +1580,7 @@
         object-fit: cover;
         margin: 5px 10px 5px 5px;
     }
-    
+
     .confirmexchange-card .confirmexchange-info {
         flex: 1;
         display: flex;
@@ -1312,21 +1588,21 @@
         /* justify-content: space-between; */
         /* height: 100%; */
     }
-    
+
     .confirmexchange-card .confirmexchange-name {
         font-family: 'NotoSansThai';
         font-size: 14px;
         font-weight: 700;
         color: #333333;
         padding: 0 0 5px 0;
-    
+
         max-width: 900px;
         white-space: normal;
         /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
         word-wrap: break-word;
         /* ตัดคำเมื่อความยาวเกินความกว้าง */
     }
-    
+
     .confirmexchange-card .productdetail {
         font-family: 'NotoSansThai';
         font-size: 11px;
@@ -1334,33 +1610,33 @@
         color: #333333;
         white-space: pre-line;
     }
-    
+
     .confirmexchange-card .user-group {
         display: flex;
         align-items: center;
         padding: 10px 0 0 0;
     }
-    
+
     .confirmexchange-card .user-avatar {
         width: 30px;
         height: 30px;
         border-radius: 50%;
         margin-right: 10px;
     }
-    
+
     .confirmexchange-card .user-info {
         font-family: 'NotoSansThai';
         font-size: 11px;
         font-weight: 400;
         color: #333333;
     }
-    
+
     .confirmexchange-card .points-container {
         display: flex;
         align-items: center;
         padding: 30px 0 0 0;
     }
-    
+
     .confirmexchange-card .points-container span {
         font-family: 'NotoSansThai';
         font-size: 15px;
@@ -1369,16 +1645,16 @@
         text-align: left;
         margin-top: 5px;
     }
-    
+
     .confirmexchange-card .point-image {
         width: 26px;
         height: 24px;
         margin-right: 5px;
     }
-    
+
     .confirmexchange-container .confirmexchange-group {
         text-align: left;
-    
+
         label {
             font-family: 'NotoSansThai';
             font-size: 14px;
@@ -1386,10 +1662,10 @@
             font-weight: 400;
         }
     }
-    
-    
+
+
     .confirmexchange-group input[type="text"],
-    .confirmexchange-group input[type="number"]{
+    .confirmexchange-group input[type="number"] {
         width: 98%;
         padding: 8px;
         border: 1px solid #F7F7F7;
@@ -1399,51 +1675,97 @@
         color: #000;
         background-color: #F7F7F7;
     }
-    
+
     .confirmexchange-group input {
         height: 40px;
     }
-    
+
     .confirmexchange-group input[readonly] {
         outline: none;
         /* ปิดการแสดงผลการโฟกัส */
     }
-    
+
     .confirmexchange-container .confirm-button {
         display: flex;
     }
-    
-    .confirmexchange-container .confirmexchange-group .confirmexchange-popup-class {
+
+    .confirmexchange-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
-    
-    .confirmexchange-container .confirmexchange-group .confirmexchange-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+
+    .confirmexchange-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+
+    .confirmexchange-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+
+    .confirmexchange-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+
+    .confirmexchange-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+
+    .confirmexchange-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
-@media only screen and (max-width:460px){
+@media only screen and (max-width:460px) {
     .confirmexchange-container {
         width: 100%;
         height: 100%;
         background-color: #fff;
         max-height: 100vh;
     }
-    
+
     .confirmexchange-container .confirmexchange-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .confirmexchange-grid .row-1 {
         padding: 20px 20px 20px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .confirmexchange-grid .row-2 {
         padding: 0px 20px 0px 20px;
         display: flex;
@@ -1451,7 +1773,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-3 {
         padding: 20px 0px 0px 20px;
         display: flex;
@@ -1459,7 +1781,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-4 {
         padding: 20px 0px 0px 20px;
         display: flex;
@@ -1467,7 +1789,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-5 {
         padding: 130px 15px 20px 20px;
         display: flex;
@@ -1475,32 +1797,32 @@
         justify-content: center;
         max-width: 96vw;
     }
-    
+
     .confirmexchange-grid .row-1 .header {
         display: flex;
         justify-content: center;
     }
-    
+
     .confirmexchange-grid .row-1 .header.title h2 {
         font-family: 'NotoSansThai';
         font-size: 26px;
         font-weight: 700;
         color: #DE2D1E;
     }
-    
+
     .confirmexchange-grid .row-2 .confirmexchange-card {
         width: 100%;
         height: 100%;
         background-color: #ffffff;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+
         display: flex;
         padding: 10px;
         box-sizing: border-box;
         align-items: center;
     }
-    
+
     .confirmexchange-card .confirmexchange-image {
         width: 220px;
         height: 220px;
@@ -1508,7 +1830,7 @@
         object-fit: cover;
         margin: 5px 10px 5px 5px;
     }
-    
+
     .confirmexchange-card .confirmexchange-info {
         flex: 1;
         display: flex;
@@ -1516,21 +1838,21 @@
         /* justify-content: space-between; */
         /* height: 100%; */
     }
-    
+
     .confirmexchange-card .confirmexchange-name {
         font-family: 'NotoSansThai';
         font-size: 14px;
         font-weight: 700;
         color: #333333;
         padding: 0 0 5px 0;
-    
+
         max-width: 900px;
         white-space: normal;
         /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
         word-wrap: break-word;
         /* ตัดคำเมื่อความยาวเกินความกว้าง */
     }
-    
+
     .confirmexchange-card .productdetail {
         font-family: 'NotoSansThai';
         font-size: 11px;
@@ -1538,33 +1860,33 @@
         color: #333333;
         white-space: pre-line;
     }
-    
+
     .confirmexchange-card .user-group {
         display: flex;
         align-items: center;
         padding: 10px 0 0 0;
     }
-    
+
     .confirmexchange-card .user-avatar {
         width: 25px;
         height: 25px;
         border-radius: 50%;
         margin-right: 10px;
     }
-    
+
     .confirmexchange-card .user-info {
         font-family: 'NotoSansThai';
         font-size: 11px;
         font-weight: 400;
         color: #333333;
     }
-    
+
     .confirmexchange-card .points-container {
         display: flex;
         align-items: center;
         padding: 30px 0 0 0;
     }
-    
+
     .confirmexchange-card .points-container span {
         font-family: 'NotoSansThai';
         font-size: 14px;
@@ -1573,16 +1895,16 @@
         text-align: left;
         margin-top: 5px;
     }
-    
+
     .confirmexchange-card .point-image {
         width: 24px;
         height: 22px;
         margin-right: 5px;
     }
-    
+
     .confirmexchange-container .confirmexchange-group {
         text-align: left;
-    
+
         label {
             font-family: 'NotoSansThai';
             font-size: 14px;
@@ -1590,10 +1912,10 @@
             font-weight: 400;
         }
     }
-    
-    
+
+
     .confirmexchange-group input[type="text"],
-    .confirmexchange-group input[type="number"]{
+    .confirmexchange-group input[type="number"] {
         width: 98%;
         padding: 8px;
         border: 1px solid #F7F7F7;
@@ -1603,51 +1925,97 @@
         color: #000;
         background-color: #F7F7F7;
     }
-    
+
     .confirmexchange-group input {
         height: 40px;
     }
-    
+
     .confirmexchange-group input[readonly] {
         outline: none;
         /* ปิดการแสดงผลการโฟกัส */
     }
-    
+
     .confirmexchange-container .confirm-button {
         display: flex;
     }
-    
-    .confirmexchange-container .confirmexchange-group .confirmexchange-popup-class {
+
+    .confirmexchange-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
-    
-    .confirmexchange-container .confirmexchange-group .confirmexchange-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+
+    .confirmexchange-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+
+    .confirmexchange-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+
+    .confirmexchange-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+
+    .confirmexchange-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+
+    .confirmexchange-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
-@media only screen and (max-width:445px){
+@media only screen and (max-width:445px) {
     .confirmexchange-container {
         width: 100%;
         height: 100%;
         background-color: #fff;
         max-height: 100vh;
     }
-    
+
     .confirmexchange-container .confirmexchange-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .confirmexchange-grid .row-1 {
         padding: 20px 20px 20px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .confirmexchange-grid .row-2 {
         padding: 0px 20px 0px 20px;
         display: flex;
@@ -1655,7 +2023,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-3 {
         padding: 20px 0px 0px 20px;
         display: flex;
@@ -1663,7 +2031,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-4 {
         padding: 20px 0px 0px 20px;
         display: flex;
@@ -1671,7 +2039,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-5 {
         padding: 130px 15px 20px 20px;
         display: flex;
@@ -1679,32 +2047,32 @@
         justify-content: center;
         max-width: 96vw;
     }
-    
+
     .confirmexchange-grid .row-1 .header {
         display: flex;
         justify-content: center;
     }
-    
+
     .confirmexchange-grid .row-1 .header.title h2 {
         font-family: 'NotoSansThai';
         font-size: 26px;
         font-weight: 700;
         color: #DE2D1E;
     }
-    
+
     .confirmexchange-grid .row-2 .confirmexchange-card {
         width: 100%;
         height: 100%;
         background-color: #ffffff;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+
         display: flex;
         padding: 10px;
         box-sizing: border-box;
         align-items: center;
     }
-    
+
     .confirmexchange-card .confirmexchange-image {
         width: 220px;
         height: 220px;
@@ -1712,7 +2080,7 @@
         object-fit: cover;
         margin: 5px 10px 5px 5px;
     }
-    
+
     .confirmexchange-card .confirmexchange-info {
         flex: 1;
         display: flex;
@@ -1720,21 +2088,21 @@
         /* justify-content: space-between; */
         /* height: 100%; */
     }
-    
+
     .confirmexchange-card .confirmexchange-name {
         font-family: 'NotoSansThai';
         font-size: 12px;
         font-weight: 700;
         color: #333333;
         padding: 0 0 5px 0;
-    
+
         max-width: 900px;
         white-space: normal;
         /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
         word-wrap: break-word;
         /* ตัดคำเมื่อความยาวเกินความกว้าง */
     }
-    
+
     .confirmexchange-card .productdetail {
         font-family: 'NotoSansThai';
         font-size: 11px;
@@ -1742,33 +2110,33 @@
         color: #333333;
         white-space: pre-line;
     }
-    
+
     .confirmexchange-card .user-group {
         display: flex;
         align-items: center;
         padding: 5px 0 0 0;
     }
-    
+
     .confirmexchange-card .user-avatar {
         width: 25px;
         height: 25px;
         border-radius: 50%;
         margin-right: 10px;
     }
-    
+
     .confirmexchange-card .user-info {
         font-family: 'NotoSansThai';
         font-size: 11px;
         font-weight: 400;
         color: #333333;
     }
-    
+
     .confirmexchange-card .points-container {
         display: flex;
         align-items: center;
         padding: 20px 0 0 0;
     }
-    
+
     .confirmexchange-card .points-container span {
         font-family: 'NotoSansThai';
         font-size: 14px;
@@ -1777,16 +2145,16 @@
         text-align: left;
         margin-top: 5px;
     }
-    
+
     .confirmexchange-card .point-image {
         width: 24px;
         height: 22px;
         margin-right: 5px;
     }
-    
+
     .confirmexchange-container .confirmexchange-group {
         text-align: left;
-    
+
         label {
             font-family: 'NotoSansThai';
             font-size: 14px;
@@ -1794,10 +2162,10 @@
             font-weight: 400;
         }
     }
-    
-    
+
+
     .confirmexchange-group input[type="text"],
-    .confirmexchange-group input[type="number"]{
+    .confirmexchange-group input[type="number"] {
         width: 98%;
         padding: 8px;
         border: 1px solid #F7F7F7;
@@ -1807,51 +2175,97 @@
         color: #000;
         background-color: #F7F7F7;
     }
-    
+
     .confirmexchange-group input {
         height: 40px;
     }
-    
+
     .confirmexchange-group input[readonly] {
         outline: none;
         /* ปิดการแสดงผลการโฟกัส */
     }
-    
+
     .confirmexchange-container .confirm-button {
         display: flex;
     }
-    
-    .confirmexchange-container .confirmexchange-group .confirmexchange-popup-class {
+
+    .confirmexchange-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
-    
-    .confirmexchange-container .confirmexchange-group .confirmexchange-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+
+    .confirmexchange-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+
+    .confirmexchange-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+
+    .confirmexchange-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+
+    .confirmexchange-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+
+    .confirmexchange-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
-@media only screen and (max-width:420px){
+@media only screen and (max-width:420px) {
     .confirmexchange-container {
         width: 100%;
         height: 100%;
         background-color: #fff;
         max-height: 100vh;
     }
-    
+
     .confirmexchange-container .confirmexchange-grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .confirmexchange-grid .row-1 {
         padding: 20px 20px 20px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .confirmexchange-grid .row-2 {
         padding: 0px 20px 0px 20px;
         display: flex;
@@ -1859,7 +2273,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-3 {
         padding: 20px 0px 0px 20px;
         display: flex;
@@ -1867,7 +2281,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-4 {
         padding: 20px 0px 0px 20px;
         display: flex;
@@ -1875,7 +2289,7 @@
         justify-content: center;
         max-width: 100vw;
     }
-    
+
     .confirmexchange-grid .row-5 {
         padding: 130px 15px 20px 20px;
         display: flex;
@@ -1883,32 +2297,32 @@
         justify-content: center;
         max-width: 96vw;
     }
-    
+
     .confirmexchange-grid .row-1 .header {
         display: flex;
         justify-content: center;
     }
-    
+
     .confirmexchange-grid .row-1 .header.title h2 {
         font-family: 'NotoSansThai';
         font-size: 26px;
         font-weight: 700;
         color: #DE2D1E;
     }
-    
+
     .confirmexchange-grid .row-2 .confirmexchange-card {
         width: 100%;
         height: 100%;
         background-color: #ffffff;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+
         display: flex;
         padding: 10px;
         box-sizing: border-box;
         align-items: center;
     }
-    
+
     .confirmexchange-card .confirmexchange-image {
         width: 200px;
         height: 200px;
@@ -1916,7 +2330,7 @@
         object-fit: cover;
         margin: 5px 10px 5px 5px;
     }
-    
+
     .confirmexchange-card .confirmexchange-info {
         flex: 1;
         display: flex;
@@ -1924,21 +2338,21 @@
         /* justify-content: space-between; */
         /* height: 100%; */
     }
-    
+
     .confirmexchange-card .confirmexchange-name {
         font-family: 'NotoSansThai';
         font-size: 12px;
         font-weight: 700;
         color: #333333;
         padding: 0 0 5px 0;
-    
+
         max-width: 900px;
         white-space: normal;
         /* อนุญาตให้ข้อความขึ้นบรรทัดใหม่ */
         word-wrap: break-word;
         /* ตัดคำเมื่อความยาวเกินความกว้าง */
     }
-    
+
     .confirmexchange-card .productdetail {
         font-family: 'NotoSansThai';
         font-size: 10px;
@@ -1946,33 +2360,33 @@
         color: #333333;
         white-space: pre-line;
     }
-    
+
     .confirmexchange-card .user-group {
         display: flex;
         align-items: center;
         padding: 5px 0 0 0;
     }
-    
+
     .confirmexchange-card .user-avatar {
         width: 25px;
         height: 25px;
         border-radius: 50%;
         margin-right: 10px;
     }
-    
+
     .confirmexchange-card .user-info {
         font-family: 'NotoSansThai';
         font-size: 10px;
         font-weight: 400;
         color: #333333;
     }
-    
+
     .confirmexchange-card .points-container {
         display: flex;
         align-items: center;
         padding: 20px 0 0 0;
     }
-    
+
     .confirmexchange-card .points-container span {
         font-family: 'NotoSansThai';
         font-size: 14px;
@@ -1981,16 +2395,16 @@
         text-align: left;
         margin-top: 5px;
     }
-    
+
     .confirmexchange-card .point-image {
         width: 24px;
         height: 22px;
         margin-right: 5px;
     }
-    
+
     .confirmexchange-container .confirmexchange-group {
         text-align: left;
-    
+
         label {
             font-family: 'NotoSansThai';
             font-size: 14px;
@@ -1998,10 +2412,9 @@
             font-weight: 400;
         }
     }
-    
-    
+
     .confirmexchange-group input[type="text"],
-    .confirmexchange-group input[type="number"]{
+    .confirmexchange-group input[type="number"] {
         width: 98%;
         padding: 8px;
         border: 1px solid #F7F7F7;
@@ -2011,27 +2424,73 @@
         color: #000;
         background-color: #F7F7F7;
     }
-    
+
     .confirmexchange-group input {
         height: 40px;
     }
-    
+
     .confirmexchange-group input[readonly] {
         outline: none;
         /* ปิดการแสดงผลการโฟกัส */
     }
-    
+
     .confirmexchange-container .confirm-button {
         display: flex;
     }
-    
-    .confirmexchange-container .confirmexchange-group .confirmexchange-popup-class {
+
+    .confirmexchange-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
-    
-    .confirmexchange-container .confirmexchange-group .confirmexchange-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+
+    .confirmexchange-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+
+    .confirmexchange-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+
+    .confirmexchange-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+
+    .confirmexchange-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+
+    .confirmexchange-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }

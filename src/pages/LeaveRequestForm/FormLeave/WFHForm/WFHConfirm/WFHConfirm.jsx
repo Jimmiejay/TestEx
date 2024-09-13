@@ -20,15 +20,15 @@ const WFHConfirm = () => {
         if (isSuccess) {
             Swal.fire({
                 title: "คุณได้แจ้งลาสำเร็จ",
-                text: "คุณแจ้ง ลาป่วย เรียบร้อยแล้ว",
+                html: `<p class="wfhconfirm-text-class">คุณแจ้ง WFH เรียบร้อยแล้</p>`,
                 icon: "success",
                 confirmButtonText: 'เรียบร้อย',
-                confirmButtonColor: "#29AE4C",
                 width: '375px',
                 height: '290px',
                 customClass: {
+                    title: 'wfhconfirm-title-class',
                     popup: 'wfhconfirm-popup-class',
-                    confirmButton: 'wfhconfirm-button-class'
+                    confirmButton: 'wfhconfirm-confirmbutton-class'
                 }
             }).then(() => {
                 setisTransferDone(true);
@@ -36,17 +36,17 @@ const WFHConfirm = () => {
         } else {
             Swal.fire({
                 title: "โอ้ว..ไม่นะ",
-                text: "มีอะไรบางอย่างผิดพลาด",
+                html: `<p class="wfhconfirm-text-class">มีอะไรบางอย่างผิดพลาด</p>`,
                 icon: "error",
                 showCancelButton: true,  // เพิ่มการแสดงปุ่ม cancel
                 showConfirmButton: false,
                 cancelButtonText: 'ปิด',
-                cancelButtonColor: "#CFCFCF",
                 width: '375px',
                 height: '290px',
                 customClass: {
+                    title: 'wfhconfirm-title-class',
                     popup: 'wfhconfirm-popup-class',
-                    confirmButton: 'wfhconfirm-button-class'
+                    cancleButton: 'wfhconfirm-canclebutton-class'
                 }
             });
         }
@@ -65,14 +65,14 @@ const WFHConfirm = () => {
     //         if (response.status === 200) {
     //             Swal.fire({
     //                 title: "คุณได้แจ้งลาสำเร็จ",
-    //                 text: "คุณแจ้ง ลาป่วย เรียบร้อยแล้ว",
+    //                 html: `<p class="wfhconfirm-text-class">คุณแจ้ง WFH เรียบร้อยแล้</p>`,
     //                 icon: "success",
     //                 confirmButtonText: 'เรียบร้อย',
-    //                 confirmButtonColor: "#29AE4C",
     //                 width: '375px',
     //                 customClass: {
+    //                     title: 'wfhconfirm-title-class',
     //                     popup: 'wfhconfirm-popup-class',
-    //                     confirmButton: 'wfhconfirm-button-class'
+    //                     confirmButton: 'wfhconfirm-confirmbutton-class'
     //                 }
     //             }).then(() => {
     //                 setisTransferDone(true);
@@ -82,18 +82,18 @@ const WFHConfirm = () => {
     //         }
     //     } catch (error) {
     //         Swal.fire({
-    //            //             title: "โอ้ว..ไม่นะ",
-    //             text: "มีอะไรบางอย่างผิดพลาด",
+    //             title: "โอ้ว..ไม่นะ",
+    //             html: `<p class="wfhconfirm-text-class">มีอะไรบางอย่างผิดพลาด</p>`,
     //             icon: "error",
     //             showCancelButton: true,  // เพิ่มการแสดงปุ่ม cancel
     //             showConfirmButton: false,
     //             cancelButtonText: 'ปิด',
-    //             cancelButtonColor: "#CFCFCF",
     //             width: '375px',
     //             height: '290px',
     //             customClass: {
+    //                 title: 'wfhconfirm-title-class',
     //                 popup: 'wfhconfirm-popup-class',
-    //                 confirmButton: 'wfhconfirm-button-class'
+    //                 cancleButton: 'wfhconfirm-canclebutton-class'
     //             }
     //         });
     //     }

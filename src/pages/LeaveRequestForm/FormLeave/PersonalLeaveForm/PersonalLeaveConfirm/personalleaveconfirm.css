@@ -126,14 +126,60 @@
     /* ปิดการแสดงผลการโฟกัส */
 }
 
-.personalconfirm-form .personalconfirm-group .personalconfirm-popup-class {
+.personalconfirm-popup-class {
     border-radius: 15px;
-    /* ปรับค่า radius ตามที่ต้องการ */
 }
 
-.personalconfirm-form .personalconfirm-group .personalconfirm-button-class {
-    border-radius: 25px;
-    /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+.personalconfirm-title-class {
+    font-family: 'NotoSansThai';
+    font-size: 32px;
+    font-weight: 400;
+    color: #545454;
+    text-align: center;
+}
+
+.personalconfirm-text-class {
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #545454;
+    text-align: center;
+}
+
+.personalconfirm-confirmbutton-class {
+    width: 83px;
+    height: 38px;
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: #29AE4C;
+}
+
+.personalconfirm-canclebutton-class {
+    width: 83px;
+    height: 38px;
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: #CFCFCF;
+}
+
+.personalconfirm-error-canclebutton-class {
+    width: 83px;
+    height: 38px;
+    font-family: 'NotoSansThai';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    background-color: #CFCFCF;
 }
 
 @media only screen and (max-width:1250px){
@@ -265,14 +311,60 @@
         /* ปิดการแสดงผลการโฟกัส */
     }
     
-    .personalconfirm-form .personalconfirm-group .personalconfirm-popup-class {
+    .personalconfirm-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
     
-    .personalconfirm-form .personalconfirm-group .personalconfirm-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+    .personalconfirm-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .personalconfirm-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .personalconfirm-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+    
+    .personalconfirm-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+    
+    .personalconfirm-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
@@ -405,14 +497,60 @@
         /* ปิดการแสดงผลการโฟกัส */
     }
     
-    .personalconfirm-form .personalconfirm-group .personalconfirm-popup-class {
+    .personalconfirm-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
     
-    .personalconfirm-form .personalconfirm-group .personalconfirm-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+    .personalconfirm-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .personalconfirm-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .personalconfirm-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+    
+    .personalconfirm-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+    
+    .personalconfirm-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
@@ -545,14 +683,60 @@
         /* ปิดการแสดงผลการโฟกัส */
     }
     
-    .personalconfirm-form .personalconfirm-group .personalconfirm-popup-class {
+    .personalconfirm-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
     
-    .personalconfirm-form .personalconfirm-group .personalconfirm-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+    .personalconfirm-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .personalconfirm-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .personalconfirm-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+    
+    .personalconfirm-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+    
+    .personalconfirm-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
@@ -685,14 +869,60 @@
         /* ปิดการแสดงผลการโฟกัส */
     }
     
-    .personalconfirm-form .personalconfirm-group .personalconfirm-popup-class {
+    .personalconfirm-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
     
-    .personalconfirm-form .personalconfirm-group .personalconfirm-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+    .personalconfirm-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .personalconfirm-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .personalconfirm-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+    
+    .personalconfirm-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+    
+    .personalconfirm-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
@@ -825,14 +1055,60 @@
         /* ปิดการแสดงผลการโฟกัส */
     }
     
-    .personalconfirm-form .personalconfirm-group .personalconfirm-popup-class {
+    .personalconfirm-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
     
-    .personalconfirm-form .personalconfirm-group .personalconfirm-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+    .personalconfirm-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .personalconfirm-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .personalconfirm-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+    
+    .personalconfirm-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+    
+    .personalconfirm-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }
 
@@ -965,13 +1241,59 @@
         /* ปิดการแสดงผลการโฟกัส */
     }
     
-    .personalconfirm-form .personalconfirm-group .personalconfirm-popup-class {
+    .personalconfirm-popup-class {
         border-radius: 15px;
-        /* ปรับค่า radius ตามที่ต้องการ */
     }
     
-    .personalconfirm-form .personalconfirm-group .personalconfirm-button-class {
-        border-radius: 25px;
-        /* ปรับค่า radius ของปุ่มตามที่ต้องการ */
+    .personalconfirm-title-class {
+        font-family: 'NotoSansThai';
+        font-size: 32px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .personalconfirm-text-class {
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #545454;
+        text-align: center;
+    }
+    
+    .personalconfirm-confirmbutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #29AE4C;
+    }
+    
+    .personalconfirm-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
+    }
+    
+    .personalconfirm-error-canclebutton-class {
+        width: 83px;
+        height: 38px;
+        font-family: 'NotoSansThai';
+        font-size: 16px;
+        font-weight: 400;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 0px;
+        background-color: #CFCFCF;
     }
 }

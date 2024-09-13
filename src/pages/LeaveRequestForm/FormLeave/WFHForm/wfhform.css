@@ -126,7 +126,7 @@ textarea {
 }
 
 .wfh-form-container .wfh-form-group textarea {
-    resize: vertical;
+    resize: none;
     height: 195px;
 }
 
@@ -337,7 +337,7 @@ textarea {
     }
 
     .wfh-form-container .wfh-form-group textarea {
-        resize: vertical;
+        resize: none;
         height: 195px;
     }
 
@@ -549,7 +549,7 @@ textarea {
     }
 
     .wfh-form-container .wfh-form-group textarea {
-        resize: vertical;
+        resize: none;
         height: 195px;
     }
 
@@ -761,7 +761,7 @@ textarea {
     }
 
     .wfh-form-container .wfh-form-group textarea {
-        resize: vertical;
+        resize: none;
         height: 195px;
     }
 
@@ -973,7 +973,7 @@ textarea {
     }
 
     .wfh-form-container .wfh-form-group textarea {
-        resize: vertical;
+        resize: none;
         height: 195px;
     }
 
@@ -1185,7 +1185,7 @@ textarea {
     }
 
     .wfh-form-container .wfh-form-group textarea {
-        resize: vertical;
+        resize: none;
         height: 195px;
     }
 
@@ -1397,7 +1397,7 @@ textarea {
     }
 
     .wfh-form-container .wfh-form-group textarea {
-        resize: vertical;
+        resize: none;
         height: 195px;
     }
 
@@ -1609,7 +1609,7 @@ textarea {
     }
 
     .wfh-form-container .wfh-form-group textarea {
-        resize: vertical;
+        resize: none;
         height: 195px;
     }
 
@@ -1821,7 +1821,7 @@ textarea {
     }
 
     .wfh-form-container .wfh-form-group textarea {
-        resize: vertical;
+        resize: none;
         height: 195px;
     }
 
